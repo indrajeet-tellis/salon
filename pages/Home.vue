@@ -1,8 +1,6 @@
 <template>
-  <section
-    class="banner"
-    :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
-  >
+  <!-- :style="{ backgroundImage: 'url(/assets/Frame.png)' }" -->
+  <section class="banner">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -30,7 +28,7 @@
       <div class="up">
         <div class="item">
           <div class="round">
-            <img src="../assets/s-one.png" />
+            <!-- <img src="../assets/s-one.png" /> -->
           </div>
           <p>Website design</p>
         </div>
@@ -50,11 +48,8 @@
   </div>
 
   <!-- software end -->
-
-  <section
-    class="advantage"
-    :style="{ backgroundImage: 'url(/assets/group.png)' }"
-  >
+  <!-- :style="{ backgroundImage: 'url(/assets/group.png)' }" -->
+  <section class="advantage">
     <div class="container">
       <div class="main">
         <h2>Advantages of having your own salon app</h2>
@@ -63,7 +58,7 @@
         </div>
       </div>
       <div class="ad-img">
-        <img src="../assets/ad-phn.png" />
+        <!-- <img src="../assets/ad-phn.png" /> -->
       </div>
     </div>
     <div>
