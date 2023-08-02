@@ -61,7 +61,8 @@
         </div>
       </div>
       <div class="ad-img">
-        <img src="~/assets/ad-phn.png" />
+        <!-- <img src="~/assets/ad-phn.png" alt="Advertisement Phone" /> -->
+        <img :src="require('~/assets/ad-phn.png')" alt="" />
       </div>
     </div>
     <div>
