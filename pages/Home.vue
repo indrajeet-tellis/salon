@@ -10,7 +10,7 @@
             <h1 class="heading">Hello Marcel,</h1>
             <p class="para">Welcome to Salonnz, your salon digital partner</p>
             <div>
-              <img src="../assets/Background.png" alt="" />
+              <!-- <img src="../assets/Background.png" alt="" /> -->
             </div>
           </div>
         </div>
