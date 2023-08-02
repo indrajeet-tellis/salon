@@ -28,7 +28,7 @@
       <div class="up">
         <div class="item">
           <div class="round">
-            <!-- <img src="../assets/s-one.png" /> -->
+            <img src="../assets/s-one.png" />
           </div>
           <p>Website design</p>
         </div>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="ad-img">
-        <!-- <img src="../assets/ad-phn.png" /> -->
+        <img src="../assets/ad-phn.png" />
       </div>
     </div>
     <div>
@@ -124,10 +124,10 @@ a {
   margin-top: 30px;
 }
 /* .software .up .item {
-  width: 20%;
-  border: 1px solid wheat;
-  height: 300px;
-} */
+    width: 20%;
+    border: 1px solid wheat;
+    height: 300px;
+  } */
 .software .up .item .round {
   width: 50px;
   height: 50px;
@@ -169,3 +169,7 @@ a {
   color: #ed0046;
 }
 </style>
+
+<!-- <style>
+    
+</style> -->
