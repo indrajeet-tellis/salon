@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="ad-img">
-        <!-- <img src="../assets/ad-phn.png" /> -->
+        <img src="~/assets/ad-phn.png" />
       </div>
     </div>
     <div>
