@@ -49,10 +49,7 @@
 
   <!-- software end -->
   <!-- :style="{ backgroundImage: 'url(/assets/group.png)' }" -->
-  <section
-    class="advantage"
-    :style="{ backgroundImage: 'url(/assets/group.png)' }"
-  >
+  <section class="advantage">
     <div class="container">
       <div class="main">
         <h2>Advantages of having your own salon app</h2>
@@ -60,9 +57,8 @@
           <a href="#">View All</a>
         </div>
       </div>
-      <div class="ad-img">
-        <!-- <img src="~/assets/ad-phn.png" alt="Advertisement Phone" /> -->
-        <img :src="require('~/assets/ad-phn.png')" alt="" />
+      <div class="">
+        <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
       </div>
     </div>
     <div>
@@ -72,6 +68,12 @@
 </template>
 
 <style>
+.ad-img {
+  width: 38%;
+  background-size: cover;
+  background-position: center;
+  height: 118px;
+}
 .my-text {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -173,7 +175,3 @@ a {
   color: #ed0046;
 }
 </style>
-
-<!-- <style>
-    
-</style> -->
