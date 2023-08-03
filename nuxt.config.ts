@@ -14,12 +14,9 @@ export default defineNuxtConfig({
       Roboto: {
         wght: [100, 400, 700], // Font weights
       },
-      DMSans: {
+      DM: {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000], // Font weights
       },
-      // $colors:{
-      //   $primary:[#ed0046]
-      // }
     },
     display: "swap",
   },

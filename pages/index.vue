@@ -1,14 +1,19 @@
 <template>
-  <!-- :style="{ backgroundImage: 'url(/assets/Frame.png)' }" -->
-  <section class="banner">
+  <section
+    class="banner"
+    :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
+  >
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="main">
-            <h1 class="heading">Hello Marcel,</h1>
-            <p class="para">Welcome to Salonnz, your salon digital partner</p>
-            <div>
-              <!-- <img src="../assets/Background.png" alt="" /> -->
+        <div class="col-sm">
+          <div class="main mt-4">
+            <h1 class="heading fw-bold">Hello Marcel,</h1>
+            <div class="icon"><i class="fa-regular fa-bell"></i></div>
+            <p class="para fw-normal">
+              Welcome to Salonnz, your salon digital partner
+            </p>
+            <div class="pic col-sm:m-auto">
+              <img class="pb-5" src="/assets/Background.png" alt="Background" />
             </div>
           </div>
         </div>
@@ -21,14 +26,12 @@
     <div class="container">
       <div class="main">
         <h2 class="">What we can do for your salon?</h2>
-        <!-- <div class="button">
-          <a>View All</a>
-        </div> -->
+        <Button />
       </div>
       <div class="up">
         <div class="item">
           <div class="round">
-            <!-- <img src="../assets/s-one.png" /> -->
+            <img src="/assets/s-one.png" />
           </div>
           <p>Website design</p>
         </div>
@@ -37,25 +40,16 @@
       </div>
     </div>
   </section>
-
-  <div class="">
-    <i class="fas fa-heart"></i>
-    <i class="fa-regular fa-bell"></i>
-    <i class="fa-solid fa-bell"></i>
-  </div>
-  <div>
-    <h1 class="my-text">Hello, Google Fonts!</h1>
-  </div>
-
   <!-- software end -->
-  <!-- :style="{ backgroundImage: 'url(/assets/group.png)' }" -->
-  <section class="advantage">
+  <!--  -->
+  <section
+    class="advantage"
+    :style="{ backgroundImage: 'url(/assets/group.png)' }"
+  >
     <div class="container">
       <div class="main">
         <h2>Advantages of having your own salon app</h2>
-        <!-- <div class="button">
-          <a href="#">View All</a>
-        </div> -->
+        <Button />
       </div>
       <div class="">
         <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
@@ -69,42 +63,37 @@
 </template>
 
 <style>
-.ad-img {
-  width: 38%;
-  background-size: cover;
-  background-position: center;
-  height: 118px;
-}
-.my-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none !important;
 }
 .banner .heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
   color: #fff;
+  display: inline-block;
+}
+.banner .icon {
+  color: #fff;
+  display: inline-block;
+  padding-left: 172px;
+  font-size: 20px;
 }
 .banner {
   width: 100%;
   background-size: cover;
   background-position: center;
-  padding: 70px 0;
 }
 .banner .para {
-  color: #fff;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  color: #d4dbff;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
 }
-.banner .main {
-  padding: 0 30px;
-}
+
 /* banner end */
 .software .main {
   display: flex;
