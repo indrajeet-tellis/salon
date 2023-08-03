@@ -81,7 +81,7 @@
 
   <!-- advantage start -->
   <section
-    class="advantage"
+    class="advantage pt-5"
     :style="{ backgroundImage: 'url(/assets/group.png)' }"
   >
     <div class="container">
@@ -98,10 +98,54 @@
       </div>
       <div class="row mt-5">
         <div class="col-sm">
-          <div class="box">
-            <!-- <img src="/assets/ad-one" alt="ad-one" /> -->
-            <h3 class="header">Increasing a customer loyalty</h3>
-            <p class="para">
+          <div class="box text-center mt-3 px-2 py-3">
+            <img src="/assets/ad-one.png" alt="ad-one" />
+            <h3 class="sub-header fw-bold mt-3">
+              Increasing a customer loyalty
+            </h3>
+            <p class="ad-para fw-light">
+              People like attention, and your customers are no exception.
+              Continuous interaction with your customers make them feel special,
+              and their trust in you grows.
+            </p>
+          </div>
+          <div class="box text-center mt-3 px-2 py-3">
+            <img src="/assets/ad-five.png" alt="add-two" />
+            <h3 class="sub-header fw-bold mt-3">
+              Attracting and retaining an audience
+            </h3>
+            <p class="ad-para fw-light">
+              People like attention, and your customers are no exception.
+              Continuous interaction with your customers make them feel special,
+              and their trust in you grows.
+            </p>
+          </div>
+          <div class="box text-center mt-3 px-2 py-3">
+            <img src="/assets/add-four.png" alt="ad-one" />
+            <h3 class="sub-header fw-bold mt-3">
+              Optimization and automation of business
+            </h3>
+            <p class="ad-para fw-light">
+              People like attention, and your customers are no exception.
+              Continuous interaction with your customers make them feel special,
+              and their trust in you grows.
+            </p>
+          </div>
+          <div class="box text-center mt-3 px-2 py-3">
+            <img src="/assets/add-three.png" alt="ad-one" />
+            <h3 class="sub-header fw-bold mt-3">
+              You get a powerful communication channel with your customer
+            </h3>
+            <p class="ad-para fw-light">
+              People like attention, and your customers are no exception.
+              Continuous interaction with your customers make them feel special,
+              and their trust in you grows.
+            </p>
+          </div>
+          <div class="box text-center mt-3 px-2 py-3">
+            <img src="/assets/add-two.png" alt="ad-one" />
+            <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
+            <p class="ad-para fw-light">
               People like attention, and your customers are no exception.
               Continuous interaction with your customers make them feel special,
               and their trust in you grows.
@@ -215,14 +259,14 @@ a {
 }
 /* software end */
 
+/* advantage start */
 .advantage {
   width: 100%;
   background-size: cover;
   background-position: center;
-  height: 990px;
   background-repeat: no-repeat;
   margin-top: 50px;
-  padding: 20px 0;
+  padding-bottom: 200px;
 }
 .advantage .main {
   display: flex;
@@ -245,4 +289,21 @@ a {
 .advantage .pic img {
   width: 100%;
 }
+.advantage .box {
+  border: 1px solid #e4e3e3;
+  border-radius: 23px;
+}
+.advantage .box .sub-header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #ed0046;
+}
+.advantage .box .ad-para {
+  font-family: "Roboto", sans-serif;
+  font-size: 8px;
+  color: #232323;
+  width: 235px;
+  margin: 0 auto;
+}
+/* advantage end */
 </style>
