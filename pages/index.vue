@@ -24,24 +24,60 @@
 
   <section class="software">
     <div class="container">
-      <div class="main">
-        <h2 class="">What we can do for your salon?</h2>
-        <Button />
-      </div>
-      <div class="up">
-        <div class="item">
-          <div class="round">
-            <img src="/assets/s-one.png" />
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="main">
+            <div class="heading mt-3">
+              <h2 class="fw-bold">What we can do for your salon?</h2>
+            </div>
+            <Button />
           </div>
-          <p>Website design</p>
+          <div class="up">
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-one.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Website design</p>
+            </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-two.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Digital marketing</p>
+            </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-three.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Logo & Graphics</p>
+            </div>
+          </div>
+          <div class="down">
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-four.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Custom Salon Apps</p>
+            </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-five.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Salon Software</p>
+            </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-six.png" />
+              </div>
+              <p class="para paraTwo mt-2 fw-normal">SEO</p>
+            </div>
+          </div>
         </div>
-        <div class="item"></div>
-        <div class="item"></div>
       </div>
     </div>
   </section>
   <!-- software end -->
-  <!--  -->
+
   <section
     class="advantage"
     :style="{ backgroundImage: 'url(/assets/group.png)' }"
@@ -93,29 +129,28 @@ a {
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
 }
-
 /* banner end */
+
+/* software start*/
+.software .heading h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  color: #1c2d57;
+}
 .software .main {
   display: flex;
-  column-gap: 50px;
   margin-top: 12px;
+  justify-content: space-between;
 }
-.software .main h2 {
-  font-weight: 500;
-  font-size: 18px;
-  color: #1c2d57;
-  margin-left: 10px;
+.software .main .button {
+  margin-top: 9px;
 }
-
 .software .up {
   display: flex;
   margin-top: 30px;
+  justify-content: space-between;
 }
-/* .software .up .item {
-    width: 20%;
-    border: 1px solid wheat;
-    height: 300px;
-  } */
+
 .software .up .item .round {
   width: 50px;
   height: 50px;
@@ -124,12 +159,43 @@ a {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+  margin: 0 auto;
 }
 .software .up .item .round img {
   padding: 10px;
 }
-.software .up .item p {
-  margin-top: 20px;
+.software .up .item .para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #232323;
+}
+.software .down {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.software .down .item .round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+  margin: 0 auto;
+}
+.software .down .item .round img {
+  padding: 10px;
+}
+.software .down .item .para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #232323;
+}
+
+.software .down .item .paraTwo {
+  padding-left: 16px;
 }
 /* software end */
 
