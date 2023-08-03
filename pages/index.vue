@@ -1,9 +1,40 @@
+<script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css/free-mode";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
+    };
+  },
+};
+</script>
+
 <template>
-  <section
-    class="banner"
-    :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
-  >
-    <div class="container">
+  <section class="banner">
+    <div
+      class="container ba-bg"
+      :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
+    >
       <div class="row">
         <div class="col-sm">
           <div class="main mt-4">
@@ -80,11 +111,11 @@
   <!-- software end -->
 
   <!-- advantage start -->
-  <section
-    class="advantage pt-5"
-    :style="{ backgroundImage: 'url(/assets/group.png)' }"
-  >
-    <div class="container">
+  <section class="advantage pt-5">
+    <div
+      class="container bg-ad"
+      :style="{ backgroundImage: 'url(/assets/group.png)' }"
+    >
       <div class="row">
         <div class="col-sm">
           <div class="main">
@@ -98,64 +129,114 @@
       </div>
       <div class="row mt-5">
         <div class="col-sm">
-          <div class="box text-center mt-3 px-2 py-3">
-            <img src="/assets/ad-one.png" alt="ad-one" />
-            <h3 class="sub-header fw-bold mt-3">
-              Increasing a customer loyalty
-            </h3>
-            <p class="ad-para fw-light">
-              People like attention, and your customers are no exception.
-              Continuous interaction with your customers make them feel special,
-              and their trust in you grows.
-            </p>
-          </div>
-          <div class="box text-center mt-3 px-2 py-3">
-            <img src="/assets/ad-five.png" alt="add-two" />
-            <h3 class="sub-header fw-bold mt-3">
-              Attracting and retaining an audience
-            </h3>
-            <p class="ad-para fw-light">
-              People like attention, and your customers are no exception.
-              Continuous interaction with your customers make them feel special,
-              and their trust in you grows.
-            </p>
-          </div>
-          <div class="box text-center mt-3 px-2 py-3">
-            <img src="/assets/add-four.png" alt="ad-one" />
-            <h3 class="sub-header fw-bold mt-3">
-              Optimization and automation of business
-            </h3>
-            <p class="ad-para fw-light">
-              People like attention, and your customers are no exception.
-              Continuous interaction with your customers make them feel special,
-              and their trust in you grows.
-            </p>
-          </div>
-          <div class="box text-center mt-3 px-2 py-3">
-            <img src="/assets/add-three.png" alt="ad-one" />
-            <h3 class="sub-header fw-bold mt-3">
-              You get a powerful communication channel with your customer
-            </h3>
-            <p class="ad-para fw-light">
-              People like attention, and your customers are no exception.
-              Continuous interaction with your customers make them feel special,
-              and their trust in you grows.
-            </p>
-          </div>
-          <div class="box text-center mt-3 px-2 py-3">
-            <img src="/assets/add-two.png" alt="ad-one" />
-            <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
-            <p class="ad-para fw-light">
-              People like attention, and your customers are no exception.
-              Continuous interaction with your customers make them feel special,
-              and their trust in you grows.
-            </p>
+          <swiper
+            :freeMode="true"
+            :pagination="{
+              clickable: true,
+              dynamicBullets: true,
+            }"
+            :modules="modules"
+            class="mySwiper"
+            :slides-per-view="1"
+            :space-between="50"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide
+              ><div class="box text-center mt-3 px-2 py-3">
+                <img src="/assets/ad-one.png" alt="ad-one" />
+                <h3 class="sub-header fw-bold mt-3">
+                  Increasing a customer loyalty
+                </h3>
+                <p class="ad-para fw-light">
+                  People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows.
+                </p>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide
+              ><div class="box text-center mt-3 px-2 py-3">
+                <img src="/assets/ad-five.png" alt="add-two" />
+                <h3 class="sub-header fw-bold mt-3">
+                  Attracting and retaining an audience
+                </h3>
+                <p class="ad-para fw-light">
+                  People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows.
+                </p>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div class="box text-center mt-3 px-2 py-3">
+                <img src="/assets/add-four.png" alt="ad-one" />
+                <h3 class="sub-header fw-bold mt-3">
+                  Optimization and automation of business
+                </h3>
+                <p class="ad-para fw-light">
+                  People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows.
+                </p>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div class="box text-center mt-3 px-2 py-3">
+                <img src="/assets/add-three.png" alt="ad-one" />
+                <h3 class="sub-header fw-bold mt-3">
+                  You get a powerful communication channel with your customer
+                </h3>
+                <p class="ad-para fw-light">
+                  People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows.
+                </p>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div class="box text-center mt-3 px-2 py-3">
+                <img src="/assets/add-two.png" alt="ad-one" />
+                <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
+                <p class="ad-para fw-light">
+                  People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows.
+                </p>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm">
+          <div class="marketing-part">
+            <h2 class="head fw-bold">Marketing features of our app</h2>
+            <div class="mar-main mt-3">
+              <div class="left">
+                <img src="/assets/ma-phn.png" alt="ma-phn" />
+              </div>
+              <div class="right"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- advantage end -->
+
+  <!-- marketing start -->
+
+  <!-- <section class="marketing">
+    <div class="container"></div>
+  </section> -->
+
+  <!-- marketing end -->
 </template>
 
 <style>
@@ -163,8 +244,16 @@
   margin: 0;
   padding: 0;
 }
+.container {
+  width: 350px !important;
+}
 a {
   text-decoration: none !important;
+}
+.banner .ba-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner .heading {
   font-family: "DM Sans", sans-serif;
@@ -265,12 +354,18 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  padding-bottom: 200px;
+}
+.advantage .bg-ad {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 200px;
 }
 .advantage .main {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .advantage .main h2 {
   font-size: 18px;
@@ -305,5 +400,20 @@ a {
   width: 235px;
   margin: 0 auto;
 }
+.advantage .marketing-part .mar-main {
+  display: flex;
+}
+.advantage .marketing-part .head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #1c2d57;
+  text-align: center;
+}
 /* advantage end */
+
+/* marketing start */
+/* .main {
+  display: flex;
+} */
+/* marketing end */
 </style>

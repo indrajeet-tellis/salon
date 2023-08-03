@@ -4,11 +4,7 @@
   </div>
 </template>
 <style>
-/* :root {
-  --bs-danger-border-subtle: #ed0046 !important;
-} */
 .button a {
-  /* background: black; */
   display: inline-block;
   color: #ed0046;
   font-family: "DM Sans", sans-serif;

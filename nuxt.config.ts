@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
