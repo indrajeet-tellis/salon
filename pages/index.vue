@@ -21,9 +21,9 @@
     <div class="container">
       <div class="main">
         <h2 class="">What we can do for your salon?</h2>
-        <div class="button">
+        <!-- <div class="button">
           <a>View All</a>
-        </div>
+        </div> -->
       </div>
       <div class="up">
         <div class="item">
@@ -53,9 +53,9 @@
     <div class="container">
       <div class="main">
         <h2>Advantages of having your own salon app</h2>
-        <div class="button">
+        <!-- <div class="button">
           <a href="#">View All</a>
-        </div>
+        </div> -->
       </div>
       <div class="">
         <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
@@ -63,6 +63,7 @@
     </div>
     <div>
       <h1 class="m-5">HELLO......</h1>
+      <Button />
     </div>
   </section>
 </template>
@@ -115,14 +116,6 @@ a {
   font-size: 18px;
   color: #1c2d57;
   margin-left: 10px;
-}
-.software .main .button a {
-  font-weight: 500;
-  font-size: 12px;
-  color: #ed0046;
-  text-decoration: none !important;
-  cursor: pointer;
-  margin-left: 30px;
 }
 
 .software .up {
