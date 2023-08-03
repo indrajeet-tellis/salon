@@ -22,6 +22,7 @@
   </section>
   <!-- bannner end -->
 
+  <!-- software start -->
   <section class="software">
     <div class="container">
       <div class="row">
@@ -78,24 +79,39 @@
   </section>
   <!-- software end -->
 
+  <!-- advantage start -->
   <section
     class="advantage"
     :style="{ backgroundImage: 'url(/assets/group.png)' }"
   >
     <div class="container">
-      <div class="main">
-        <h2>Advantages of having your own salon app</h2>
-        <Button />
+      <div class="row">
+        <div class="col-sm">
+          <div class="main">
+            <h2>Advantages of having your own salon app</h2>
+            <Button />
+          </div>
+          <div class="pic mt-4">
+            <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
+          </div>
+        </div>
       </div>
-      <div class="">
-        <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
+      <div class="row mt-5">
+        <div class="col-sm">
+          <div class="box">
+            <!-- <img src="/assets/ad-one" alt="ad-one" /> -->
+            <h3 class="header">Increasing a customer loyalty</h3>
+            <p class="para">
+              People like attention, and your customers are no exception.
+              Continuous interaction with your customers make them feel special,
+              and their trust in you grows.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <h1 class="m-5">HELLO......</h1>
-      <Button />
     </div>
   </section>
+  <!-- advantage end -->
 </template>
 
 <style>
@@ -210,6 +226,7 @@ a {
 }
 .advantage .main {
   display: flex;
+  justify-content: space-between;
 }
 .advantage .main h2 {
   font-size: 18px;
@@ -221,5 +238,11 @@ a {
   font-size: 12px;
   font-weight: 500;
   color: #ed0046;
+}
+.advantage .pic {
+  box-sizing: border-box;
+}
+.advantage .pic img {
+  width: 100%;
 }
 </style>
