@@ -220,7 +220,9 @@ export default {
               <div class="left">
                 <img src="/assets/ma-phn.png" alt="ma-phn" />
               </div>
-              <div class="right"></div>
+              <div class="right">
+                <img src="/assets/ad-right.png" alt="ma-phn" />
+              </div>
             </div>
           </div>
         </div>
@@ -354,13 +356,12 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 200px;
 }
 .advantage .bg-ad {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 200px;
+  padding-bottom: 55px;
 }
 .advantage .main {
   display: flex;
@@ -402,12 +403,32 @@ a {
 }
 .advantage .marketing-part .mar-main {
   display: flex;
+  position: relative;
 }
+
 .advantage .marketing-part .head {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   color: #1c2d57;
   text-align: center;
+}
+.advantage .marketing-part .mar-main .left {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.advantage .marketing-part .mar-main .left img {
+  width: 100%;
+}
+.advantage .marketing-part .mar-main .right {
+  width: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 35px;
+  left: 120px;
+}
+.advantage .marketing-part .mar-main .right img {
+  width: 115%;
 }
 /* advantage end */
 
