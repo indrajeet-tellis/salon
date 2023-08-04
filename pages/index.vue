@@ -231,19 +231,60 @@ export default {
 
   <!-- advantage end -->
 
-  <!-- marketing start -->
+  <!-- Features start -->
 
-  <!-- <section class="marketing">
-    <div class="container"></div>
-  </section> -->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2 class="head fw-bold text-center mt-3">Features of our website</h2>
+          <div class="d-flex">
+            <div class="left">
+              <img src="/assets/feature.png" alt="feature.png" />
+            </div>
+            <div class="right">
+              <ul class="mt-1 mb-0">
+                <li class="fw-normal">
+                  <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />Cool
+                  & Attractive Minimal Designs
+                </li>
+                <li class="fw-normal">
+                  <img
+                    class="tik"
+                    src="/assets/Ftik.png"
+                    alt="Ftik.png"
+                  />Online Booking Options
+                </li>
+                <li class="fw-normal">
+                  <img
+                    class="tik"
+                    src="/assets/Ftik.png"
+                    alt="Ftik.png"
+                  />Displays Google & Facebook Reviews
+                </li>
+                <li class="fw-normal">
+                  <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />SEO
+                  Optimized & Mobile Friendly
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- marketing end -->
+  <!-- Features end -->
 </template>
 
 <style>
 * {
   margin: 0;
   padding: 0;
+}
+ul,
+ol {
+  list-style: none;
 }
 .container {
   width: 350px !important;
@@ -418,7 +459,6 @@ a {
   display: flex;
   position: relative;
 }
-
 .advantage .marketing-part .head {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
@@ -443,4 +483,34 @@ a {
 .advantage .marketing-part .mar-main .right img {
   width: 115%;
 }
+/* advantage end */
+
+/* features start */
+.features .head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #1c2d57;
+}
+.features .left {
+  width: 40%;
+  box-sizing: border-box;
+}
+.features .left img {
+  width: 100%;
+}
+.features .right {
+  width: 60%;
+}
+.features .right ul li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #232323;
+  margin-left: 8px;
+  line-height: 17px;
+}
+.features .right .tik {
+  margin-left: -33px;
+  margin-right: 7px;
+}
+/* features end */
 </style>
