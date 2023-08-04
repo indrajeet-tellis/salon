@@ -142,7 +142,7 @@ export default {
             @slideChange="onSlideChange"
           >
             <swiper-slide
-              ><div class="box text-center mt-3 px-2 py-3 mb-5">
+              ><div class="box mb-5 text-center mt-3 px-2 py-3">
                 <img src="/assets/ad-one.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">
                   Increasing a customer loyalty
@@ -198,7 +198,7 @@ export default {
             </swiper-slide>
 
             <swiper-slide>
-              <div class="box text-center mt-3 px-2 py-3">
+              <div class="box mb-5 text-center mt-3 px-2 py-3">
                 <img src="/assets/add-two.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
                 <p class="ad-para fw-light">
@@ -443,6 +443,92 @@ export default {
     </div>
   </section>
   <!-- package end -->
+
+  <!-- works start -->
+  <section class="works">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="head fw-bold text-center">How it works</h2>
+          <div class="main">
+            <swiper
+              :freeMode="true"
+              :pagination="{
+                clickable: true,
+              }"
+              :modules="modules"
+              class="mySwiper"
+              :slides-per-view="1"
+              :space-between="50"
+              @swiper="onSwiper"
+              @slideChange="onSlideChange"
+            >
+              <swiper-slide>
+                <div class="box text-center mt-4">
+                  <img src="../public/assets/w-five.png" />
+                  <h3 class="sub-header fw-bold mb-0 mt-2">Request Demo</h3>
+                  <p class="sub-para fw-normal mb-0 mt-2">
+                    Submit and request a demo online on our website.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="box text-center mt-4">
+                  <img src="../public/assets/w-four.png" />
+                  <h3 class="sub-header fw-bold mb-0 mt-2">
+                    We will contact you
+                  </h3>
+                  <p class="sub-para fw-normal mb-0 mt-2">
+                    We will contact you on the date and time you requested and
+                    show you same demo design and template
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="box text-center mt-4">
+                  <img src="../public/assets/w-three.png" />
+                  <h3 class="sub-header fw-bold mb-0 mt-2">
+                    Features and functionality Consultation
+                  </h3>
+                  <p class="sub-para fw-normal mb-0 mt-2">
+                    Once you check our demo design and solutions,you can request
+                    design changes and modify and customize features and
+                    functionallity according to your requirement.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="box text-center mt-4">
+                  <img src="../public/assets/w-two.png" />
+                  <h3 class="sub-header fw-bold mb-0 mt-2">
+                    Review the App and Website
+                  </h3>
+                  <p class="sub-para fw-normal mb-0 mt-2">
+                    Once we review all the content and images for your website
+                    and the app for you to review before publishing it live.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="box text-center mt-4">
+                  <img src="../public/assets/w-one.png" />
+                  <h3 class="sub-header fw-bold mb-0 mt-2">
+                    Publish the app and website live.
+                  </h3>
+                  <p class="sub-para fw-normal mb-0 mt-2">
+                    Once you finalize your website and app the webiste will be
+                    published the same day. But your salon app will take 3-10
+                    days by Apple and google store
+                  </p>
+                </div>
+              </swiper-slide>
+            </swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- works end -->
 </template>
 
 <style>
@@ -559,7 +645,7 @@ a {
 /* software end */
 
 /* advantage start */
-.swiper-pagination-bullet {
+.advantage .swiper-pagination-bullet {
   opacity: 1;
   background: #fff;
   width: 7px;
@@ -567,7 +653,7 @@ a {
   border-radius: 50%;
   border: 1px solid #ed0046;
 }
-.swiper-pagination-bullet-active {
+.advantage .swiper-pagination-bullet-active {
   background: #ed0046 !important;
   width: 13px;
   border-radius: 100px;
@@ -719,7 +805,6 @@ a {
 /* package start */
 .package .pack-bg {
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   padding-top: 20px;
   padding-bottom: 70px;
@@ -772,4 +857,40 @@ a {
   width: 262px;
 }
 /* package end */
+
+/* works start */
+.works .head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #1c2d57;
+}
+.works .main .box .sub-header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #ed0046;
+}
+.works .main .box .sub-para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #000000;
+  width: 232px;
+  margin: 0 auto;
+}
+.works .swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #ed0046;
+}
+.works .swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px;
+  border-radius: 100px;
+}
+.works .box {
+  margin-bottom: 30px !important;
+}
+/* works start */
 </style>
