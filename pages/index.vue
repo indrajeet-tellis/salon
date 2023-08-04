@@ -349,7 +349,7 @@ export default {
   <section class="package mb-5">
     <div
       class="container pack-bg mt-5"
-      :style="{ backgroundImage: 'url(/assets/group.png)' }"
+      :style="{ backgroundImage: 'url(/assets/pack-bg.png)' }"
     >
       <div class="row">
         <div class="col">
