@@ -133,7 +133,6 @@ export default {
             :freeMode="true"
             :pagination="{
               clickable: true,
-              dynamicBullets: true,
             }"
             :modules="modules"
             class="mySwiper"
@@ -143,7 +142,7 @@ export default {
             @slideChange="onSlideChange"
           >
             <swiper-slide
-              ><div class="box text-center mt-3 px-2 py-3">
+              ><div class="box text-center mt-3 px-2 py-3 mb-5">
                 <img src="/assets/ad-one.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">
                   Increasing a customer loyalty
@@ -351,6 +350,20 @@ a {
 /* software end */
 
 /* advantage start */
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #ed0046;
+}
+.swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px;
+  border-radius: 100px;
+}
+
 .advantage {
   width: 100%;
   background-size: cover;
@@ -430,11 +443,4 @@ a {
 .advantage .marketing-part .mar-main .right img {
   width: 115%;
 }
-/* advantage end */
-
-/* marketing start */
-/* .main {
-  display: flex;
-} */
-/* marketing end */
 </style>
