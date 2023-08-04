@@ -344,6 +344,105 @@ export default {
     </div>
   </section>
   <!-- appointment end -->
+
+  <!-- package start -->
+  <section class="package mb-5">
+    <div
+      class="container pack-bg mt-5"
+      :style="{ backgroundImage: 'url(/assets/group.png)' }"
+    >
+      <div class="row">
+        <div class="col">
+          <div class="header">
+            <h2 class="head fw-bold">Digital salon Kickstarter package</h2>
+            <p class="para fw-normal">
+              All-in-one package for your for your meeting all your salon
+              digitalization
+            </p>
+          </div>
+          <div class="main mt-3">
+            <div class="item">
+              <div class="line"></div>
+              <div class="d-flex">
+                <div class="left pb-1 pe-1 ps-2">
+                  <img src="/assets/digi-one.png" alt="digi-one" />
+                </div>
+                <div class="right">
+                  <h3 class="sub-header fw-bold mb-0">
+                    Branded salon app with your own logo
+                  </h3>
+                  <p class="sub-para fw-normal mb-0 mt-1">
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    esetting industry lorem Ipsum has.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item mt-5 d-flex">
+              <div class="line"></div>
+              <div class="left pb-1 pe-1 ps-2">
+                <img src="/assets/digi-two.png" alt="digi-one" />
+              </div>
+              <div class="right">
+                <h3 class="sub-header fw-bold mb-0">
+                  Branded salon app with your own logo
+                </h3>
+                <p class="sub-para fw-normal mb-0 mt-1">
+                  Lorem Ipsum is simply dummy text of the printing and type
+                  esetting industry lorem Ipsum has.
+                </p>
+              </div>
+            </div>
+            <div class="item mt-5 d-flex">
+              <div class="line"></div>
+              <div class="left pb-1 pe-1 ps-2">
+                <img src="/assets/digi-four.png" alt="digi-one" />
+              </div>
+              <div class="right">
+                <h3 class="sub-header fw-bold mb-0">
+                  Branded salon app with your own logo
+                </h3>
+                <p class="sub-para fw-normal mb-0 mt-1">
+                  Lorem Ipsum is simply dummy text of the printing and type
+                  esetting industry lorem Ipsum has.
+                </p>
+              </div>
+            </div>
+            <div class="item mt-5 d-flex">
+              <div class="line"></div>
+              <div class="left pb-1 pe-1 ps-2">
+                <img src="/assets/digi-five.png" alt="digi-one" />
+              </div>
+              <div class="right">
+                <h3 class="sub-header fw-bold mb-0">
+                  Branded salon app with your own logo
+                </h3>
+                <p class="sub-para fw-normal mb-0 mt-1">
+                  Lorem Ipsum is simply dummy text of the printing and type
+                  esetting industry lorem Ipsum has.
+                </p>
+              </div>
+            </div>
+            <div class="item mt-5 d-flex">
+              <div class="left pb-1 pe-1 ps-2">
+                <img src="/assets/digi-six.png" alt="digi-one" />
+              </div>
+              <div class="right">
+                <h3 class="sub-header fw-bold mb-0">
+                  Branded salon app with your own logo
+                </h3>
+                <p class="sub-para fw-normal mb-0 mt-1">
+                  Lorem Ipsum is simply dummy text of the printing and type
+                  esetting industry lorem Ipsum has.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- package end -->
 </template>
 
 <style>
@@ -616,4 +715,61 @@ a {
   font-weight: 400 !important;
 }
 /* appointment end */
+
+/* package start */
+.package .pack-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.package .header {
+  text-align: center;
+}
+.package .header .head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #102c56;
+  width: 284px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.package .header .para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #0c1740;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+.package .main .item {
+  position: relative;
+}
+.package .main .item .line {
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+  border: 1px dashed #232323;
+}
+.package .main .item .left {
+  width: 20%;
+  padding-top: 1px;
+}
+.package .main .item .right {
+  width: 80%;
+}
+.package .main .item .right .sub-header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #232323;
+}
+.package .main .item .right .sub-para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 8px;
+  color: #232323;
+  width: 262px;
+}
+/* package end */
 </style>
