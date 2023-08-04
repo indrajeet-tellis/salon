@@ -6,9 +6,12 @@ export default defineNuxtConfig({
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "@fortawesome/fontawesome-free/css/all.css",
+    "bootstrap/dist/css/bootstrap.css",
   ],
 
   modules: ["@nuxtjs/google-fonts"],
+
+  plugins: [{ src: "~/plugins/bootstrap.js", mode: "client" }],
 
   googleFonts: {
     families: {
