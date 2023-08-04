@@ -232,7 +232,6 @@ export default {
   <!-- advantage end -->
 
   <!-- Features start -->
-
   <section class="features">
     <div class="container">
       <div class="row">
@@ -273,8 +272,78 @@ export default {
       </div>
     </div>
   </section>
-
   <!-- Features end -->
+
+  <!-- appointment start -->
+  <section class="appointment">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="heading d-flex justify-content-between">
+            <div class="left">
+              <h2 class="header fw-bold">
+                Features of our appointment management solution
+              </h2>
+            </div>
+            <div class="right">
+              <Button />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-one.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Dashboard</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-two.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Calender</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-three.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Sales</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-four.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Apointment</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-five.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Coupones</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-six.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Staff</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-seven.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Payroll</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box text-center p-2">
+            <img src="/assets/appo-eight.png" alt="appo-one.png" />
+            <p class="para mb-0 fw-normal mt-1">Discount</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- appointment end -->
 </template>
 
 <style>
@@ -513,4 +582,38 @@ a {
   margin-right: 7px;
 }
 /* features end */
+
+/* appointment start */
+.appointment .heading {
+  margin-top: 50px;
+}
+.appointment .heading .left {
+  width: 80%;
+}
+.appointment .heading .right {
+  width: 20%;
+  margin-top: -4px;
+}
+.appointment .heading .left .header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #1c2d57;
+  width: 300px;
+}
+.appointment .box {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.42);
+  margin-bottom: 12px;
+  margin-top: 22px;
+}
+.appointment .box .para {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #102c56;
+  font-weight: 400 !important;
+}
+/* appointment end */
 </style>
