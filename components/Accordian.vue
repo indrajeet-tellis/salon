@@ -1,54 +1,57 @@
 <template>
-  <div>
-    <div class="accordion" id="accordionExample">
-      <div v-for="(item, index) in items" :key="index" class="accordion-item">
-        <h2 class="accordion-header" :id="'heading' + index">
-          <button
-            class="accordion-button"
-            type="button"
-            :data-bs-toggle="index === 0 ? 'collapse' : ''"
-            :data-bs-target="'#collapse' + index"
-            :aria-controls="'collapse' + index"
-            :aria-expanded="index === 0 ? 'true' : 'false'"
-            @click="toggleAccordion(index)"
-          >
-            {{ item.title }}
-          </button>
-        </h2>
-        <div
-          :id="'collapse' + index"
-          class="accordion-collapse collapse"
-          :class="{ show: index === 0 }"
-          :aria-labelledby="'heading' + index"
-        >
-          <div class="accordion-body">
-            {{ item.content }}
-          </div>
-        </div>
-      </div>
+  <div class="acc-wrapper" v-for="item in accItems" :key="item.id">
+    <div class="acc-title" @click="toggleAcc(item)">
+      <p>{{ item.accTitle }}</p>
+      <i class="fa-solid fa-plus" v-if="item.isOpen"></i>
+      <i class="fa-solid fa-minus" v-if="!item.isOpen"></i>
+    </div>
+    <div class="acc-content" v-if="item.isOpen">
+      {{ item.accContent }}
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
-  props: {
-    items: {
-      type: Array,
-      required: true,
-    },
-  },
-  methods: {
-    toggleAccordion(index) {
-      if (index !== 0) {
-        const targetId = "#collapse" + index;
-        const targetCollapse = new bootstrap.Collapse(
-          document.querySelector(targetId),
-          { toggle: false }
-        );
-        targetCollapse.toggle();
-      }
-    },
+  setup() {
+    const accItems = ref([
+      {
+        id: 1,
+        accTitle: "What is a salon app?",
+        accContent:
+          "It all comes down to improving your guest experience. From simple online bookings, to reacting to customer feedback faster, or rewarding loyal clients with a discount code.  Want to reduce no-shows? Send SMS & email reminders about upcoming appointments – push notifications are your friends and can maximise revenue with very minimum effort.",
+        isOpen: true,
+      },
+
+      {
+        id: 2,
+        accTitle: "What is a salon app?",
+        accContent:
+          "It all comes down to improving your guest experience. From simple online bookings, to reacting to customer feedback faster, or rewarding loyal clients with a discount code.  Want to reduce no-shows? Send SMS & email reminders about upcoming appointments – push notifications are your friends and can maximise revenue with very minimum effort.",
+        isOpen: false,
+      },
+      {
+        id: 3,
+        accTitle: "What is a salon app?",
+        accContent:
+          "It all comes down to improving your guest experience. From simple online bookings, to reacting to customer feedback faster, or rewarding loyal clients with a discount code.  Want to reduce no-shows? Send SMS & email reminders about upcoming appointments – push notifications are your friends and can maximise revenue with very minimum effort.",
+        isOpen: false,
+      },
+      {
+        id: 4,
+        accTitle: "What is a salon app?",
+        accContent:
+          "It all comes down to improving your guest experience. From simple online bookings, to reacting to customer feedback faster, or rewarding loyal clients with a discount code.  Want to reduce no-shows? Send SMS & email reminders about upcoming appointments – push notifications are your friends and can maximise revenue with very minimum effort.",
+        isOpen: false,
+      },
+    ]);
+
+    const toggleAcc = (item) => {
+      item.isOpen = !item.isOpen;
+    };
+
+    return { accItems, toggleAcc };
   },
 };
 </script>

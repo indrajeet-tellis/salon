@@ -6,13 +6,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Accordion from "~/components/Accordion.vue";
+
+import Accordian from "../components/Accordian.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
-    Accordion,
+    Accordian,
   },
 
   setup() {
@@ -26,22 +27,6 @@ export default {
       onSwiper,
       onSlideChange,
       modules: [Navigation, Pagination, Scrollbar, A11y],
-    };
-  },
-
-  data() {
-    return {
-      accordionItems: [
-        {
-          title: "Accordion Item 1",
-          content: "This is the content for Accordion Item 1.",
-        },
-        {
-          title: "Accordion Item 2",
-          content: "This is the content for Accordion Item 2.",
-        },
-        // Add more accordion items as needed
-      ],
     };
   },
 };
@@ -547,10 +532,7 @@ export default {
     </div>
   </section>
   <!-- works end -->
-
-  <div>
-    <Accordion :items="accordionItems" />
-  </div>
+  <Accordian />
 </template>
 
 <style>
