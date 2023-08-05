@@ -1,12 +1,14 @@
 <template>
-  <div class="acc-wrapper" v-for="item in accItems" :key="item.id">
-    <div class="acc-title" @click="toggleAcc(item)">
-      <p>{{ item.accTitle }}</p>
-      <i class="fa-solid fa-plus" v-if="item.isOpen"></i>
-      <i class="fa-solid fa-minus" v-if="!item.isOpen"></i>
-    </div>
-    <div class="acc-content" v-if="item.isOpen">
-      {{ item.accContent }}
+  <div class="main">
+    <div class="acc-wrapper" v-for="item in accItems" :key="item.id">
+      <div class="acc-title" @click="toggleAcc(item)">
+        <p>{{ item.accTitle }}</p>
+        <i class="fa-solid fa-minus icon" v-if="item.isOpen"></i>
+        <i class="fa-solid fa-plus icon" v-if="!item.isOpen"></i>
+      </div>
+      <div class="acc-content" v-if="item.isOpen">
+        {{ item.accContent }}
+      </div>
     </div>
   </div>
 </template>
@@ -55,3 +57,19 @@ export default {
   },
 };
 </script>
+
+<style>
+.icon {
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #ed0046;
+}
+.acc-wrapper {
+  border-bottom: 1px dashed black;
+  box-sizing: content-box;
+  margin-top: 20px;
+}
+.acc-content {
+  margin-bottom: 20px;
+}
+</style>

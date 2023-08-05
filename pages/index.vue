@@ -526,7 +526,23 @@ export default {
     </div>
   </section>
   <!-- works end -->
-  <Accordian />
+
+  <!-- question start -->
+  <section class="question mt-5">
+    <div
+      class="container que-bg"
+      :style="{ backgroundImage: 'url(/assets/group.png)' }"
+    >
+      <div class="row">
+        <div class="col">
+          <h1 class="head fw-bold">Frequently Asked Questions</h1>
+        </div>
+        <Accordian />
+      </div>
+    </div>
+  </section>
+
+  <!-- question end -->
 </template>
 
 <style>
@@ -898,5 +914,21 @@ a {
 .works .box {
   margin-bottom: 30px !important;
 }
-/* works start */
+/* works end */
+
+/* question start */
+.question .que-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.question .head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #1c2d57;
+  text-align: center;
+}
+/* question end */
 </style>
