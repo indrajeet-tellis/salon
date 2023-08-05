@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,7 +26,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y],
+      modules: [Pagination],
     };
   },
 };
@@ -131,21 +131,18 @@ export default {
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-sm">
+        <div class="">
           <swiper
-            :freeMode="true"
+            :slidesPerView="'auto'"
             :pagination="{
               clickable: true,
             }"
             :modules="modules"
             class="mySwiper"
-            :slides-per-view="1"
-            :space-between="50"
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
+            :space-between="20"
           >
             <swiper-slide
-              ><div class="box mb-5 text-center mt-3 px-2 py-3">
+              ><div class="box mb-4 text-center mt-3 px-2 py-3">
                 <img src="/assets/ad-one.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">
                   Increasing a customer loyalty
@@ -455,16 +452,13 @@ export default {
           <h2 class="head fw-bold text-center">How it works</h2>
           <div class="main">
             <swiper
-              :freeMode="true"
+              :slidesPerView="'auto'"
               :pagination="{
                 clickable: true,
               }"
               :modules="modules"
               class="mySwiper"
-              :slides-per-view="1"
-              :space-between="50"
-              @swiper="onSwiper"
-              @slideChange="onSlideChange"
+              :space-between="20"
             >
               <swiper-slide>
                 <div class="box text-center mt-4">
@@ -649,6 +643,9 @@ a {
 /* software end */
 
 /* advantage start */
+.advantage .swiper-slide {
+  width: 65%;
+}
 .advantage .swiper-pagination-bullet {
   opacity: 1;
   background: #fff;
@@ -700,17 +697,19 @@ a {
 .advantage .box {
   border: 1px solid #e4e3e3;
   border-radius: 23px;
+  height: 234px;
 }
 .advantage .box .sub-header {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   color: #ed0046;
+  width: 197px;
 }
 .advantage .box .ad-para {
   font-family: "Roboto", sans-serif;
   font-size: 8px;
   color: #232323;
-  width: 235px;
+  width: 162px;
   margin: 0 auto;
 }
 .advantage .marketing-part .mar-main {
@@ -868,16 +867,19 @@ a {
   font-size: 18px;
   color: #1c2d57;
 }
+.works .swiper-slide {
+  width: 63%;
+}
 .works .main .box .sub-header {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #ed0046;
 }
 .works .main .box .sub-para {
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   color: #000000;
-  width: 232px;
+  width: 201px;
   margin: 0 auto;
 }
 .works .swiper-pagination-bullet {
