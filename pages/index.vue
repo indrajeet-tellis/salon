@@ -531,7 +531,7 @@ export default {
   <section class="question mt-5">
     <div
       class="container que-bg"
-      :style="{ backgroundImage: 'url(/assets/group.png)' }"
+      :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
     >
       <div class="row">
         <div class="col">
