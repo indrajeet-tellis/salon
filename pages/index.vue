@@ -33,21 +33,29 @@ export default {
 </script>
 
 <template>
-  <section class="banner">
-    <div
-      class="container ba-bg"
-      :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
-    >
+  <section
+    class="banner"
+    :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
+  >
+    <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="main mt-4">
-            <h1 class="heading fw-bold">Hello Marcel,</h1>
-            <div class="icon"><i class="fa-regular fa-bell"></i></div>
+            <div class="head d-flex justify-content-between align-items-center">
+              <h1 class="heading fw-bold">Hello Marcel,</h1>
+              <div class="icon">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+            </div>
             <p class="para fw-normal">
               Welcome to Salonnz, your salon digital partner
             </p>
-            <div class="pic col-sm:m-auto">
-              <img class="pb-5" src="/assets/Background.png" alt="Background" />
+            <div class="pic text-center">
+              <img
+                class="pb-5 ban-picture"
+                src="/assets/Background.png"
+                alt="Background"
+              />
             </div>
           </div>
         </div>
@@ -60,7 +68,7 @@ export default {
   <section class="software">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col">
           <div class="main">
             <div class="heading mt-3">
               <h2 class="fw-bold">What we can do for your salon?</h2>
@@ -114,13 +122,13 @@ export default {
   <!-- software end -->
 
   <!-- advantage start -->
-  <section class="advantage pt-5">
-    <div
-      class="container bg-ad"
-      :style="{ backgroundImage: 'url(/assets/group.png)' }"
-    >
+  <section
+    class="advantage pt-5"
+    :style="{ backgroundImage: 'url(/assets/group.png)' }"
+  >
+    <div class="container bg-ad">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="main">
             <h2>Advantages of having your own salon app</h2>
             <Button />
@@ -212,7 +220,7 @@ export default {
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-sm">
+        <div class="col">
           <div class="marketing-part">
             <h2 class="head fw-bold">Marketing features of our app</h2>
             <div class="mar-main mt-3">
@@ -235,13 +243,13 @@ export default {
   <section class="features">
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <h2 class="head fw-bold text-center mt-3">Features of our website</h2>
           <div class="d-flex">
             <div class="left">
               <img src="/assets/feature.png" alt="feature.png" />
             </div>
-            <div class="right">
+            <div class="right d-flex align-items-center">
               <ul class="mt-1 mb-0">
                 <li class="fw-normal">
                   <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />Cool
@@ -278,7 +286,7 @@ export default {
   <section class="appointment">
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="heading d-flex justify-content-between">
             <div class="left">
               <h2 class="header fw-bold">
@@ -292,50 +300,45 @@ export default {
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+        <div class="up d-flex justify-content-between">
+          <div class="box text-center">
             <img src="/assets/appo-one.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Dashboard</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-two.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Calender</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-three.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Sales</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-four.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Apointment</p>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+        <div class="up d-flex justify-content-between">
+          <div class="box text-center">
             <img src="/assets/appo-five.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Coupones</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-six.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Staff</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-seven.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Payroll</p>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="box text-center p-2">
+
+          <div class="box text-center">
             <img src="/assets/appo-eight.png" alt="appo-one.png" />
             <p class="para mb-0 fw-normal mt-1">Discount</p>
           </div>
@@ -346,11 +349,11 @@ export default {
   <!-- appointment end -->
 
   <!-- package start -->
-  <section class="package mb-5">
-    <div
-      class="container pack-bg mt-5"
-      :style="{ backgroundImage: 'url(/assets/pack-bg.png)' }"
-    >
+  <section
+    class="package mb-5"
+    :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
+  >
+    <div class="container pack-bg mt-5">
       <div class="row">
         <div class="col">
           <div class="header">
@@ -385,7 +388,7 @@ export default {
               </div>
               <div class="right">
                 <h3 class="sub-header fw-bold mb-0">
-                  Branded salon app with your own logo
+                  New awesome looking website or upgrade your existing website
                 </h3>
                 <p class="sub-para fw-normal mb-0 mt-1">
                   Lorem Ipsum is simply dummy text of the printing and type
@@ -400,7 +403,7 @@ export default {
               </div>
               <div class="right">
                 <h3 class="sub-header fw-bold mb-0">
-                  Branded salon app with your own logo
+                  Online booking option on the website
                 </h3>
                 <p class="sub-para fw-normal mb-0 mt-1">
                   Lorem Ipsum is simply dummy text of the printing and type
@@ -415,7 +418,7 @@ export default {
               </div>
               <div class="right">
                 <h3 class="sub-header fw-bold mb-0">
-                  Branded salon app with your own logo
+                  App promotion in social media with images/video content
                 </h3>
                 <p class="sub-para fw-normal mb-0 mt-1">
                   Lorem Ipsum is simply dummy text of the printing and type
@@ -429,7 +432,7 @@ export default {
               </div>
               <div class="right">
                 <h3 class="sub-header fw-bold mb-0">
-                  Branded salon app with your own logo
+                  Review and Reputation management
                 </h3>
                 <p class="sub-para fw-normal mb-0 mt-1">
                   Lorem Ipsum is simply dummy text of the printing and type
@@ -528,11 +531,11 @@ export default {
   <!-- works end -->
 
   <!-- question start -->
-  <section class="question mt-5">
-    <div
-      class="container que-bg"
-      :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
-    >
+  <section
+    class="question mt-5"
+    :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
+  >
+    <div class="container que-bg">
       <div class="row">
         <div class="col">
           <h1 class="head fw-bold">Frequently Asked Questions</h1>
@@ -554,11 +557,14 @@ ul,
 ol {
   list-style: none;
 }
-.container {
-  width: 350px !important;
-}
+/* .container {
+  max-width: 575px !important;
+} */
 a {
   text-decoration: none !important;
+}
+.banner .ban-picture {
+  width: 100%;
 }
 .banner .ba-bg {
   background-repeat: no-repeat;
@@ -569,12 +575,11 @@ a {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   color: #fff;
-  display: inline-block;
 }
 .banner .icon {
   color: #fff;
   display: inline-block;
-  padding-left: 172px;
+
   font-size: 20px;
 }
 .banner {
@@ -750,8 +755,8 @@ a {
   width: 50%;
   box-sizing: border-box;
   position: absolute;
-  top: 35px;
-  left: 120px;
+  top: 12%;
+  left: 36%;
 }
 .advantage .marketing-part .mar-main .right img {
   width: 115%;
@@ -812,6 +817,9 @@ a {
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.42);
   margin-bottom: 12px;
   margin-top: 22px;
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .appointment .box .para {
   font-family: "DM Sans", sans-serif;
@@ -822,6 +830,11 @@ a {
 /* appointment end */
 
 /* package start */
+.package {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .package .pack-bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -873,7 +886,6 @@ a {
   font-family: "DM Sans", sans-serif;
   font-size: 8px;
   color: #232323;
-  width: 262px;
 }
 /* package end */
 
@@ -917,6 +929,11 @@ a {
 /* works end */
 
 /* question start */
+.question {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .question .que-bg {
   background-repeat: no-repeat;
   background-size: cover;
