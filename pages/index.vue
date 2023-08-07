@@ -364,6 +364,12 @@ export default {
               </div>
               <p class="para paraTwo mt-2 fw-normal">SEO</p>
             </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-six.png" />
+              </div>
+              <p class="para paraTwo mt-2 fw-normal">SEO</p>
+            </div>
           </div>
         </div>
       </div>

@@ -30,12 +30,15 @@
       </div>
     </div>
   </nav>
+  <div>
+    <slot />
+  </div>
 </template>
 <!-- <script>
-export default {
-    
-}
-</script> -->
+  export default {
+      
+  }
+  </script> -->
 <style>
 .links {
   position: fixed;
