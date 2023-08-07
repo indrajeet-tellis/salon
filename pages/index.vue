@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,7 +26,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
     };
   },
 };
@@ -34,8 +34,8 @@ export default {
 
 <template>
   <section
-    class="banner"
-    :style="{ backgroundImage: 'url(/assets/Frame.png)' }"
+    class="banner position-relative"
+    :style="{ backgroundImage: 'url(/assets/banner.png)' }"
   >
     <div class="container">
       <div class="row">
@@ -50,18 +50,262 @@ export default {
             <p class="para fw-normal">
               Welcome to Salonnz, your salon digital partner
             </p>
-            <div class="pic text-center">
-              <img
-                class="pb-5 ban-picture"
-                src="/assets/Background.png"
-                alt="Background"
-              />
-            </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ban-bottom">
+          <swiper
+            :slidesPerView="'auto'"
+            @autoplayTimeLeft="onAutoplayTimeLeft"
+            :pagination="{
+              clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper"
+            :space-between="20"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: false,
+            }"
+          >
+            <swiper-slide>
+              <div
+                class="banItem"
+                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+              >
+                <div
+                  class="subBan-main d-flex position-relative"
+                  style="padding-left: 13px; padding-bottom: 20px; text"
+                >
+                  <div class="left w-75">
+                    <h3
+                      class="mb-0"
+                      style="
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 24px;
+                        width: 206px;
+                      "
+                    >
+                      Elevate Your Online Presence with Stunning and Functional
+                      Designs
+                    </h3>
+                    <div
+                      class="subBan-btn"
+                      style="
+                        width: 110px;
+                        padding-bottom: 8px;
+                        background: #ed0046;
+                        margin-top: 55px;
+                        border-radius: 50px;
+                      "
+                    >
+                      <a
+                        style="
+                          color: #fff !important;
+                          font-family: 'Roboto', sans-serif;
+                          font-size: 10px;
+                          font-weight: 500;
+                          padding: 20px;
+                        "
+                        href="#"
+                      >
+                        Request Demo
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="right w-25 position-absolute"
+                    style="left: 54%; bottom: 7%"
+                  >
+                    <img src="/assets/subBan-One.png" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div
+                class="banItem"
+                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+              >
+                <div
+                  class="subBan-main d-flex position-relative"
+                  style="padding-left: 13px; padding-bottom: 20px; text"
+                >
+                  <div class="left w-75">
+                    <h3
+                      class="mb-0"
+                      style="
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 24px;
+                        width: 206px;
+                      "
+                    >
+                      Elevate Your Online Presence with Stunning and Functional
+                      Designs
+                    </h3>
+                    <div
+                      class="subBan-btn"
+                      style="
+                        width: 110px;
+                        padding-bottom: 8px;
+                        background: #ed0046;
+                        margin-top: 55px;
+                        border-radius: 50px;
+                      "
+                    >
+                      <a
+                        style="
+                          color: #fff !important;
+                          font-family: 'Roboto', sans-serif;
+                          font-size: 10px;
+                          font-weight: 500;
+                          padding: 20px;
+                        "
+                        href="#"
+                      >
+                        Request Demo
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="right w-25 position-absolute"
+                    style="left: 54%; bottom: 7%"
+                  >
+                    <img src="/assets/subBan-One.png" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div
+                class="banItem"
+                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+              >
+                <div
+                  class="subBan-main d-flex position-relative"
+                  style="padding-left: 13px; padding-bottom: 20px; text"
+                >
+                  <div class="left w-75">
+                    <h3
+                      class="mb-0"
+                      style="
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 24px;
+                        width: 206px;
+                      "
+                    >
+                      Elevate Your Online Presence with Stunning and Functional
+                      Designs
+                    </h3>
+                    <div
+                      class="subBan-btn"
+                      style="
+                        width: 110px;
+                        padding-bottom: 8px;
+                        background: #ed0046;
+                        margin-top: 55px;
+                        border-radius: 50px;
+                      "
+                    >
+                      <a
+                        style="
+                          color: #fff !important;
+                          font-family: 'Roboto', sans-serif;
+                          font-size: 10px;
+                          font-weight: 500;
+                          padding: 20px;
+                        "
+                        href="#"
+                      >
+                        Request Demo
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="right w-25 position-absolute"
+                    style="left: 54%; bottom: 7%"
+                  >
+                    <img src="/assets/subBan-One.png" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div
+                class="banItem"
+                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+              >
+                <div
+                  class="subBan-main d-flex position-relative"
+                  style="padding-left: 13px; padding-bottom: 20px; text"
+                >
+                  <div class="left w-75">
+                    <h3
+                      class="mb-0"
+                      style="
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 24px;
+                        width: 206px;
+                      "
+                    >
+                      Elevate Your Online Presence with Stunning and Functional
+                      Designs
+                    </h3>
+                    <div
+                      class="subBan-btn"
+                      style="
+                        width: 110px;
+                        padding-bottom: 8px;
+                        background: #ed0046;
+                        margin-top: 55px;
+                        border-radius: 50px;
+                      "
+                    >
+                      <a
+                        style="
+                          color: #fff !important;
+                          font-family: 'Roboto', sans-serif;
+                          font-size: 10px;
+                          font-weight: 500;
+                          padding: 20px;
+                        "
+                        href="#"
+                      >
+                        Request Demo
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="right w-25 position-absolute"
+                    style="left: 54%; bottom: 7%"
+                  >
+                    <img src="/assets/subBan-One.png" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </div>
   </section>
+
   <!-- bannner end -->
 
   <!-- software start -->
@@ -93,6 +337,12 @@ export default {
                 <img src="/assets/s-three.png" />
               </div>
               <p class="para mt-2 fw-normal">Logo & Graphics</p>
+            </div>
+            <div class="item">
+              <div class="round">
+                <img src="/assets/s-one.png" />
+              </div>
+              <p class="para mt-2 fw-normal">Website design</p>
             </div>
           </div>
           <div class="down">
@@ -142,12 +392,17 @@ export default {
         <div class="">
           <swiper
             :slidesPerView="'auto'"
+            @autoplayTimeLeft="onAutoplayTimeLeft"
             :pagination="{
               clickable: true,
             }"
             :modules="modules"
             class="mySwiper"
             :space-between="20"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: false,
+            }"
           >
             <swiper-slide
               ><div class="box mb-4 text-center mt-3 px-2 py-3">
@@ -557,16 +812,20 @@ ul,
 ol {
   list-style: none;
 }
-/* .container {
-  max-width: 575px !important;
-} */
+
 a {
   text-decoration: none !important;
 }
 
-.banner .ban-picture {
-  width: 100%;
+.banner .banItem {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
 }
+/* .banner .ban-picture {
+  width: 100%;
+} */
 .banner .ba-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -575,10 +834,10 @@ a {
 .banner .heading {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
-  color: #fff;
+  color: #2c3b91;
 }
 .banner .icon {
-  color: #fff;
+  color: #333333;
   display: inline-block;
 
   font-size: 20px;
@@ -587,12 +846,26 @@ a {
   width: 100%;
   background-size: cover;
   background-position: center;
+  padding-bottom: 50px;
 }
 .banner .para {
-  color: #d4dbff;
+  color: #333333;
   margin-bottom: 20px;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #ed0046;
+}
+.swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px;
+  border-radius: 100px;
 }
 /* banner end */
 
@@ -705,11 +978,7 @@ a {
   color: #1c2d57;
   width: 257px;
 }
-.advantage .main .button a {
-  font-size: 12px;
-  font-weight: 500;
-  color: #ed0046;
-}
+
 .advantage .pic {
   box-sizing: border-box;
 }

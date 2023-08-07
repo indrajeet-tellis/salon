@@ -13,7 +13,7 @@
           </li>
           <li class="py-4">
             <NuxtLink to="/requestdemo"
-              ><i class="fa-regular fa-file-video"></i>Request Demo</NuxtLink
+              ><i class="fa-regular fa-file-video"></i> Demo</NuxtLink
             >
           </li>
           <li class="py-4">
@@ -50,7 +50,9 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-
+.links ul li i {
+  font-size: 20px;
+}
 .links ul li a {
   color: #737373 !important;
   font-size: 10px;
@@ -65,9 +67,18 @@ nav .bottom-nav {
 }
 .router-link-active.router-link-exact-active {
   color: #2c3b91 !important;
+  position: relative;
 }
-/* .router-link-active.router-link-exact-active::after{
-  
-  border: 2px solid red;
-} */
+
+.links ul li a::after {
+  width: 73px;
+  height: 4px;
+  background: #2c3b91;
+  content: "";
+  position: absolute;
+  left: -55%;
+  top: -53%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 </style>

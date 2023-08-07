@@ -13,10 +13,10 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Roboto: {
-        wght: [100, 400, 700], // Font weights
+        wght: [100, 400, 700],
       },
       DM: {
-        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000], // Font weights
+        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
       },
     },
     display: "swap",
