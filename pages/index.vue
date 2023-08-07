@@ -544,8 +544,8 @@ export default {
       </div>
     </div>
   </section>
-
   <!-- question end -->
+  <bottom-nav />
 </template>
 
 <style>
@@ -563,6 +563,7 @@ ol {
 a {
   text-decoration: none !important;
 }
+
 .banner .ban-picture {
   width: 100%;
 }

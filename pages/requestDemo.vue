@@ -1,0 +1,3 @@
+<template>
+  <bottom-nav />
+</template>

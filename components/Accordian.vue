@@ -30,7 +30,7 @@ export default {
         accTitle: "What is a salon app?",
         accContent:
           "It all comes down to improving your guest experience. From simple online bookings, to reacting to customer feedback faster, or rewarding loyal clients with a discount code.  Want to reduce no-shows? Send SMS & email reminders about upcoming appointments – push notifications are your friends and can maximise revenue with very minimum effort.",
-        isOpen: true,
+        isOpen: false,
       },
 
       {
