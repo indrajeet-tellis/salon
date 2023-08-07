@@ -34,7 +34,7 @@ export default {
 
 <template>
   <section
-    class="banner position-relative"
+    class="banner"
     :style="{ backgroundImage: 'url(/assets/banner.png)' }"
   >
     <div class="container">
@@ -54,7 +54,7 @@ export default {
         </div>
       </div>
       <div class="row">
-        <div class="ban-bottom">
+        <div class="">
           <swiper
             :slidesPerView="'auto'"
             @autoplayTimeLeft="onAutoplayTimeLeft"
@@ -829,9 +829,7 @@ a {
   background-position: center;
   border-radius: 20px;
 }
-/* .banner .ban-picture {
-  width: 100%;
-} */
+
 .banner .ba-bg {
   background-repeat: no-repeat;
   background-size: cover;
