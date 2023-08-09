@@ -639,7 +639,7 @@ export default {
                 font-size: 10px;
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
-                width: 362px;
+                width: 333px;
               "
             >
               All-in-one package for your for your meeting all your salon
