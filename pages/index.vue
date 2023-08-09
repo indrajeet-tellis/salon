@@ -599,7 +599,12 @@ export default {
             </div>
           </div>
           <div class="text-center mt-4">
-            <!-- <img src="/assets/app-main.png" alt="app-img" /> -->
+            <img
+              class="app-img"
+              style="width: 100%"
+              src="/assets/app-main.png"
+              alt="app-img"
+            />
           </div>
         </div>
       </div>
