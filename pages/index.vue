@@ -574,7 +574,15 @@ export default {
         <div class="col">
           <div class="heading d-flex justify-content-between">
             <div class="left">
-              <h2 class="header fw-bold">
+              <h2
+                class="header fw-bold"
+                style="
+                  font-size: 14px;
+                  font-weight: 600;
+                  font-family: 'Roboto', sans-serif;
+                  color: #2c3b91;
+                "
+              >
                 Features of our appointment management solution
               </h2>
             </div>
@@ -582,50 +590,8 @@ export default {
               <Button />
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="up d-flex justify-content-between">
-          <div class="box text-center">
-            <img src="/assets/appo-one.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Dashboard</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-two.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Calender</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-three.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Sales</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-four.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Apointment</p>
-          </div>
-        </div>
-
-        <div class="up d-flex justify-content-between">
-          <div class="box text-center">
-            <img src="/assets/appo-five.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Coupones</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-six.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Staff</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-seven.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Payroll</p>
-          </div>
-
-          <div class="box text-center">
-            <img src="/assets/appo-eight.png" alt="appo-one.png" />
-            <p class="para mb-0 fw-normal mt-1">Discount</p>
+          <div class="text-center mt-4">
+            <img src="/assets/app-main.png" alt="app-img" />
           </div>
         </div>
       </div>
