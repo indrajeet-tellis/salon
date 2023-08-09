@@ -645,7 +645,7 @@ export default {
             <div class="item">
               <div class="line"></div>
               <div class="d-flex align-items-center">
-                <div class="left pb-1 pe-1 ps-2">
+                <div class="left">
                   <img src="/assets/pack-one.png" alt="digi-one" />
                 </div>
                 <div class="right">
@@ -665,7 +665,7 @@ export default {
             </div>
             <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
-              <div class="left pb-1 pe-1 ps-2">
+              <div class="left">
                 <img src="/assets/pack-two.png" alt="digi-one" />
               </div>
               <div class="right">
@@ -684,7 +684,7 @@ export default {
             </div>
             <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
-              <div class="left pb-1 pe-1 ps-2">
+              <div class="left">
                 <img src="/assets/pack-three.png" alt="digi-one" />
               </div>
               <div class="right">
@@ -703,7 +703,7 @@ export default {
             </div>
             <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
-              <div class="left pb-1 pe-1 ps-2">
+              <div class="left">
                 <img src="/assets/pack-four.png" alt="digi-one" />
               </div>
               <div class="right">
@@ -721,7 +721,7 @@ export default {
               </div>
             </div>
             <div class="item mt-5 d-flex align-items-center">
-              <div class="left pb-1 pe-1 ps-2">
+              <div class="left">
                 <img src="/assets/pack-five.png" alt="digi-one" />
               </div>
               <div class="right">
