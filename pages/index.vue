@@ -382,12 +382,21 @@ export default {
     <div class="container bg-ad">
       <div class="row">
         <div class="col">
-          <div class="main">
-            <h2>Advantages of having your own salon app</h2>
+          <div class="main d-flex justify-content-between align-items-center">
+            <h2
+              style="
+                font-weight: 700;
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                color: #2c3b91;
+              "
+            >
+              Advantages of having your own salon app
+            </h2>
             <Button />
           </div>
           <div class="pic mt-4">
-            <img src="/assets/ad-phn.png" alt="Advertisement Phone" />
+            <img src="/assets/ad-main.png" alt="advantage" />
           </div>
         </div>
       </div>
@@ -423,7 +432,7 @@ export default {
 
             <swiper-slide
               ><div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-five.png" alt="add-two" />
+                <img src="/assets/ad-two.png" alt="add-two" />
                 <h3 class="sub-header fw-bold mt-3">
                   Attracting and retaining an audience
                 </h3>
@@ -437,7 +446,7 @@ export default {
 
             <swiper-slide>
               <div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/add-four.png" alt="ad-one" />
+                <img src="/assets/ad-three.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">
                   Optimization and automation of business
                 </h3>
@@ -451,7 +460,7 @@ export default {
 
             <swiper-slide>
               <div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/add-three.png" alt="ad-one" />
+                <img src="/assets/ad-four.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">
                   You get a powerful communication channel with your customer
                 </h3>
@@ -465,7 +474,7 @@ export default {
 
             <swiper-slide>
               <div class="box mb-5 text-center mt-3 px-2 py-3">
-                <img src="/assets/add-two.png" alt="ad-one" />
+                <img src="/assets/ad-five.png" alt="ad-one" />
                 <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
                 <p class="ad-para fw-light">
                   People like attention, and your customers are no exception.
@@ -838,12 +847,13 @@ a {
   text-decoration: none !important;
 }
 
+/* marketing start */
 .marketing {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* marketing end */
 .banner .banItem {
   background-repeat: no-repeat;
   background-size: cover;
@@ -991,17 +1001,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 55px;
-}
-.advantage .main {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.advantage .main h2 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #1c2d57;
-  width: 257px;
 }
 
 .advantage .pic {
