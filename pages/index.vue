@@ -527,7 +527,15 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="head fw-bold text-center mt-3">
+          <h2
+            class="head text-center mt-3"
+            style="
+              font-size: 14px;
+              font-weight: 600;
+              font-family: 'Roboto', sans-serif;
+              color: #2c3b91;
+            "
+          >
             Features For Your Salon Website
           </h2>
           <div class="d-flex">
