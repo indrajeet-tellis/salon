@@ -602,14 +602,33 @@ export default {
   <!-- package start -->
   <section
     class="package mb-5"
-    :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
+    :style="{ backgroundImage: 'url(/assets/package-img.png)' }"
   >
     <div class="container pack-bg mt-5">
       <div class="row">
         <div class="col">
           <div class="header">
-            <h2 class="head fw-bold">Digital salon Kickstarter package</h2>
-            <p class="para fw-normal">
+            <h2
+              class="head"
+              style="
+                color: #2c3b91;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+              "
+            >
+              Digital salon Kickstarter package
+            </h2>
+            <p
+              class="para"
+              style="
+                color: #2c3b91;
+                font-size: 10px;
+                font-weight: 400;
+                font-family: 'Roboto', sans-serif;
+                width: 362px;
+              "
+            >
               All-in-one package for your for your meeting all your salon
               digitalization
             </p>
@@ -617,78 +636,98 @@ export default {
           <div class="main mt-3">
             <div class="item">
               <div class="line"></div>
-              <div class="d-flex">
+              <div class="d-flex align-items-center">
                 <div class="left pb-1 pe-1 ps-2">
-                  <img src="/assets/digi-one.png" alt="digi-one" />
+                  <img src="/assets/pack-one.png" alt="digi-one" />
                 </div>
                 <div class="right">
-                  <h3 class="sub-header fw-bold mb-0">
+                  <h3
+                    class="sub-header mb-0"
+                    style="
+                      color: #333333;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
                     Branded salon app with your own logo
                   </h3>
-                  <p class="sub-para fw-normal mb-0 mt-1">
-                    Lorem Ipsum is simply dummy text of the printing and type
-                    esetting industry lorem Ipsum has.
-                  </p>
                 </div>
               </div>
             </div>
-            <div class="item mt-5 d-flex">
+            <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
               <div class="left pb-1 pe-1 ps-2">
-                <img src="/assets/digi-two.png" alt="digi-one" />
+                <img src="/assets/pack-two.png" alt="digi-one" />
               </div>
               <div class="right">
-                <h3 class="sub-header fw-bold mb-0">
+                <h3
+                  class="sub-header mb-0"
+                  style="
+                    color: #333333;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
                   New awesome looking website or upgrade your existing website
                 </h3>
-                <p class="sub-para fw-normal mb-0 mt-1">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  esetting industry lorem Ipsum has.
-                </p>
               </div>
             </div>
-            <div class="item mt-5 d-flex">
+            <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
               <div class="left pb-1 pe-1 ps-2">
-                <img src="/assets/digi-four.png" alt="digi-one" />
+                <img src="/assets/pack-three.png" alt="digi-one" />
               </div>
               <div class="right">
-                <h3 class="sub-header fw-bold mb-0">
+                <h3
+                  class="sub-header mb-0"
+                  style="
+                    color: #333333;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
                   Online booking option on the website
                 </h3>
-                <p class="sub-para fw-normal mb-0 mt-1">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  esetting industry lorem Ipsum has.
-                </p>
               </div>
             </div>
-            <div class="item mt-5 d-flex">
+            <div class="item mt-5 d-flex align-items-center">
               <div class="line"></div>
               <div class="left pb-1 pe-1 ps-2">
-                <img src="/assets/digi-five.png" alt="digi-one" />
+                <img src="/assets/pack-four.png" alt="digi-one" />
               </div>
               <div class="right">
-                <h3 class="sub-header fw-bold mb-0">
+                <h3
+                  class="sub-header mb-0"
+                  style="
+                    color: #333333;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
                   App promotion in social media with images/video content
                 </h3>
-                <p class="sub-para fw-normal mb-0 mt-1">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  esetting industry lorem Ipsum has.
-                </p>
               </div>
             </div>
-            <div class="item mt-5 d-flex">
+            <div class="item mt-5 d-flex align-items-center">
               <div class="left pb-1 pe-1 ps-2">
-                <img src="/assets/digi-six.png" alt="digi-one" />
+                <img src="/assets/pack-five.png" alt="digi-one" />
               </div>
               <div class="right">
-                <h3 class="sub-header fw-bold mb-0">
+                <h3
+                  class="sub-header mb-0"
+                  style="
+                    color: #333333;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
                   Review and Reputation management
                 </h3>
-                <p class="sub-para fw-normal mb-0 mt-1">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  esetting industry lorem Ipsum has.
-                </p>
               </div>
             </div>
           </div>
@@ -1100,27 +1139,12 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 .package .header {
   text-align: center;
 }
-.package .header .head {
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  color: #102c56;
-  width: 284px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-.package .header .para {
-  font-family: "DM Sans", sans-serif;
-  font-size: 10px;
-  color: #0c1740;
-  width: 230px;
-  margin: 0 auto;
-  margin-top: 11px;
-}
+
 .package .main .item {
   position: relative;
 }
@@ -1129,7 +1153,7 @@ a {
   bottom: -23px;
   left: 0;
   width: 100%;
-  border: 1px dashed #232323;
+  border: 1px dashed #000000;
 }
 .package .main .item .left {
   width: 20%;
@@ -1138,16 +1162,7 @@ a {
 .package .main .item .right {
   width: 80%;
 }
-.package .main .item .right .sub-header {
-  font-family: "DM Sans", sans-serif;
-  font-size: 12px;
-  color: #232323;
-}
-.package .main .item .right .sub-para {
-  font-family: "DM Sans", sans-serif;
-  font-size: 8px;
-  color: #232323;
-}
+
 /* package end */
 
 /* works start */
