@@ -505,12 +505,11 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="head fw-bold text-center mt-3">Features of our website</h2>
+          <h2 class="head fw-bold text-center mt-3">
+            Features For Your Salon Website
+          </h2>
           <div class="d-flex">
-            <div class="left">
-              <img src="/assets/feature.png" alt="feature.png" />
-            </div>
-            <div class="right d-flex align-items-center">
+            <div class="left d-flex align-items-center">
               <ul class="mt-1 mb-0">
                 <li class="fw-normal">
                   <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />Cool
@@ -535,6 +534,9 @@ export default {
                   Optimized & Mobile Friendly
                 </li>
               </ul>
+            </div>
+            <div class="right">
+              <img src="/assets/feature.png" alt="feature.png" />
             </div>
           </div>
         </div>
@@ -1044,26 +1046,27 @@ a {
   color: #1c2d57;
 }
 .features .left {
-  width: 40%;
+  width: 60%;
   box-sizing: border-box;
 }
-.features .left img {
-  width: 100%;
-}
-.features .right {
-  width: 60%;
-}
-.features .right ul li {
+.features .left ul li {
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
   color: #232323;
   margin-left: 8px;
-  line-height: 17px;
+  line-height: 23px;
 }
-.features .right .tik {
+.features .left .tik {
   margin-left: -33px;
   margin-right: 7px;
 }
+.features .right img {
+  width: 100%;
+}
+.features .right {
+  width: 40%;
+}
+
 /* features end */
 
 /* appointment start */
