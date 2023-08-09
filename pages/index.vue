@@ -378,10 +378,7 @@ export default {
   <!-- software end -->
 
   <!-- advantage start -->
-  <section
-    class="advantage pt-5"
-    :style="{ backgroundImage: 'url(/assets/group.png)' }"
-  >
+  <section class="advantage pt-5">
     <div class="container bg-ad">
       <div class="row">
         <div class="col">
@@ -480,25 +477,41 @@ export default {
           </swiper>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- advantage end -->
+
+  <!-- marketing start -->
+
+  <section
+    class="marketing pb-3"
+    :style="{ backgroundImage: 'url(/assets/mar-banner.png)' }"
+  >
+    <div class="container">
       <div class="row mt-5">
         <div class="col">
-          <div class="marketing-part">
-            <h2 class="head fw-bold">Marketing features of our app</h2>
-            <div class="mar-main mt-3">
-              <div class="left">
-                <img src="/assets/ma-phn.png" alt="ma-phn" />
-              </div>
-              <div class="right">
-                <img src="/assets/ad-right.png" alt="ma-phn" />
-              </div>
-            </div>
+          <h2
+            class="head fw-bold text-center mt-3 mb-4"
+            style="
+              color: #2c3b91;
+              width: 312px;
+              font-size: 14px;
+              font-weight: 700;
+              font-family: 'Roboto', sans-serif;
+              margin: 0 auto;
+            "
+          >
+            Marketing Features For Your Salon App
+          </h2>
+          <div class="mar-main mt-3 text-center">
+            <img src="/assets/maImg.png" alt="mar-img" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- advantage end -->
+  <!-- marketing end -->
 
   <!-- Features start -->
   <section class="features">
@@ -823,6 +836,12 @@ ol {
 
 a {
   text-decoration: none !important;
+}
+
+.marketing {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner .banItem {
