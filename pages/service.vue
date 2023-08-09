@@ -8,32 +8,7 @@
             <div class="left">
               <img src="/assets/feature.png" alt="feature.png" />
             </div>
-            <div class="right d-flex align-items-center">
-              <ul class="mt-1 mb-0">
-                <li class="fw-normal">
-                  <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />Cool
-                  & Attractive Minimal Designs
-                </li>
-                <li class="fw-normal">
-                  <img
-                    class="tik"
-                    src="/assets/Ftik.png"
-                    alt="Ftik.png"
-                  />Online Booking Options
-                </li>
-                <li class="fw-normal">
-                  <img
-                    class="tik"
-                    src="/assets/Ftik.png"
-                    alt="Ftik.png"
-                  />Displays Google & Facebook Reviews
-                </li>
-                <li class="fw-normal">
-                  <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />SEO
-                  Optimized & Mobile Friendly
-                </li>
-              </ul>
-            </div>
+            <div class="right d-flex align-items-center"></div>
           </div>
         </div>
       </div>

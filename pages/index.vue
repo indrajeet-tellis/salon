@@ -599,7 +599,7 @@ export default {
             </div>
           </div>
           <div class="text-center mt-4">
-            <img src="/assets/app-main.png" alt="app-img" />
+            <!-- <img src="/assets/app-main.png" alt="app-img" /> -->
           </div>
         </div>
       </div>
@@ -843,7 +843,6 @@ export default {
     </div>
   </section>
   <!-- question end -->
-  <bottom-nav />
 </template>
 
 <style>
@@ -867,13 +866,13 @@ a {
   background-size: cover;
 }
 /* marketing end */
+
 .banner .banItem {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 20px;
 }
-
 .banner .ba-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -891,9 +890,9 @@ a {
   font-size: 20px;
 }
 .banner {
-  width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 50px;
 }
 .banner .para {
@@ -1008,6 +1007,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .advantage .bg-ad {
   background-size: cover;
@@ -1142,6 +1142,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .package .pack-bg {
   background-size: cover;
@@ -1217,6 +1218,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .question .que-bg {
   background-repeat: no-repeat;
