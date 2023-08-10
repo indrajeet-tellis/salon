@@ -42,12 +42,30 @@ export default {
         <div class="col">
           <div class="main mt-4">
             <div class="head d-flex justify-content-between align-items-center">
-              <h1 class="heading fw-bold">Hello Marcel,</h1>
+              <h1
+                class="b-heading"
+                style="
+                  font-size: 22px;
+                  font-weight: 700;
+                  font-family: 'Roboto', sans-serif;
+                  color: #2c3b91;
+                "
+              >
+                Hello Marcel,
+              </h1>
               <div class="icon">
                 <i class="fa-regular fa-bell"></i>
               </div>
             </div>
-            <p class="para fw-normal">
+            <p
+              class="b-para"
+              style="
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Roboto', sans-serif;
+                color: #333333;
+              "
+            >
               Welcome to Salonnz, your salon digital partner
             </p>
           </div>
@@ -1083,77 +1101,189 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="head fw-bold text-center">How it works</h2>
-          <div class="main">
-            <swiper
-              :slidesPerView="'auto'"
-              :pagination="{
-                clickable: true,
-              }"
-              :modules="modules"
-              class="mySwiper"
-              :space-between="20"
-            >
-              <swiper-slide>
-                <div class="box text-center mt-4">
-                  <img src="../public/assets/w-five.png" />
-                  <h3 class="sub-header fw-bold mb-0 mt-2">Request Demo</h3>
-                  <p class="sub-para fw-normal mb-0 mt-2">
+          <h2
+            class="head text-center"
+            style="
+              font-size: 14px;
+              font-weight: 700;
+              font-family: 'Roboto', sans-serif;
+              color: #2c3b91;
+            "
+          >
+            How it works
+          </h2>
+          <div class="main mt-4">
+            <div class="item d-flex align-items-center mt-2">
+              <div class="round">1</div>
+              <div class="left text-center">
+                <img src="/assets/w-one.png" />
+              </div>
+              <div class="right">
+                <div class="heads">
+                  <h3
+                    class="w-subHeading mb-0"
+                    style="
+                      color: #ed0046;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
+                    Request Demo
+                  </h3>
+                  <p
+                    class="w-subPara mb-0"
+                    style="
+                      font-size: 10px;
+                      font-weight: 400;
+                      font-family: 'Roboto', sans-serif;
+                      color: #000000;
+                      margin-top: 9px;
+                    "
+                  >
                     Submit and request a demo online on our website.
                   </p>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="box text-center mt-4">
-                  <img src="../public/assets/w-four.png" />
-                  <h3 class="sub-header fw-bold mb-0 mt-2">
+              </div>
+            </div>
+            <div class="item d-flex align-items-center mt-4">
+              <div class="round">2</div>
+              <div class="left text-end">
+                <div class="headsT">
+                  <h3
+                    class="w-subHeading mb-0"
+                    style="
+                      color: #ed0046;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
                     We will contact you
                   </h3>
-                  <p class="sub-para fw-normal mb-0 mt-2">
+                  <p
+                    class="w-subPara mb-0"
+                    style="
+                      font-size: 10px;
+                      font-weight: 400;
+                      font-family: 'Roboto', sans-serif;
+                      color: #000000;
+                      margin-top: 9px;
+                    "
+                  >
                     We will contact you on the date and time you requested and
                     show you same demo design and template
                   </p>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="box text-center mt-4">
-                  <img src="../public/assets/w-three.png" />
-                  <h3 class="sub-header fw-bold mb-0 mt-2">
+              </div>
+              <div class="right text-center">
+                <img src="/assets/w-two.png" />
+              </div>
+            </div>
+            <div class="item d-flex align-items-center mt-4">
+              <div class="round">3</div>
+              <div class="left text-center">
+                <img src="/assets/w-three.png" />
+              </div>
+              <div class="right">
+                <div class="heads">
+                  <h3
+                    class="w-subHeading mb-0"
+                    style="
+                      color: #ed0046;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
                     Features and functionality Consultation
                   </h3>
-                  <p class="sub-para fw-normal mb-0 mt-2">
+                  <p
+                    class="w-subPara mb-0"
+                    style="
+                      font-size: 10px;
+                      font-weight: 400;
+                      font-family: 'Roboto', sans-serif;
+                      color: #000000;
+                      margin-top: 9px;
+                    "
+                  >
                     Once you check our demo design and solutions,you can request
                     design changes and modify and customize features and
                     functionallity according to your requirement.
                   </p>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="box text-center mt-4">
-                  <img src="../public/assets/w-two.png" />
-                  <h3 class="sub-header fw-bold mb-0 mt-2">
+              </div>
+            </div>
+            <div class="item d-flex align-items-center mt-4">
+              <div class="round">4</div>
+              <div class="left text-end">
+                <div class="headsT">
+                  <h3
+                    class="w-subHeading mb-0"
+                    style="
+                      color: #ed0046;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
                     Review the App and Website
                   </h3>
-                  <p class="sub-para fw-normal mb-0 mt-2">
+                  <p
+                    class="w-subPara mb-0"
+                    style="
+                      font-size: 10px;
+                      font-weight: 400;
+                      font-family: 'Roboto', sans-serif;
+                      color: #000000;
+                      margin-top: 9px;
+                    "
+                  >
                     Once we review all the content and images for your website
                     and the app for you to review before publishing it live.
                   </p>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="box text-center mt-4">
-                  <img src="../public/assets/w-one.png" />
-                  <h3 class="sub-header fw-bold mb-0 mt-2">
+              </div>
+              <div class="right text-center">
+                <img src="/assets/w-four.png" />
+              </div>
+            </div>
+            <div class="item d-flex align-items-center mt-4">
+              <div class="round">5</div>
+              <div class="left text-center">
+                <img src="/assets/w-five.png" />
+              </div>
+              <div class="right">
+                <div class="heads">
+                  <h3
+                    class="w-subHeading mb-0"
+                    style="
+                      color: #ed0046;
+                      font-size: 12px;
+                      font-weight: 500;
+                      font-family: 'Roboto', sans-serif;
+                    "
+                  >
                     Publish the app and website live.
                   </h3>
-                  <p class="sub-para fw-normal mb-0 mt-2">
+                  <p
+                    class="w-subPara mb-0"
+                    style="
+                      font-size: 10px;
+                      font-weight: 400;
+                      font-family: 'Roboto', sans-serif;
+                      color: #000000;
+                      margin-top: 9px;
+                    "
+                  >
                     Once you finalize your website and app the webiste will be
                     published the same day. But your salon app will take 3-10
                     days by Apple and google store
                   </p>
                 </div>
-              </swiper-slide>
-            </swiper>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1216,11 +1346,7 @@ a {
   background-size: cover;
   background-position: center;
 }
-.banner .heading {
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  color: #2c3b91;
-}
+
 .banner .icon {
   color: #333333;
   display: inline-block;
@@ -1234,12 +1360,7 @@ a {
   position: relative;
   padding-bottom: 160px;
 }
-.banner .para {
-  color: #333333;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-family: "DM Sans", sans-serif;
-}
+
 .swiper-pagination-bullet {
   opacity: 1;
   background: #fff;
@@ -1514,41 +1635,53 @@ a {
 /* package end */
 
 /* works start */
-.works .head {
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  color: #1c2d57;
+.works {
+  position: relative;
 }
-.works .swiper-slide {
-  width: 63%;
+.works .heads {
+  padding-left: 10px;
 }
-.works .main .box .sub-header {
-  font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  color: #ed0046;
+.works .headsT {
+  padding-right: 10px;
 }
-.works .main .box .sub-para {
-  font-family: "DM Sans", sans-serif;
-  font-size: 9px;
-  color: #000000;
-  width: 201px;
-  margin: 0 auto;
+.works .main .item {
+  position: relative;
 }
-.works .swiper-pagination-bullet {
-  opacity: 1;
-  background: #fff;
-  width: 7px;
-  height: 7px;
+.works .main .item .round {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 1px solid #ed0046;
+  background: #ed0046;
+  color: #fff;
+  position: absolute;
+  top: 44%;
+  left: 45%;
+  text-align: center;
+  line-height: 20px;
+  z-index: 2;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
-.works .swiper-pagination-bullet-active {
-  background: #ed0046 !important;
-  width: 13px;
-  border-radius: 100px;
+.works .main::after {
+  height: 93%;
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  left: 48%;
+  top: 6%;
+  content: "";
 }
-.works .box {
-  margin-bottom: 30px !important;
+.works .main .w-subHeading {
+  width: 152px;
+}
+.works .main .w-subPara {
+  width: 152px;
+}
+.works .main .left {
+  width: 50%;
+}
+.works .main .right {
+  width: 50%;
 }
 /* works end */
 
