@@ -654,6 +654,255 @@ export default {
   </section>
   <!-- Features end -->
 
+  <!-- online start -->
+  <section
+    class="online mt-4"
+    :style="{ backgroundImage: 'url(/assets/online.png)' }"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="on-main text-center">
+          <h2
+            class=""
+            style="
+              color: #002478;
+              font-size: 14px;
+              font-weight: 700;
+              font-family: 'Roboto', sans-serif;
+              margin-top: 9px;
+              margin-bottom: 8px;
+            "
+          >
+            Online Review Management for Social Ratings
+          </h2>
+          <p
+            class=""
+            style="
+              color: #333333;
+              font-size: 10px;
+              font-weight: 400;
+              font-family: 'Roboto', sans-serif;
+              width: 213px;
+              margin: 0 auto;
+            "
+          >
+            Increase your new client rate with our automatic ratings and reviews
+          </p>
+        </div>
+        <div class="text-center mt-3">
+          <img src="/assets/on-img.png" alt="" />
+        </div>
+        <div class="main mt-4">
+          <swiper
+            :slidesPerView="'auto'"
+            :pagination="{
+              clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper"
+            :space-between="30"
+          >
+            <swiper-slide>
+              <div
+                class="box"
+                style="
+                  border-radius: 20px;
+                  padding: 15px 10px;
+                  margin-bottom: 38px;
+                "
+              >
+                <img src="/assets/on-one.png" />
+                <h3
+                  class="on-header mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 15px;
+                  "
+                >
+                  Increase Visibility
+                </h3>
+                <p
+                  class="on-para mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    width: 172px;
+                    margin-top: 18px;
+                  "
+                >
+                  Ratings and reviews increase your salon’s online visibility
+                  and reputation, ensuring you rank more highly & attract more
+                  clients than ever before.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="box"
+                style="
+                  border-radius: 20px;
+                  padding: 15px 10px;
+                  margin-bottom: 38px;
+                "
+              >
+                <img src="/assets/on-two.png" />
+                <h3
+                  class="on-header mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 15px;
+                  "
+                >
+                  Send review request automatically
+                </h3>
+                <p
+                  class="on-para mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    width: 172px;
+                    margin-top: 18px;
+                  "
+                >
+                  Our automatic review request message clients at key points in
+                  their client journey, ensuring a steady stream of reviews that
+                  provide valuable insight into your salon’s performance.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="box"
+                style="
+                  border-radius: 20px;
+                  padding: 15px 10px;
+                  margin-bottom: 38px;
+                "
+              >
+                <img src="/assets/on-three.png" />
+                <h3
+                  class="on-header mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 15px;
+                  "
+                >
+                  Boost team morale
+                </h3>
+                <p
+                  class="on-para mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    width: 172px;
+                    margin-top: 18px;
+                  "
+                >
+                  Positive review and ratings boost staff morale and motivation.
+                  They provide recognition for their hard work and dedication.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="box"
+                style="
+                  border-radius: 20px;
+                  padding: 15px 10px;
+                  margin-bottom: 38px;
+                "
+              >
+                <img src="/assets/on-four.png" />
+                <h3
+                  class="on-header mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 15px;
+                  "
+                >
+                  More accountability
+                </h3>
+                <p
+                  class="on-para mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    width: 172px;
+                    margin-top: 18px;
+                  "
+                >
+                  Reviews and ratings provide a means for clients to hold the
+                  salon and its team accountable for their performance, which
+                  improves service quality.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="box"
+                style="
+                  border-radius: 20px;
+                  padding: 15px 10px;
+                  margin-bottom: 38px;
+                "
+              >
+                <img src="/assets/on-five.png" />
+                <h3
+                  class="on-header mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 15px;
+                  "
+                >
+                  Cost effective
+                </h3>
+                <p
+                  class="on-para mb-0"
+                  style="
+                    color: #201f1f;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    width: 172px;
+                    margin-top: 18px;
+                  "
+                >
+                  Reviews and ratings are a cost effective way for you to gather
+                  feedback and improve your performance, as they do not require
+                  significant investments in time or money.
+                </p>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- online end -->
+
   <!-- appointment start -->
   <section class="appointment">
     <div class="container">
@@ -1040,8 +1289,39 @@ a {
 .software .item .round img {
   padding: 10px;
 }
-
 /* software end */
+
+/* online start */
+
+.online .swiper-slide {
+  width: 60% !important;
+}
+.online .box {
+  height: 222px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
+}
+.online {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.online .swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #ed0046;
+}
+.online .swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px;
+  border-radius: 100px;
+}
+/* online end */
 
 /* advantage start */
 .advantage .swiper-slide {
