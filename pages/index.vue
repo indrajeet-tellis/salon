@@ -313,65 +313,144 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="main">
-            <div class="heading mt-3">
-              <h2 class="fw-bold">What we can do for your salon?</h2>
-            </div>
+          <div
+            class="main d-flex align-items-center justify-content-between mt-4"
+          >
+            <h2
+              class="heading"
+              style="
+                color: #2c3b91;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+                padding-top: 7px;
+              "
+            >
+              What we can do for your salon?
+            </h2>
             <Button />
           </div>
-          <div class="up">
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-one.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Website design</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-two.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Digital marketing</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-three.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Logo & Graphics</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-one.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Website design</p>
-            </div>
-          </div>
-          <div class="down">
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-four.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Custom Salon Apps</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-five.png" />
-              </div>
-              <p class="para mt-2 fw-normal">Salon Software</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-six.png" />
-              </div>
-              <p class="para paraTwo mt-2 fw-normal">SEO</p>
-            </div>
-            <div class="item">
-              <div class="round">
-                <img src="/assets/s-six.png" />
-              </div>
-              <p class="para paraTwo mt-2 fw-normal">SEO</p>
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="botom-scroll-container d-flex gap-4"
+      style="overflow-x: scroll; margin-top: 30px"
+    >
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-one.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          Salon Software
+        </p>
+      </div>
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-two.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          Digital marketing
+        </p>
+      </div>
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-three.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          Logo & Graphics
+        </p>
+      </div>
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-four.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          Custom Salon Apps
+        </p>
+      </div>
+
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-five.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          Website design
+        </p>
+      </div>
+      <div class="item text-center">
+        <div class="round">
+          <img src="/assets/sof-six.png" />
+        </div>
+        <p
+          class="para"
+          style="
+            color: #2c3b91;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            width: 88px;
+            margin-top: 12px;
+          "
+        >
+          SEO
+        </p>
       </div>
     </div>
   </section>
@@ -922,26 +1001,11 @@ a {
 /* banner end */
 
 /* software start*/
-.software .heading h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 17px;
-  color: #1c2d57;
-}
-.software .main {
-  display: flex;
-  margin-top: 12px;
-  justify-content: space-between;
-}
+
 .software .main .button {
   margin-top: 9px;
 }
-.software .up {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-
-.software .up .item .round {
+.software .item .round {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -951,21 +1015,10 @@ a {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
   margin: 0 auto;
 }
-.software .up .item .round img {
+.software .item .round img {
   padding: 10px;
 }
-.software .up .item .para {
-  font-family: "DM Sans", sans-serif;
-  font-size: 10px;
-  color: #232323;
-}
-.software .down {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-
-.software .down .item .round {
+.software .item .round {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -975,18 +1028,10 @@ a {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
   margin: 0 auto;
 }
-.software .down .item .round img {
+.software .item .round img {
   padding: 10px;
 }
-.software .down .item .para {
-  font-family: "DM Sans", sans-serif;
-  font-size: 10px;
-  color: #232323;
-}
 
-.software .down .item .paraTwo {
-  padding-left: 16px;
-}
 /* software end */
 
 /* advantage start */
