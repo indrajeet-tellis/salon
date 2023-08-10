@@ -54,7 +54,7 @@ export default {
         </div>
       </div>
       <div class="row">
-        <div class="">
+        <div class="ban-main">
           <swiper
             :slidesPerView="'auto'"
             @autoplayTimeLeft="onAutoplayTimeLeft"
@@ -950,12 +950,17 @@ a {
   background-size: cover;
 }
 /* marketing end */
-
+.banner .ban-main {
+  position: absolute;
+  bottom: -23%;
+  left: 0%;
+}
 .banner .banItem {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
+  margin-bottom: 38px;
 }
 .banner .ba-bg {
   background-repeat: no-repeat;
@@ -977,7 +982,8 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 50px;
+  position: relative;
+  padding-bottom: 160px;
 }
 .banner .para {
   color: #333333;
@@ -1001,6 +1007,9 @@ a {
 /* banner end */
 
 /* software start*/
+.software {
+  margin-top: 42px;
+}
 
 .software .main .button {
   margin-top: 9px;
