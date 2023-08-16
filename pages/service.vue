@@ -9,6 +9,9 @@
               <img src="/assets/feature.png" alt="feature.png" />
             </div>
             <div class="right d-flex align-items-center"></div>
+            <button class="" @click="handleCurrentBack('update')">
+              Back to home
+            </button>
           </div>
         </div>
       </div>
@@ -16,3 +19,21 @@
   </section>
   <bottom-nav />
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      currentBack: "send-btn",
+    };
+  },
+  methods: {
+    handleCurrentBack(params) {
+      console.log(params);
+      // navigateTo("/");
+      this.currentBack = params;
+      console.log(this.currentBack);
+    },
+  },
+};
+</script>

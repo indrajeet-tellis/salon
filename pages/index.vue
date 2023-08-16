@@ -89,57 +89,111 @@ export default {
           >
             <swiper-slide>
               <div
-                class="banItem"
+                class="banItem banItem2 position-relative overflow-hidden"
                 :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
               >
-                <div
-                  class="subBan-main d-flex position-relative"
-                  style="padding-left: 13px; padding-bottom: 20px; text"
-                >
-                  <div class="left w-75">
-                    <h3
-                      class="mb-0"
-                      style="
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        font-weight: 700;
-                        color: #fff;
-                        margin-top: 24px;
-                        width: 206px;
-                      "
-                    >
-                      Elevate Your Online Presence with Stunning and Functional
-                      Designs
-                    </h3>
-                    <div
-                      class="subBan-btn"
-                      style="
-                        width: 110px;
-                        padding-bottom: 8px;
-                        background: #ed0046;
-                        margin-top: 55px;
-                        border-radius: 50px;
-                      "
-                    >
-                      <a
-                        style="
-                          color: #fff !important;
-                          font-family: 'Roboto', sans-serif;
-                          font-size: 10px;
-                          font-weight: 500;
-                          padding: 20px;
-                        "
-                        href="#"
-                      >
-                        Request Demo
-                      </a>
-                    </div>
-                  </div>
+                <div class="subBan-main subBan-main2" style="">
                   <div
-                    class="right w-25 position-absolute"
-                    style="left: 54%; bottom: 7%"
+                    class="shape"
+                    style="
+                      width: 77px;
+                      height: 56px;
+                      background: red;
+                      position: absolute;
+                      right: -8%;
+                      top: -10%;
+                      rotate: 405deg;
+                      text-align: center;
+                      display: flex;
+                    "
                   >
-                    <img src="/assets/subBan-One.png" />
+                    <p
+                      class="b-offer align-items-end"
+                      style="
+                        font-family: Roboto, sans-serif;
+                        font-size: 8px;
+                        font-weight: 400;
+                        color: #fff;
+                        position: absolute;
+                        bottom: -15px;
+                        left: 16%;
+                        width: 44px;
+                        line-height: 9px;
+                      "
+                    >
+                      Limited Offer
+                    </p>
+                  </div>
+                  <h3
+                    class="mb-0 mt-3"
+                    style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 18px;
+                      font-weight: 700;
+                      color: #002478;
+
+                      width: 206px;
+                      text-align: center;
+                      margin: 0 auto;
+                    "
+                  >
+                    Introductory Offer
+                  </h3>
+                  <p
+                    class="b-subPara2 mt-4"
+                    style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 10px;
+                      font-weight: 400;
+                      color: #fff;
+
+                      width: 261px;
+                      text-align: center;
+                      margin: 0 auto;
+                    "
+                  >
+                    For a limited time we are offering free trial for 120 days
+                    for first
+                    <span
+                      style="
+                        color: #2c34c8;
+                        text-decoration: underline;
+                        font-weight: 700;
+                      "
+                      >25</span
+                    >salons with
+                    <span
+                      style="
+                        color: #2c34c8;
+                        text-decoration: underline;
+                        font-weight: 700;
+                      "
+                      >$0 </span
+                    >set-up fees
+                  </p>
+                  <div
+                    class="subBan-btn subBan-btn2 mt-4"
+                    style="
+                      width: 110px;
+                      padding-bottom: 8px;
+                      background: #ed0046;
+
+                      border-radius: 50px;
+                      margin: 0 auto;
+                    "
+                  >
+                    <a
+                      style="
+                        color: #fff !important;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 10px;
+                        font-weight: 500;
+                        padding: 20px;
+                      "
+                      href="#"
+                    >
+                      Request Demo
+                    </a>
                   </div>
                 </div>
               </div>
@@ -166,8 +220,8 @@ export default {
                         width: 206px;
                       "
                     >
-                      Elevate Your Online Presence with Stunning and Functional
-                      Designs
+                      Boost & increase your salon revenue with your own branded
+                      Salon App
                     </h3>
                     <div
                       class="subBan-btn"
@@ -197,7 +251,7 @@ export default {
                     class="right w-25 position-absolute"
                     style="left: 54%; bottom: 7%"
                   >
-                    <img src="/assets/subBan-One.png" />
+                    <img src="/assets/subBan-one.png" />
                   </div>
                 </div>
               </div>
@@ -210,7 +264,11 @@ export default {
               >
                 <div
                   class="subBan-main d-flex position-relative"
-                  style="padding-left: 13px; padding-bottom: 20px; text"
+                  style="
+                    padding-left: 13px;
+                    padding-bottom: 20px;
+                    padding-top: 15px;
+                  "
                 >
                   <div class="left w-75">
                     <h3
@@ -220,7 +278,7 @@ export default {
                         font-size: 14px;
                         font-weight: 700;
                         color: #fff;
-                        margin-top: 24px;
+
                         width: 206px;
                       "
                     >
@@ -252,10 +310,10 @@ export default {
                     </div>
                   </div>
                   <div
-                    class="right w-25 position-absolute"
-                    style="left: 54%; bottom: 7%"
+                    class="right right2 w-25 position-absolute"
+                    style="left: 69%; bottom: 7%"
                   >
-                    <img src="/assets/subBan-One.png" />
+                    <img src="/assets/subBan-two.png" />
                   </div>
                 </div>
               </div>
@@ -266,32 +324,99 @@ export default {
                 class="banItem"
                 :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
               >
-                <div
-                  class="subBan-main d-flex position-relative"
-                  style="padding-left: 13px; padding-bottom: 20px; text"
+                <h2
+                  class="b-subHead3 text-center mb-0"
+                  style="
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                    color: #fff;
+                  "
                 >
-                  <div class="left w-75">
-                    <h3
-                      class="mb-0"
+                  Digital Salon Kickstarter Package
+                </h2>
+                <div class="subBan-main subBan-main3 d-flex" style="">
+                  <div
+                    class="left left2"
+                    style="width: 60%; padding-left: 32px; position: relative"
+                  >
+                    <ul
+                      class="mb-0 ps-0"
                       style="
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        font-weight: 700;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 8px;
+                        font-weight: 400;
                         color: #fff;
-                        margin-top: 24px;
-                        width: 206px;
+                        padding-bottom: 18px;
+                        font-size: 7px;
+                        font-weight: 400;
+                        font-family: 'DM Sans', sans-serif;
                       "
                     >
-                      Elevate Your Online Presence with Stunning and Functional
-                      Designs
-                    </h3>
+                      <div
+                        class="b-tikImg"
+                        style="position: absolute; left: 7%; top: 10%"
+                      >
+                        <img src="/assets/Ftik.png" />
+                      </div>
+                      <li class="mt-3" style="width: 163px">
+                        Branded salon app with your own logo
+                      </li>
+                      <div
+                        class="b-tikImg2"
+                        style="position: absolute; left: 7%; top: 29%"
+                      >
+                        <img src="/assets/Ftik.png" />
+                      </div>
+                      <li class="mt-3" style="width: 163px">
+                        New awesome looking website or upgrade your existing
+                        website
+                      </li>
+                      <div
+                        class="b-tikImg3"
+                        style="position: absolute; left: 7%; top: 48%"
+                      >
+                        <img src="/assets/Ftik.png" />
+                      </div>
+                      <li class="mt-2" style="width: 163px">
+                        Online booking option on the website
+                      </li>
+                      <div
+                        class="b-tikImg4"
+                        style="position: absolute; left: 7%; top: 61%"
+                      >
+                        <img src="/assets/Ftik.png" />
+                      </div>
+                      <li class="mt-2" style="width: 163px">
+                        App promotion in social media with images/video content
+                      </li>
+                      <div
+                        class="b-tikImg5"
+                        style="position: absolute; left: 7%; top: 80%"
+                      >
+                        <img src="/assets/Ftik.png" />
+                      </div>
+                      <li class="mt-2" style="width: 163px">
+                        Review and Reputation management
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="right right2"
+                    style="width: 40%; margin-top: 10px"
+                  >
+                    <img
+                      class=""
+                      style="left: 54%; bottom: 7%"
+                      src="/assets/subBan-three.png"
+                    />
                     <div
-                      class="subBan-btn"
+                      class="subBan-btn subBan-btn3"
                       style="
                         width: 110px;
                         padding-bottom: 8px;
                         background: #ed0046;
-                        margin-top: 55px;
+                        margin-top: 17px;
                         border-radius: 50px;
                       "
                     >
@@ -308,12 +433,6 @@ export default {
                         Request Demo
                       </a>
                     </div>
-                  </div>
-                  <div
-                    class="right w-25 position-absolute"
-                    style="left: 54%; bottom: 7%"
-                  >
-                    <img src="/assets/subBan-One.png" />
                   </div>
                 </div>
               </div>
@@ -323,7 +442,6 @@ export default {
       </div>
     </div>
   </section>
-
   <!-- bannner end -->
 
   <!-- software start -->
@@ -594,7 +712,7 @@ export default {
     :style="{ backgroundImage: 'url(/assets/mar-banner.png)' }"
   >
     <div class="container">
-      <div class="row mt-5">
+      <div class="row">
         <div class="col">
           <h2
             class="head fw-bold text-center mt-3 mb-4"
@@ -609,8 +727,115 @@ export default {
           >
             Marketing Features For Your Salon App
           </h2>
-          <div class="mar-main mt-3 text-center">
-            <img src="/assets/maImg.png" alt="mar-img" />
+          <div class="text-center">
+            <img src="/assets/mar-one.png" />
+            <p
+              class="marketing-para mt-2 mb-0"
+              style="
+                color: #ed2d66;
+                font-size: 10px;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+              "
+            >
+              Push Notifications
+            </p>
+          </div>
+          <div class="mar-main mt-3 d-flex">
+            <div class="ma-one" style="width: 30%; margin-top: -13px">
+              <div>
+                <img src="/assets/mar-three.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Refferal Program
+                </p>
+              </div>
+              <div style="margin-top: 33px">
+                <img src="/assets/mar-two.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Packages
+                </p>
+              </div>
+              <div style="margin-top: 33px">
+                <img src="/assets/mar-four.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Membership
+                </p>
+              </div>
+            </div>
+            <div class="ma-two" style="width: 40%; text-align: center">
+              <img src="/assets/mar-mobile.png" />
+            </div>
+            <div
+              class="ma-three"
+              style="width: 30%; text-align: end; margin-top: -13px"
+            >
+              <div>
+                <img src="/assets/mar-five.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Reward Points
+                </p>
+              </div>
+              <div style="margin-top: 33px">
+                <img src="/assets/mar-six.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Review
+                </p>
+              </div>
+              <div style="margin-top: 33px">
+                <img src="/assets/mar-seven.png" />
+                <p
+                  class="marketing-para mb-0 mt-2"
+                  style="
+                    color: #ed2d66;
+                    font-size: 10px;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                  "
+                >
+                  Gift Card
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -944,13 +1169,216 @@ export default {
               <Button />
             </div>
           </div>
-          <div class="text-center mt-4">
-            <img
-              class="app-img"
-              style="width: 100%"
-              src="/assets/app-main.png"
-              alt="app-img"
-            />
+          <div class="text-center position-relative" style="margin-top: 82px">
+            <div
+              class="round position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 5%;
+                left: 16%;
+              "
+            >
+              <img src="/assets/appo-eight.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Discount
+              </p>
+            </div>
+            <div
+              class="round round2 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 40%;
+                left: 10%;
+              "
+            >
+              <img src="/assets/appo-seven.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Payroll
+              </p>
+            </div>
+            <div
+              class="round round3 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 78%;
+                left: 11%;
+              "
+            >
+              <img src="/assets/appo-six.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Staff
+              </p>
+            </div>
+            <div
+              class="round round4 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 105%;
+                left: 25%;
+              "
+            >
+              <img src="/assets/appo-five.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                coupones
+              </p>
+            </div>
+            <div
+              class="round round5 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 111%;
+                left: 44%;
+              "
+            >
+              <img src="/assets/appo-four.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Appointment
+              </p>
+            </div>
+            <div
+              class="round round6 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 92%;
+                left: 63%;
+              "
+            >
+              <img src="/assets/appo-three.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Sales
+              </p>
+            </div>
+            <div
+              class="round round7 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 55%;
+                left: 72%;
+              "
+            >
+              <img src="/assets/appo-two.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Calender
+              </p>
+            </div>
+            <div
+              class="round round8 position-absolute"
+              style="
+                width: 60px;
+                height: 60px;
+                background: #2c3b91;
+                border-radius: 50%;
+                padding: 5px;
+                bottom: 14%;
+                left: 73%;
+              "
+            >
+              <img src="/assets/appo-one.png" style="size: 10%" />
+              <p
+                class="round-para mb-0"
+                style="
+                  font-size: 8px;
+                  font-weight: 400;
+                  font-family: 'Roboto', sans-serif;
+                  color: #fff;
+                  margin-top: 2px;
+                "
+              >
+                Dashboard
+              </p>
+            </div>
+            <img class="app-img" src="/assets/appo-mainImg.png" alt="app-img" />
           </div>
         </div>
       </div>
@@ -1299,7 +1727,20 @@ export default {
     <div class="container que-bg">
       <div class="row">
         <div class="col">
-          <h1 class="head fw-bold">Frequently Asked Questions</h1>
+          <div class="q-main d-flex justify-content-between align-items-center">
+            <h2
+              class="mb-0"
+              style="
+                color: #2c3b91;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+              "
+            >
+              FAQ’s
+            </h2>
+            <Button />
+          </div>
         </div>
         <Accordian />
       </div>
@@ -1333,6 +1774,7 @@ a {
   position: absolute;
   bottom: -23%;
   left: 0%;
+  margin-top: 10px;
 }
 .banner .banItem {
   background-size: cover;
@@ -1340,6 +1782,9 @@ a {
   background-repeat: no-repeat;
   border-radius: 20px;
   margin-bottom: 38px;
+  padding-top: 7px;
+  height: 200px;
+  border-radius: 20px;
 }
 .banner .ba-bg {
   background-repeat: no-repeat;
