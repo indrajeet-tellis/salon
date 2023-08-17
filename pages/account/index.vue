@@ -1,3 +1,3 @@
 <template>
-  <bottom-nav />
+  <h1>account</h1>
 </template>
