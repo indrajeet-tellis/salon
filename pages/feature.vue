@@ -1,5 +1,5 @@
 <template>
-  <div class="HEAD" :style="{ backgroundImage: 'url(/assets/banner.png)' }">
+  <!-- <div class="HEAD" :style="{ backgroundImage: 'url(/assets/banner.png)' }">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -209,7 +209,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <h1>feature</h1>
 </template>
 
 <script>

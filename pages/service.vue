@@ -9,9 +9,9 @@
               <img src="/assets/feature.png" alt="feature.png" />
             </div>
             <div class="right d-flex align-items-center"></div>
-            <button class="" @click="handleCurrentBack('update')">
+            <!-- <button class="" @click="handleCurrentBack('update')">
               Back to home
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@
   <bottom-nav />
 </template>
 
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -37,4 +37,4 @@ export default {
     },
   },
 };
-</script>
+</script> -->
