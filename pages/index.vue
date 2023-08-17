@@ -1414,6 +1414,7 @@ export default {
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
                 width: 333px;
+                margin: 0 auto;
               "
             >
               All-in-one package for your for your meeting all your salon
@@ -1936,14 +1937,14 @@ a {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   color: #ed0046;
-  width: 197px;
+  margin: 0 auto;
 }
 .advantage .box .ad-para {
   font-family: "Roboto", sans-serif;
   font-size: 8px;
   color: #232323;
   width: 162px;
-  margin: 0 auto;
+  margin: 6px auto;
 }
 .advantage .marketing-part .mar-main {
   display: flex;

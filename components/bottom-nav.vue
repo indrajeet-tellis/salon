@@ -12,13 +12,13 @@
             >
           </li>
           <li class="py-4">
-            <NuxtLink to="/requestdemo"
-              ><i class="fa-regular fa-file-video"></i> Demo</NuxtLink
+            <NuxtLink to="/advantage"
+              ><i class="fa-regular fa-file-video"></i> Advantage</NuxtLink
             >
           </li>
           <li class="py-4">
-            <NuxtLink to="/themes"
-              ><i class="fa-solid fa-mobile-retro"></i>Themes</NuxtLink
+            <NuxtLink to="/feature"
+              ><i class="fa-solid fa-mobile-retro"></i>Feature</NuxtLink
             >
           </li>
           <li class="py-4">
@@ -36,7 +36,7 @@ export default {
     
 }
 </script> -->
-<style>
+<style scoped>
 .links {
   position: fixed;
   left: 0;

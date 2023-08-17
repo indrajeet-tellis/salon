@@ -32,6 +32,7 @@ export default {
       console.log(params);
       // navigateTo("/");
       this.currentBack = params;
+      navigateTo("/");
       console.log(this.currentBack);
     },
   },
