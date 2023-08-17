@@ -707,7 +707,7 @@ export default {
 
   <!-- marketing start -->
 
-  <!-- <section
+  <section
     class="marketing pb-3"
     :style="{ backgroundImage: 'url(/assets/mar-banner.png)' }"
   >
@@ -840,7 +840,7 @@ export default {
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- marketing end -->
 
@@ -1147,7 +1147,7 @@ export default {
   <!-- online end -->
 
   <!-- appointment start -->
-  <!-- <section class="appointment">
+  <section class="appointment">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -1383,7 +1383,7 @@ export default {
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- appointment end -->
 
   <!-- package start -->
