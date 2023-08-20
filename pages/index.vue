@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,7 +27,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination, Autoplay],
+      modules: [Pagination],
     };
   },
 };
@@ -101,9 +101,9 @@ export default {
                       height: 56px;
                       background: red;
                       position: absolute;
-                      right: -8%;
-                      top: -10%;
-                      rotate: 405deg;
+                      right: -9%;
+                      top: -11%;
+                      rotate: 403deg;
                       text-align: center;
                       display: flex;
                     "
