@@ -220,6 +220,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { useRoute } from "vue-router";
 
 export default {
   components: {
@@ -228,6 +229,8 @@ export default {
   },
 
   setup() {
+    const route = useRoute();
+    console.log(route.params.id);
     const onSwiper = (swiper) => {
       console.log(swiper);
     };
