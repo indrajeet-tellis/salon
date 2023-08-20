@@ -34,7 +34,10 @@ export default {
 </script>
 
 <template>
-  <section class="banner">
+  <section
+    class="banner"
+    :style="{ backgroundImage: 'url(/assets/banner.png)' }"
+  >
     <div class="container">
       <div class="row">
         <div class="col">
@@ -86,7 +89,10 @@ export default {
             }"
           >
             <swiper-slide>
-              <div class="banItem banItem2 position-relative overflow-hidden">
+              <div
+                class="banItem banItem2 position-relative overflow-hidden"
+                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+              >
                 <div class="subBan-main subBan-main2" style="">
                   <div
                     class="shape"
@@ -245,9 +251,7 @@ export default {
                   <div
                     class="right w-25 position-absolute"
                     style="left: 54%; bottom: 7%"
-                  >
-                    <img src="/assets/subBan-one.png" />
-                  </div>
+                  ></div>
                 </div>
               </div>
             </swiper-slide>
@@ -702,7 +706,10 @@ export default {
 
   <!-- marketing start -->
 
-  <section class="marketing pb-3">
+  <section
+    class="marketing pb-3"
+    :style="{ backgroundImage: 'url(/assets/mar-banner.png)' }"
+  >
     <div class="container">
       <div class="row">
         <div class="col">
@@ -890,7 +897,10 @@ export default {
   <!-- Features end -->
 
   <!-- online start -->
-  <section class="online mt-4">
+  <section
+    class="online mt-4"
+    :style="{ backgroundImage: 'url(/assets/online.png)' }"
+  >
     <div class="container">
       <div class="row">
         <div class="on-main text-center">
@@ -1376,7 +1386,10 @@ export default {
   <!-- appointment end -->
 
   <!-- package start -->
-  <section class="package mb-5">
+  <section
+    class="package mb-5"
+    :style="{ backgroundImage: 'url(/assets/package-img.png)' }"
+  >
     <div class="container pack-bg mt-5">
       <div class="row">
         <div class="col">
@@ -1707,7 +1720,10 @@ export default {
   <!-- works end -->
 
   <!-- question start -->
-  <section class="question mt-5">
+  <section
+    class="question mt-5"
+    :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
+  >
     <div class="container que-bg">
       <div class="row">
         <div class="col">
