@@ -258,7 +258,9 @@ export default {
                   <div
                     class="right w-25 position-absolute"
                     style="left: 54%; bottom: 7%"
-                  ></div>
+                  >
+                    <img src="/assets/bItem.png" />
+                  </div>
                 </div>
               </div>
             </swiper-slide>
