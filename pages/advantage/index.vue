@@ -6,8 +6,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="heading">
-            <h2 class="ad-head">Advantage</h2>
+          <div class="Feature-head py-5">
+            <mobile-heading class="text-center" name="Advantage" />
           </div>
         </div>
       </div>
@@ -82,9 +82,17 @@
 </template>
 
 <script>
-import { useRoute } from "vue-router";
+import MobileHeading from "../../components/mobile-heading.vue";
 export default {
+  components: {
+    MobileHeading,
+  },
   setup() {
+    let database = ref([
+      {
+        name: "string",
+      },
+    ]);
     const route = useRoute();
     console.log(route.params.id);
   },
@@ -96,15 +104,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 20px;
 }
-.ad-head {
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  color: #2c3b91;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
+
 .Advantage-main {
   margin-bottom: 120px;
 }

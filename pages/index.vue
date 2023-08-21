@@ -8,14 +8,21 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Accordian from "../components/Accordian.vue";
 import { useRoute } from "vue-router";
+import Heading from "../components/heading.vue";
 export default {
   components: {
     Swiper,
     SwiperSlide,
     Accordian,
+    Heading,
   },
 
   setup() {
+    let database = ref([
+      {
+        name: "string",
+      },
+    ]);
     const route = useRoute();
     console.log(route.params.id);
     const onSwiper = (swiper) => {
@@ -451,18 +458,7 @@ export default {
           <div
             class="main d-flex align-items-center justify-content-between mt-4"
           >
-            <h2
-              class="heading"
-              style="
-                color: #2c3b91;
-                font-size: 14px;
-                font-weight: 700;
-                font-family: 'Roboto', sans-serif;
-                padding-top: 7px;
-              "
-            >
-              What we can do for your salon?
-            </h2>
+            <heading name="What we can do for your salon?" />
             <Button />
           </div>
         </div>
@@ -597,16 +593,7 @@ export default {
       <div class="row">
         <div class="col">
           <div class="main d-flex justify-content-between align-items-center">
-            <h2
-              style="
-                font-weight: 700;
-                font-size: 14px;
-                font-family: 'Roboto', sans-serif;
-                color: #2c3b91;
-              "
-            >
-              Advantages of having your own salon app
-            </h2>
+            <heading name="Advantages of having your own salon app" />
             <Button />
           </div>
           <div class="pic mt-4">
@@ -713,19 +700,10 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2
-            class="head fw-bold text-center mt-3 mb-4"
-            style="
-              color: #2c3b91;
-              width: 312px;
-              font-size: 14px;
-              font-weight: 700;
-              font-family: 'Roboto', sans-serif;
-              margin: 0 auto;
-            "
-          >
-            Marketing Features For Your Salon App
-          </h2>
+          <heading
+            class="text-center my-4"
+            name="Marketing Features For Your Salon App"
+          />
           <div class="text-center">
             <img src="/assets/mar-one.png" />
             <p
@@ -848,17 +826,10 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2
-            class="head text-center mt-3"
-            style="
-              font-size: 14px;
-              font-weight: 600;
-              font-family: 'Roboto', sans-serif;
-              color: #2c3b91;
-            "
-          >
-            Features For Your Salon Website
-          </h2>
+          <heading
+            class="text-center my-4"
+            name="  Features For Your Salon Website"
+          />
           <div class="d-flex">
             <div class="left d-flex align-items-center">
               <ul class="mt-1 mb-0">
@@ -898,25 +869,13 @@ export default {
 
   <!-- online start -->
   <section
-    class="online mt-4"
+    class="online mt-4 pt-4"
     :style="{ backgroundImage: 'url(/assets/online.png)' }"
   >
     <div class="container">
       <div class="row">
         <div class="on-main text-center">
-          <h2
-            class=""
-            style="
-              color: #002478;
-              font-size: 14px;
-              font-weight: 700;
-              font-family: 'Roboto', sans-serif;
-              margin-top: 9px;
-              margin-bottom: 8px;
-            "
-          >
-            Online Review Management for Social Ratings
-          </h2>
+          <heading name=" Online Review Management for Social Ratings" />
           <p
             class=""
             style="
@@ -1150,25 +1109,17 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="heading d-flex justify-content-between">
+          <div
+            class="appointment-heading d-flex justify-content-between align-items-center"
+          >
             <div class="left">
-              <h2
-                class="header fw-bold"
-                style="
-                  font-size: 14px;
-                  font-weight: 600;
-                  font-family: 'Roboto', sans-serif;
-                  color: #2c3b91;
-                "
-              >
-                Features of our appointment management solution
-              </h2>
+              <heading name="Features of our appointment management solution" />
             </div>
             <div class="right">
               <Button />
             </div>
           </div>
-          <div class="text-center position-relative" style="margin-top: 82px">
+          <div class="text-center position-relative" style="margin-top: 100px">
             <div
               class="round position-absolute"
               style="
@@ -1394,17 +1345,8 @@ export default {
       <div class="row">
         <div class="col">
           <div class="header">
-            <h2
-              class="head"
-              style="
-                color: #2c3b91;
-                font-size: 14px;
-                font-weight: 700;
-                font-family: 'Roboto', sans-serif;
-              "
-            >
-              Digital salon Kickstarter package
-            </h2>
+            <heading name="Digital salon Kickstarter package" />
+
             <p
               class="para"
               style="
@@ -1529,17 +1471,8 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2
-            class="head text-center"
-            style="
-              font-size: 14px;
-              font-weight: 700;
-              font-family: 'Roboto', sans-serif;
-              color: #2c3b91;
-            "
-          >
-            How it works
-          </h2>
+          <heading class="text-center" name="How it works" />
+
           <div class="main mt-4">
             <div class="item d-flex align-items-center mt-2">
               <div class="round">1</div>
@@ -1728,17 +1661,7 @@ export default {
       <div class="row">
         <div class="col">
           <div class="q-main d-flex justify-content-between align-items-center">
-            <h2
-              class="mb-0"
-              style="
-                color: #2c3b91;
-                font-size: 14px;
-                font-weight: 700;
-                font-family: 'Roboto', sans-serif;
-              "
-            >
-              FAQ’s
-            </h2>
+            <heading name=" FAQ’s" />
             <Button />
           </div>
         </div>
@@ -2006,8 +1929,8 @@ a {
 /* features end */
 
 /* appointment start */
-.appointment .heading {
-  margin-top: 50px;
+.appointment {
+  padding-top: 20px;
 }
 .appointment .heading .left {
   width: 80%;

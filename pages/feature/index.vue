@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="heading">
-            <h2 class="Feature-head">Feature</h2>
+          <div class="Feature-head py-5">
+            <mobile-heading class="text-center" name="Feature" />
           </div>
         </div>
       </div>
@@ -213,6 +213,7 @@
 </template>
 
 <script>
+import Heading from "../../components/heading.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
 import "swiper/css/free-mode";
@@ -220,15 +221,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { useRoute } from "vue-router";
+import { ref } from "vue";
+import MobileHeading from "../../components/mobile-heading.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    Heading,
+    MobileHeading,
   },
 
   setup() {
+    let database = ref([
+      {
+        name: "string",
+      },
+    ]);
     const route = useRoute();
     console.log(route.params.id);
     const onSwiper = (swiper) => {
@@ -255,13 +264,7 @@ export default {
 .heading {
   padding: 20px;
 }
-.Feature-head {
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  font-family: "Roboto", sans-serif;
-  color: #2c3b91;
-  text-align: center;
-}
+
 .sub-hedaing {
   font-size: 18px !important;
   font-weight: 500 !important;
