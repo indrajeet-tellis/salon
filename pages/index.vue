@@ -10,6 +10,22 @@ import Accordian from "../components/Accordian.vue";
 import { useRoute } from "vue-router";
 import Heading from "../components/heading.vue";
 export default {
+  data() {
+    return {
+      currentGone: "send",
+      currentFeature: "send",
+    };
+  },
+  methods: {
+    handleCurrentGone(params) {
+      this.currentGone = params;
+      navigateTo("/advantage");
+    },
+    handleCurrentFeature(params) {
+      this.currentGone = params;
+      navigateTo("/feature");
+    },
+  },
   components: {
     Swiper,
     SwiperSlide,
@@ -596,7 +612,7 @@ export default {
         <div class="col">
           <div class="main d-flex justify-content-between align-items-center">
             <heading name="Advantages of having your own salon app" />
-            <Button />
+            <Button @click="handleCurrentGone('update')" />
           </div>
           <div class="pic mt-4">
             <img src="/assets/ad-main.png" alt="advantage" />
@@ -1083,7 +1099,7 @@ export default {
               <heading name="Features of our appointment management solution" />
             </div>
             <div class="right">
-              <Button />
+              <Button @click="handleCurrentFeature('update')" />
             </div>
           </div>
           <div class="text-center position-relative" style="margin-top: 100px">
@@ -1651,6 +1667,7 @@ ol {
 a {
   text-decoration: none !important;
 }
+
 .swiper-pagination-bullet {
   opacity: 1 !important;
   background: #fff !important;

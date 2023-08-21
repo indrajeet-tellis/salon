@@ -12,13 +12,13 @@
             >
           </li>
           <li class="py-4">
-            <NuxtLink to="/advantage"
-              ><i class="fa-regular fa-file-video"></i> Advantage</NuxtLink
+            <NuxtLink to="/requestDemo"
+              ><i class="fa-regular fa-file-video"></i>Demo</NuxtLink
             >
           </li>
           <li class="py-4">
-            <NuxtLink to="/feature"
-              ><i class="fa-solid fa-mobile-retro"></i>Feature</NuxtLink
+            <NuxtLink to="/themes"
+              ><i class="fa-solid fa-mobile-retro"></i>Themes</NuxtLink
             >
           </li>
           <li class="py-4">
