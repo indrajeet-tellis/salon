@@ -906,14 +906,7 @@ export default {
             :space-between="30"
           >
             <swiper-slide>
-              <div
-                class="box"
-                style="
-                  border-radius: 20px;
-                  padding: 15px 10px;
-                  margin-bottom: 38px;
-                "
-              >
+              <div class="box">
                 <img src="/assets/on-one.png" />
                 <h3
                   class="on-header mb-0"
@@ -945,14 +938,7 @@ export default {
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div
-                class="box"
-                style="
-                  border-radius: 20px;
-                  padding: 15px 10px;
-                  margin-bottom: 38px;
-                "
-              >
+              <div class="box">
                 <img src="/assets/on-two.png" />
                 <h3
                   class="on-header mb-0"
@@ -984,14 +970,7 @@ export default {
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div
-                class="box"
-                style="
-                  border-radius: 20px;
-                  padding: 15px 10px;
-                  margin-bottom: 38px;
-                "
-              >
+              <div class="box">
                 <img src="/assets/on-three.png" />
                 <h3
                   class="on-header mb-0"
@@ -1022,14 +1001,7 @@ export default {
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div
-                class="box"
-                style="
-                  border-radius: 20px;
-                  padding: 15px 10px;
-                  margin-bottom: 38px;
-                "
-              >
+              <div class="box">
                 <img src="/assets/on-four.png" />
                 <h3
                   class="on-header mb-0"
@@ -1061,14 +1033,7 @@ export default {
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div
-                class="box"
-                style="
-                  border-radius: 20px;
-                  padding: 15px 10px;
-                  margin-bottom: 38px;
-                "
-              >
+              <div class="box">
                 <img src="/assets/on-five.png" />
                 <h3
                   class="on-header mb-0"
@@ -1234,8 +1199,8 @@ export default {
                 background: #2c3b91;
                 border-radius: 50%;
                 padding: 5px;
-                bottom: 111%;
-                left: 44%;
+                bottom: 110%;
+                left: 45%;
               "
             >
               <img src="/assets/appo-four.png" style="size: 10%" />
@@ -1260,7 +1225,7 @@ export default {
                 background: #2c3b91;
                 border-radius: 50%;
                 padding: 5px;
-                bottom: 92%;
+                bottom: 90%;
                 left: 63%;
               "
             >
@@ -1312,8 +1277,8 @@ export default {
                 background: #2c3b91;
                 border-radius: 50%;
                 padding: 5px;
-                bottom: 14%;
-                left: 73%;
+                bottom: 18%;
+                left: 74%;
               "
             >
               <img src="/assets/appo-one.png" style="size: 10%" />
@@ -1789,11 +1754,14 @@ a {
   width: 60% !important;
 }
 .online .box {
+  border-radius: 15px;
+  padding: 15px 10px;
+  margin-bottom: 38px;
   height: 222px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
 }
 .online {
   background-position: center;
