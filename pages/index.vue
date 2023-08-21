@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -34,7 +34,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
     };
   },
 };
@@ -1671,7 +1671,6 @@ export default {
   </section>
   <!-- question end -->
 </template>
-
 <style>
 * {
   margin: 0;
@@ -1685,7 +1684,22 @@ ol {
 a {
   text-decoration: none !important;
 }
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background: #fff !important;
+  width: 7px !important;
+  height: 7px !important ;
+  border-radius: 50% !important;
+  border: 1px solid #ed0046 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px !important;
+  border-radius: 100px !important;
+}
+</style>
 
+<style scoped>
 /* marketing start */
 .marketing {
   background-position: center;
@@ -1729,19 +1743,6 @@ a {
   padding-bottom: 160px;
 }
 
-.swiper-pagination-bullet {
-  opacity: 1;
-  background: #fff;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 1px solid #ed0046;
-}
-.swiper-pagination-bullet-active {
-  background: #ed0046 !important;
-  width: 13px;
-  border-radius: 100px;
-}
 /* banner end */
 
 /* software start*/
@@ -1797,37 +1798,12 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.online .swiper-pagination-bullet {
-  opacity: 1;
-  background: #fff;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 1px solid #ed0046;
-}
-.online .swiper-pagination-bullet-active {
-  background: #ed0046 !important;
-  width: 13px;
-  border-radius: 100px;
-}
+
 /* online end */
 
 /* advantage start */
 .advantage .swiper-slide {
   width: 65%;
-}
-.advantage .swiper-pagination-bullet {
-  opacity: 1;
-  background: #fff;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 1px solid #ed0046;
-}
-.advantage .swiper-pagination-bullet-active {
-  background: #ed0046 !important;
-  width: 13px;
-  border-radius: 100px;
 }
 
 .advantage {
