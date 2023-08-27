@@ -319,10 +319,7 @@ export default {
 .heading {
   padding: 20px;
 }
-/* .Feature-head {
-  
- 
-} */
+
 .fMain-heading {
   font-size: 14px !important;
   font-weight: 500 !important;
