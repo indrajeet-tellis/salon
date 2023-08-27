@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.min.css",
     "@fortawesome/fontawesome-free/css/all.css",
   ],
+  build: {
+    transpile: ["vuetify"],
+  },
 
   modules: ["@nuxtjs/google-fonts"],
 
