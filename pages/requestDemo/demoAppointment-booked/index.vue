@@ -34,6 +34,7 @@
               <p class="item-p">Audio call</p>
             </div>
           </div>
+
           <div class="both-btn">
             <demo-button name="Reschedule Appointment" class="mx-auto" />
             <demo-border-button
@@ -49,11 +50,13 @@
 <script>
 import DemoButton from "../../../components/demo-button.vue";
 import DemoBorderButton from "../../../components/demo-border-button.vue";
+import CancelAppointment from "../../../components/cancel-appointment";
 
 export default {
   components: {
     DemoButton,
     DemoBorderButton,
+    CancelAppointment,
   },
 
   setup() {
@@ -112,7 +115,7 @@ export default {
 .both-btn {
   position: fixed;
   bottom: 30%;
-  left: 21%;
+  left: 25%;
 }
 .item {
   width: 28%;
