@@ -27,6 +27,7 @@
     "bootstrap-vue": "^2.23.1",
     "nuxt-icons": "^3.2.1",
     "swiper": "^10.1.0",
+    "vue3-lottie": "^3.1.0",
     "vuetify": "^3.3.14"
   }
 }
