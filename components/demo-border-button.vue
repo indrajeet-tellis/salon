@@ -14,7 +14,7 @@ defineProps({
 
 <style scoped>
 .demo-button {
-  background: #ed0046;
+  background: transparent;
   text-align: center;
   width: 260px;
   border-radius: 1050px;
@@ -24,7 +24,7 @@ defineProps({
 }
 .demo-button a {
   display: inline-block;
-  color: #fff;
+  color: #ed0046;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
