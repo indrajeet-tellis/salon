@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .icon {
   cursor: pointer;
   margin-bottom: 20px;
