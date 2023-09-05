@@ -32,11 +32,10 @@
 </template>
 <script>
 import MobileHeading from "../../../components/mobile-heading.vue";
-import BlogCard from "../../../components/blog-card.vue";
+
 export default {
   components: {
     MobileHeading,
-    BlogCard,
   },
 };
 </script>
