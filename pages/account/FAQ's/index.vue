@@ -32,11 +32,10 @@
 </template>
 <script>
 import MobileHeading from "../../../components/mobile-heading.vue";
-import Accordian from "../../../components/accordian.vue";
+
 export default {
   components: {
     MobileHeading,
-    Accordian,
   },
   data() {
     return {
