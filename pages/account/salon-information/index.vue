@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="My Salon" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <MobileHeading class="" name="My Salon" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -161,6 +168,17 @@ export default {
   components: {
     MobileHeading,
     DemoButton,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>

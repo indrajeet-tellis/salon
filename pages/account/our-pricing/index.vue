@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Our Pricing" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <MobileHeading class="" name="Our Pricing" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -65,6 +72,17 @@ export default {
     FAQaccordian,
     DemoButton,
   },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
+  },
 };
 </script>
 <style scoped>
@@ -116,7 +134,7 @@ ul li {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.28px;
-  width: 294px;
+  width: 255px;
   margin: 11px auto 0 auto;
 }
 .faq-text {

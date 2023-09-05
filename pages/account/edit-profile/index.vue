@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Edit profile" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <MobileHeading class="" name="Edit profile" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -64,6 +71,17 @@ import DemoButton from "../../../components/demo-button.vue";
 export default {
   components: {
     DemoButton,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>

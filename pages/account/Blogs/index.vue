@@ -4,21 +4,27 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Blogs" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="" name="Blogs" />
+              <i class="fa-solid fa-xmark"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 200px">
+  <section style="margin-bottom: 100px">
     <div class="container">
       <div class="row">
         <div class="col">
-          <blog-card />
-          <blog-card />
-          <blog-card />
-          <blog-card />
-          <blog-card />
+          <div class="card-main">
+            <div class="card-item" style="margin-top: 21px"><blog-card /></div>
+            <div class="card-item" style="margin-top: 30px"><blog-card /></div>
+            <div class="card-item" style="margin-top: 30px"><blog-card /></div>
+            <div class="card-item" style="margin-top: 30px"><blog-card /></div>
+            <div class="" style="margin-top: 30px"><blog-card /></div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,5 +45,18 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.card-item {
+  position: relative;
+}
+.card-item::after {
+  position: absolute;
+  left: -11px;
+  bottom: -15px;
+  content: "";
+  width: 106%;
+  height: 0.5px;
+  background: #737373;
 }
 </style>

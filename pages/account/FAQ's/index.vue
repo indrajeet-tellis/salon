@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="FAQ’s" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <MobileHeading class="" name="FAQ’s" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -30,6 +37,17 @@ export default {
   components: {
     MobileHeading,
     Accordian,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>

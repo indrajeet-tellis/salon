@@ -7,7 +7,10 @@
             <div class="profile-img"><img src="/assets/profile-img.png" /></div>
             <mobile-heading class="text-center" name="Marcel Dalima" />
             <p class="email-text">limadacell@gmail.com</p>
-            <div class="editProfile-btn d-flex mx-auto">
+            <div
+              class="editProfile-btn d-flex mx-auto"
+              @click="handleCurrentEdit('update')"
+            >
               <i class="fa-solid fa-pencil edit-icon me-1"></i>
               <p class="edit-text">Edit Profile</p>
             </div>
@@ -31,6 +34,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentMysalon('update')"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -57,6 +61,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentPricing('update')"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -70,6 +75,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentFaqs(update)"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -147,6 +153,32 @@ import MobileHeading from "../../components/mobile-heading.vue";
 export default {
   components: {
     MobileHeading,
+  },
+  data() {
+    return {
+      CurrentEdit: "send",
+      CurrentMysalon: "send",
+      CurrentPricing: "send",
+      CurrentFaqs: "send",
+    };
+  },
+  methods: {
+    handleCurrentEdit(params) {
+      this.currentEdit = params;
+      navigateTo("/account/edit-profile");
+    },
+    handleCurrentMysalon(params) {
+      this.currentMysalon = params;
+      navigateTo("/account/salon-information");
+    },
+    handleCurrentPricing(params) {
+      this.currentPricing = params;
+      navigateTo("/account/our-pricing");
+    },
+    handleCurrentFaqs(params) {
+      this.currentFaqs = params;
+      navigateTo("/account/FAQ's");
+    },
   },
 };
 </script>
