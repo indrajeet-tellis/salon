@@ -89,6 +89,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentHelp(update)"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -102,6 +103,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentBlogs(update)"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -115,6 +117,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentFeedback(update)"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -128,6 +131,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentReviews(update)"
             ></i>
           </div>
           <div class="box d-flex position-relative" style="margin-top: 40px">
@@ -141,6 +145,7 @@
             <i
               class="fa-solid fa-angle-right"
               style="color: #41416e; font-size: 20px"
+              @click="handleCurrentLogout(update)"
             ></i>
           </div>
         </div>
@@ -160,6 +165,11 @@ export default {
       CurrentMysalon: "send",
       CurrentPricing: "send",
       CurrentFaqs: "send",
+      CurrentHelp: "send",
+      CurrentBlogs: "send",
+      CurrentFeedback: "send",
+      CurrentReviews: "send",
+      CurrentLogout: "send",
     };
   },
   methods: {
@@ -178,6 +188,26 @@ export default {
     handleCurrentFaqs(params) {
       this.currentFaqs = params;
       navigateTo("/account/FAQ's");
+    },
+    handleCurrentHelp(params) {
+      this.currentHelp = params;
+      navigateTo("/account/help%20and%20support");
+    },
+    handleCurrentBlogs(params) {
+      this.currentBlogs = params;
+      navigateTo("/account/Blogs");
+    },
+    handleCurrentFeedback(params) {
+      this.currentFeedback = params;
+      navigateTo("/account/feedback");
+    },
+    handleCurrentReviews(params) {
+      this.currentReviews = params;
+      navigateTo("/account/reviews");
+    },
+    handleCurrentLogout(params) {
+      this.currentLogout = params;
+      navigateTo("/");
     },
   },
 };

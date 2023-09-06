@@ -7,7 +7,10 @@
             <div class="d-flex align-items-center justify-content-between">
               <i class="fa-solid fa-angle-left"></i>
               <mobile-heading class="" name="Blogs" />
-              <i class="fa-solid fa-xmark"></i>
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
             </div>
           </div>
         </div>
@@ -36,6 +39,17 @@ import MobileHeading from "../../../components/mobile-heading.vue";
 export default {
   components: {
     MobileHeading,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>

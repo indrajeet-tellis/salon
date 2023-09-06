@@ -7,7 +7,10 @@
             <div class="d-flex align-items-center justify-content-between">
               <i class="fa-solid fa-angle-left"></i>
               <MobileHeading class="" name="Reviews" />
-              <i class="fa-solid fa-xmark"></i>
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
             </div>
           </div>
         </div>
@@ -70,6 +73,17 @@ export default {
     MobileHeading,
     ReviewList,
     StarRating,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>
