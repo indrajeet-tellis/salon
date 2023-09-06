@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Book Demo" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="" name="Book Demo" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
             <div class="mt-3"><select-box /></div>
           </div>
         </div>
@@ -12,47 +19,53 @@
     </div>
   </div>
   <section class="position-relative">
-    <div class="container" style="margin-bottom: 100px">
-      <h3 class="demo-book-subHeading">Select your salon type</h3>
-      <div class="row mt-4">
-        <div class="col-6 text-center">
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-one.png" /></div>
-            <h4 class="item-text">Hair</h4>
+    <div class="container">
+      <div class="scroll-container">
+        <h3 class="demo-book-subHeading">Select your salon type</h3>
+        <div class="row mt-4">
+          <div class="col-6 text-center">
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-one.png" /></div>
+              <h4 class="item-text">Hair</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-three.png" /></div>
+              <h4 class="item-text">Barbershop</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-five.png" /></div>
+              <h4 class="item-text">Spa</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-seven.png" /></div>
+              <h4 class="item-text">Waxing</h4>
+            </div>
           </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-three.png" /></div>
-            <h4 class="item-text">Barbershop</h4>
-          </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-five.png" /></div>
-            <h4 class="item-text">Spa</h4>
-          </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-seven.png" /></div>
-            <h4 class="item-text">Waxing</h4>
+          <div class="col-6 text-center">
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-two.png" /></div>
+              <h4 class="item-text">Beauty</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-four.png" /></div>
+              <h4 class="item-text">Nails</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-six.png" /></div>
+              <h4 class="item-text">Eyebrow</h4>
+            </div>
+            <div class="item">
+              <div class="type-img"><img src="/assets/type-eight.png" /></div>
+              <h4 class="item-text">Massage</h4>
+            </div>
           </div>
         </div>
-        <div class="col-6 text-center">
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-two.png" /></div>
-            <h4 class="item-text">Beauty</h4>
-          </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-four.png" /></div>
-            <h4 class="item-text">Nails</h4>
-          </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-six.png" /></div>
-            <h4 class="item-text">Eyebrow</h4>
-          </div>
-          <div class="item">
-            <div class="type-img"><img src="/assets/type-eight.png" /></div>
-            <h4 class="item-text">Massage</h4>
-          </div>
-        </div>
+        <demo-button
+          class="mx-auto btn"
+          name="Next"
+          @click="handleCurrentNext"
+        />
       </div>
-      <demo-button class="mx-auto btn" name="Next" />
     </div>
   </section>
 </template>
@@ -60,11 +73,28 @@
 import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
+import "../../../style/main.css";
 export default {
   components: {
     MobileHeading,
     DemoButton,
     SelectBox,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+      CurrentNext: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
+    handleCurrentNext(params) {
+      this.currentNext = params;
+      navigateTo("/requestDemo/demoBook-staff");
+    },
   },
   setup() {
     let database = ref([
@@ -76,11 +106,6 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .demo-book-subHeading {
   color: #2c3b91;
   font-size: 18px;
@@ -125,6 +150,6 @@ export default {
 .btn {
   position: fixed;
   bottom: 20%;
-  left: 20%;
+  left: 16%;
 }
 </style>

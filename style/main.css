@@ -1,0 +1,16 @@
+.HEAD {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  width: 100%;
+}
+.scroll-container {
+  overflow-y: scroll;
+  margin-top: 184px;
+  height: 40vh;
+  overflow-x: hidden;
+}

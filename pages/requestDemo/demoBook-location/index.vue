@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Book Demo" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="text-center" name="Book Demo" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
             <div class="mt-3"><select-box /></div>
           </div>
         </div>
@@ -195,12 +202,30 @@
 import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
+import "../../../style/main.css";
 
 export default {
   components: {
     MobileHeading,
     DemoButton,
     SelectBox,
+  },
+
+  data() {
+    return {
+      CurrentCross: "send",
+      // CurrentPrevious: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
+    // handleCurrentPrevious(params) {
+    //   this.CurrentPrevious = params;
+    //   navigateTo("/requestDemo/demoBook-location");
+    // },
   },
 
   setup() {
@@ -214,11 +239,11 @@ export default {
 </script>
 
 <style scoped>
-.HEAD {
+/* .HEAD {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 .form-label {
   color: #2c3b91 !important;
   font-size: 16px;
