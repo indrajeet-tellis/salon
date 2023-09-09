@@ -28,5 +28,6 @@ defineProps({
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 </style>

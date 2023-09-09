@@ -130,9 +130,6 @@ export default {
   background-position: center;
 }
 
-/* .Advantage-main {
-  margin-bottom: 120px;
-} */
 .Advantage-item {
   text-align: center;
   margin-top: 25px;

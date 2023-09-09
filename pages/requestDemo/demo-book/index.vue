@@ -22,44 +22,7 @@
     <div class="container">
       <div class="scroll-container">
         <h3 class="demo-book-subHeading">Select your salon type</h3>
-        <div class="row mt-4">
-          <div class="col-6 text-center">
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-one.png" /></div>
-              <h4 class="item-text">Hair</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-three.png" /></div>
-              <h4 class="item-text">Barbershop</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-five.png" /></div>
-              <h4 class="item-text">Spa</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-seven.png" /></div>
-              <h4 class="item-text">Waxing</h4>
-            </div>
-          </div>
-          <div class="col-6 text-center">
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-two.png" /></div>
-              <h4 class="item-text">Beauty</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-four.png" /></div>
-              <h4 class="item-text">Nails</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-six.png" /></div>
-              <h4 class="item-text">Eyebrow</h4>
-            </div>
-            <div class="item">
-              <div class="type-img"><img src="/assets/type-eight.png" /></div>
-              <h4 class="item-text">Massage</h4>
-            </div>
-          </div>
-        </div>
+        <SelecSalonType name="Select your salon type" />
         <demo-button
           class="mx-auto btn"
           name="Next"
@@ -74,11 +37,13 @@ import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
 import "../../../style/main.css";
+import SelecSalonType from "../../../components/SelecSalonType.vue";
 export default {
   components: {
     MobileHeading,
     DemoButton,
     SelectBox,
+    SelecSalonType,
   },
   data() {
     return {
@@ -117,7 +82,7 @@ export default {
 .label-box {
   margin-top: 20px;
 }
-.item {
+/* .item {
   width: 45%;
   background: #fff;
   margin: 0 auto;
@@ -146,7 +111,7 @@ export default {
   margin-top: 9px;
   font-family: "DM Sans", sans-serif;
   margin-bottom: 0 !important;
-}
+} */
 .btn {
   position: fixed;
   bottom: 20%;
