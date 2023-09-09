@@ -9,6 +9,7 @@ import "swiper/css/scrollbar";
 import Accordian from "../components/Accordian.vue";
 import { useRoute } from "vue-router";
 import Heading from "../components/heading.vue";
+import BottomNav from "../components/bottom-nav.vue";
 export default {
   data() {
     return {
@@ -31,6 +32,7 @@ export default {
     SwiperSlide,
     Accordian,
     Heading,
+    BottomNav,
   },
 
   setup() {
@@ -1635,7 +1637,7 @@ export default {
   </section>
   <!-- works end -->
 
-  <!-- question start -->
+  <!-- FAQ’s start -->
   <section
     class="question mt-5"
     :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
@@ -1651,8 +1653,9 @@ export default {
         <Accordian />
       </div>
     </div>
+    <BottomNav />
   </section>
-  <!-- question end -->
+  <!-- FAQ’s end -->
 </template>
 <style>
 * {

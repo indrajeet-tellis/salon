@@ -19,6 +19,7 @@
         name="Cancel Demo Request"
         class="mx-auto"
         style="margin-top: 27px"
+        @click="handleCurrentCross"
       />
     </div>
   </div>
@@ -29,6 +30,19 @@ import DemoButton from "../components/demo-button.vue";
 export default {
   components: {
     DemoButton,
+  },
+
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/");
+    },
   },
 
   setup() {

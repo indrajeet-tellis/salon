@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="Feature-head py-5">
-            <mobile-heading class="text-center" name="Services" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="" name="Services" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -13,252 +20,267 @@
 
   <section>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="sub-hedaing">
-            <h3>Digital salon Kickstarter package</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="bg-img"
-          :style="{ backgroundImage: 'url(/assets/Fbanner.png)' }"
-        >
+      <div class="scroll-container service-scroll-container">
+        <div class="row">
           <div class="col">
-            <div class="F-main">
-              <h4 class="fMain-heading">
-                All-in-one package for your meeting all your salon
-                digitalization
-              </h4>
-              <swiper
-                :slidesPerView="'auto'"
-                :pagination="{
-                  clickable: true,
-                }"
-                :modules="modules"
-                class="mySwiper"
-                :space-between="20"
+            <div class="sub-hedaing">
+              <h3>Digital salon Kickstarter package</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="bg-img"
+            :style="{ backgroundImage: 'url(/assets/Fbanner.png)' }"
+          >
+            <div class="col">
+              <div class="F-main">
+                <h4 class="fMain-heading">
+                  All-in-one package for your meeting all your salon
+                  digitalization
+                </h4>
+                <swiper
+                  :slidesPerView="'auto'"
+                  :pagination="{
+                    clickable: true,
+                  }"
+                  :modules="modules"
+                  class="mySwiper"
+                  :space-between="20"
+                >
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/one.png" />
+
+                      <p class="F-para mb-0">
+                        Branded salon app with your own logo
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/two.png" />
+
+                      <p class="F-para mb-0">
+                        New awesome looking website or upgrade your existing
+                        website
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/three.png" />
+
+                      <p class="F-para mb-0">
+                        Online booking option on the website
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/four.png" />
+
+                      <p class="F-para mb-0">
+                        App promotion in social media with images / video
+                        content
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/five.png" />
+
+                      <p class="F-para mb-0">Review & Reputation management</p>
+                    </div>
+                  </swiper-slide>
+                </swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="item-main">
+              <div class="item d-flex align-items-center position-relative">
+                <div class="left">
+                  <img src="/assets/service-one.png" />
+                </div>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Website Design</h3>
+                  <p class="website-para mb-0">
+                    We follow a strategic approach to give an elegant look to
+                    your website.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
               >
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/one.png" />
-
-                    <p class="F-para mb-0">
-                      Branded salon app with your own logo
-                    </p>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Digital Marketing</h3>
+                  <p class="website-para mb-0">
+                    Lift your business to new heights with our digital marketing
+                    services.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/two.png" />
-
-                    <p class="F-para mb-0">
-                      New awesome looking website or upgrade your existing
-                      website
-                    </p>
+                </div>
+                <div class="left">
+                  <img src="/assets/service-two.png" />
+                </div>
+              </div>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="left">
+                  <img src="/assets/service-three.png" />
+                </div>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Salon Software</h3>
+                  <p class="website-para mb-0">
+                    Increase customer experience, manage your salon and grow
+                    your revenue.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/three.png" />
-
-                    <p class="F-para mb-0">
-                      Online booking option on the website
-                    </p>
+                </div>
+              </div>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="right">
+                  <h3 class="website-tittle mb-0">
+                    Search Engine Optimization
+                  </h3>
+                  <p class="website-para mb-0">
+                    It is so important to make your website more visible, and
+                    that means more traffic and more opportunities to convert
+                    prospects into customers.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/four.png" />
-
-                    <p class="F-para mb-0">
-                      App promotion in social media with images / video content
-                    </p>
+                </div>
+                <div class="left">
+                  <img src="/assets/service-four.png" />
+                </div>
+              </div>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="left">
+                  <img src="/assets/service-five.png" />
+                </div>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Social Media Management</h3>
+                  <p class="website-para mb-0">
+                    Social media is an incredible method to make your salon
+                    popular, connect with customers, and attract new business.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/five.png" />
-
-                    <p class="F-para mb-0">Review & Reputation management</p>
+                </div>
+              </div>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Logo & Graphics</h3>
+                  <p class="website-para mb-0">
+                    We develop the visual identity of your business. Graphic
+                    design in social media isn't confined to imagery.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
                   </div>
-                </swiper-slide>
-              </swiper>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="item-main">
-            <div class="item d-flex align-items-center position-relative">
-              <div class="left">
-                <img src="/assets/service-one.png" />
-              </div>
-              <div class="right">
-                <h3 class="website-tittle mb-0">Website Design</h3>
-                <p class="website-para mb-0">
-                  We follow a strategic approach to give an elegant look to your
-                  website.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
+                </div>
+                <div class="left">
+                  <img src="/assets/service-six.png" />
                 </div>
               </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="right">
-                <h3 class="website-tittle mb-0">Digital Marketing</h3>
-                <p class="website-para mb-0">
-                  Lift your business to new heights with our digital marketing
-                  services.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="left">
+                  <img src="/assets/service-seven.png" />
+                </div>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Custom Salon Apps</h3>
+                  <p class="website-para mb-0">
+                    We build apps that add value to your business, and boost
+                    your efficiency.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
+                  </div>
                 </div>
               </div>
-              <div class="left">
-                <img src="/assets/service-two.png" />
-              </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="left">
-                <img src="/assets/service-three.png" />
-              </div>
-              <div class="right">
-                <h3 class="website-tittle mb-0">Salon Software</h3>
-                <p class="website-para mb-0">
-                  Increase customer experience, manage your salon and grow your
-                  revenue.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
+              <div
+                class="item d-flex align-items-center position-relative mt-4"
+              >
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Google Ads</h3>
+                  <p class="website-para mb-0">
+                    Proficient Google Ads Management ought to be considered by
+                    any business that has a venture adequately huge to
+                    legitimize employing experts for help.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
+                  </div>
+                </div>
+                <div class="left">
+                  <img src="/assets/service-eight.png" />
                 </div>
               </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="right">
-                <h3 class="website-tittle mb-0">Search Engine Optimization</h3>
-                <p class="website-para mb-0">
-                  It is so important to make your website more visible, and that
-                  means more traffic and more opportunities to convert prospects
-                  into customers.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
+              <div
+                class="item last-line d-flex align-items-center position-relative mt-4"
+              >
+                <div class="left">
+                  <img src="/assets/service-nine.png" />
                 </div>
-              </div>
-              <div class="left">
-                <img src="/assets/service-four.png" />
-              </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="left">
-                <img src="/assets/service-five.png" />
-              </div>
-              <div class="right">
-                <h3 class="website-tittle mb-0">Social Media Management</h3>
-                <p class="website-para mb-0">
-                  Social media is an incredible method to make your salon
-                  popular, connect with customers, and attract new business.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
-                </div>
-              </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="right">
-                <h3 class="website-tittle mb-0">Logo & Graphics</h3>
-                <p class="website-para mb-0">
-                  We develop the visual identity of your business. Graphic
-                  design in social media isn't confined to imagery.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
-                </div>
-              </div>
-              <div class="left">
-                <img src="/assets/service-six.png" />
-              </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="left">
-                <img src="/assets/service-seven.png" />
-              </div>
-              <div class="right">
-                <h3 class="website-tittle mb-0">Custom Salon Apps</h3>
-                <p class="website-para mb-0">
-                  We build apps that add value to your business, and boost your
-                  efficiency.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
-                </div>
-              </div>
-            </div>
-            <div class="item d-flex align-items-center position-relative mt-4">
-              <div class="right">
-                <h3 class="website-tittle mb-0">Google Ads</h3>
-                <p class="website-para mb-0">
-                  Proficient Google Ads Management ought to be considered by any
-                  business that has a venture adequately huge to legitimize
-                  employing experts for help.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
-                </div>
-              </div>
-              <div class="left">
-                <img src="/assets/service-eight.png" />
-              </div>
-            </div>
-            <div
-              class="item last-line d-flex align-items-center position-relative mt-4"
-            >
-              <div class="left">
-                <img src="/assets/service-nine.png" />
-              </div>
-              <div class="right">
-                <h3 class="website-tittle mb-0">Facebook Ads</h3>
-                <p class="website-para mb-0">
-                  Ads Manager is your starting point for running ads on
-                  Facebook, Instagram, Messenger or Audience Network.
-                </p>
-                <div class="read-text" style="color: #ed0046">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square read-text-icon"
-                  ></i
-                  ><span class="read-text-red">Read More</span>
+                <div class="right">
+                  <h3 class="website-tittle mb-0">Facebook Ads</h3>
+                  <p class="website-para mb-0">
+                    Ads Manager is your starting point for running ads on
+                    Facebook, Instagram, Messenger or Audience Network.
+                  </p>
+                  <div class="read-text" style="color: #ed0046">
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square read-text-icon"
+                    ></i
+                    ><span class="read-text-red">Read More</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -266,6 +288,7 @@
         </div>
       </div>
     </div>
+    <BottomNav />
   </section>
 </template>
 
@@ -279,12 +302,27 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRoute } from "vue-router";
 import MobileHeading from "../../components/mobile-heading.vue";
+import "../../style/main.css";
+import BottomNav from "../../components/bottom-nav.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
     MobileHeading,
+    BottomNav,
+  },
+
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/");
+    },
   },
 
   setup() {
@@ -311,10 +349,8 @@ export default {
 </script>
 
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.service-scroll-container {
+  margin-top: 133px !important;
 }
 .heading {
   padding: 20px;

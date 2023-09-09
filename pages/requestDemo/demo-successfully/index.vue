@@ -6,6 +6,10 @@
     <div class="container">
       <div class="row">
         <div class="col">
+          <i
+            class="fa-solid fa-xmark icon"
+            @click="handleCurrentCross('update')"
+          ></i>
           <lottie-animation />
           <div class="text-center" style="margin-top: 19px">
             <h1 class="mb-0 demo-text">Thank You !!!</h1>
@@ -13,7 +17,12 @@
               You have successfully book your demo request
             </p>
           </div>
-          <demo-button name="OK" class="ok-btn" style="margin: 0 auto" />
+          <demo-button
+            name="OK"
+            class="ok-btn"
+            style="margin: 0 auto"
+            @click="handleCurrentCalendar"
+          />
         </div>
       </div>
     </div>
@@ -28,8 +37,27 @@ export default {
     DemoButton,
     LottieAnimation,
   },
+  data() {
+    return {
+      CurrentCalendar: "send",
+      CurrentCross: "send",
+    };
+  },
 
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
+    handleCurrentCalendar(params) {
+      this.currentCalendar = params;
+      navigateTo("/requestDemo/demoAppointment-Confirmed");
+    },
+  },
   setup() {
+    // definePageMeta({
+    //   navigation: false,
+    // });
     let database = ref([
       {
         name: "string",
@@ -39,19 +67,24 @@ export default {
 };
 </script>
 <style scoped>
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #a7a7a7;
+}
 .demoBG {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 100px;
-  padding: 190px 0;
+  padding: 160px 0;
   position: relative;
-  height: auto;
 }
 .ok-btn {
   position: fixed;
-  bottom: 23%;
-  left: 22%;
+  bottom: 14%;
+  left: 14%;
 }
 .demo-text {
   font-size: 40px;

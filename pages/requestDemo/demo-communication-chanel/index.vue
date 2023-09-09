@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <mobile-heading class="text-center" name="Book Demo" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="text-center" name="Book Demo" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
             <div class="mt-3"><select-box /></div>
           </div>
         </div>
@@ -12,85 +19,91 @@
     </div>
   </div>
   <section style="margin-bottom: 100px">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="demoCommunicationText">
-            Communication channel you preferred
-          </h2>
-          <div class="demoText-bg">
-            <p class="demoText">
-              *For a better communication and explanation we recommend you to
-              prefer video with laptop/desktop and a proper headset.
-            </p>
+    <div class="container position-relative">
+      <div class="scroll-container">
+        <div class="row">
+          <div class="col">
+            <h2 class="demoCommunicationText">
+              Communication channel you preferred
+            </h2>
+            <div class="demoText-bg">
+              <p class="demoText">
+                *For a better communication and explanation we recommend you to
+                prefer video with laptop/desktop and a proper headset.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col d-flex justify-content-between">
-          <div class="box"></div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-one.png" />
-              <p class="itemText mb-0">Google Meet</p>
-              <i class="fa-solid fa-check item-icon"></i>
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <div class="box"></div>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-one.png" />
+                <p class="itemText mb-0">Google Meet</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-two.png" />
-              <p class="itemText mb-0">Zoom</p>
-              <i class="fa-solid fa-check item-icon"></i>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-two.png" />
+                <p class="itemText mb-0">Zoom</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
+            <div class="box"></div>
           </div>
-          <div class="box"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col d-flex justify-content-between">
-          <div class="box"></div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-three.png" />
-              <p class="itemText mb-0">Desktop</p>
-              <i class="fa-solid fa-check item-icon"></i>
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <div class="box"></div>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-three.png" />
+                <p class="itemText mb-0">Desktop</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-four.png" />
-              <p class="itemText mb-0">Mobile</p>
-              <i class="fa-solid fa-check item-icon"></i>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-four.png" />
+                <p class="itemText mb-0">Mobile</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
+            <div class="box"></div>
           </div>
-          <div class="box"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col d-flex justify-content-between">
-          <div class="box"></div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-five.png" />
-              <p class="itemText mb-0">Audio Call</p>
-              <i class="fa-solid fa-check item-icon"></i>
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <div class="box"></div>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-five.png" />
+                <p class="itemText mb-0">Audio Call</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="item">
-              <img src="/assets/channel-six.png" />
-              <p class="itemText mb-0">Video Call</p>
-              <i class="fa-solid fa-check item-icon"></i>
+            <div class="box">
+              <div class="item">
+                <img src="/assets/channel-six.png" />
+                <p class="itemText mb-0">Video Call</p>
+                <i class="fa-solid fa-check item-icon"></i>
+              </div>
             </div>
+            <div class="box"></div>
           </div>
-          <div class="box"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="d-flex both-btn" style="gap: 70px; margin-top: 90px">
-            <demo-button name="Previous" style="margin-left: 30px" />
-            <demo-button name="Next" style="margin-right: 30px" />
+        <div class="row">
+          <div class="col">
+            <div class="d-flex both-btn" style="gap: 70px; margin-top: 90px">
+              <demo-button name="Previous" style="margin-left: 30px" />
+              <demo-button
+                name="Next"
+                style="margin-right: 30px"
+                @click="handleCurrentSuccess(update)"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -101,12 +114,29 @@
 import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
+import "../../../style/main.css";
 
 export default {
   components: {
     MobileHeading,
     DemoButton,
     SelectBox,
+  },
+  data() {
+    return {
+      CurrentCross: "send",
+      CurrentSuccess: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
+    handleCurrentSuccess(params) {
+      this.currentSuccess = params;
+      navigateTo("/requestDemo/demo-successfully");
+    },
   },
 
   setup() {
@@ -119,10 +149,13 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.both-btn {
+  gap: 25px;
+  margin-top: 90px;
+  position: fixed;
+  bottom: 95px;
+  width: 100%;
+  left: 0;
 }
 .demoCommunicationText {
   font-size: 18px;

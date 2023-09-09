@@ -6,6 +6,10 @@
     <div class="container">
       <div class="row">
         <div class="col">
+          <i
+            class="fa-solid fa-xmark icon"
+            @click="handleCurrentCross('update')"
+          ></i>
           <div style="margin-top: 40px; text-align: center">
             <img src="/assets/calendar-check.png" />
           </div>
@@ -40,36 +44,84 @@
             <demo-border-button
               name="Cancel Appointment"
               class="mx-auto mt-3"
+              @click="isOpen = true"
             />
           </div>
+          <!-- <MazBtn>Open Bottom Sheet</MazBtn> -->
+          <MazBottomSheet v-model="isOpen">
+            <div class="maz-flex maz-flex-center">
+              <CancelAppointment />
+            </div>
+          </MazBottomSheet>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import MazBottomSheet from "maz-ui/components/MazBottomSheet";
+import CancelAppointment from "../../../components/cancel-appointment.vue";
+
+definePageMeta({
+  layout: false,
+});
+
+const isOpen = ref(false);
+</script>
+
 <script>
 import DemoButton from "../../../components/demo-button.vue";
 import DemoBorderButton from "../../../components/demo-border-button.vue";
-import CancelAppointment from "../../../components/cancel-appointment";
 
 export default {
   components: {
     DemoButton,
     DemoBorderButton,
-    CancelAppointment,
   },
 
-  setup() {
-    let database = ref([
-      {
-        name: "string",
-        name: "string",
-      },
-    ]);
+  data() {
+    return {
+      CurrentBooked: "send",
+      // CurrentCross: "send",
+    };
+  },
+
+  methods: {
+    // handleCurrentCross(params) {
+    //   this.currentCross = params;
+    //   navigateTo("/");
+    // },
+    handleCurrentBooked(params) {
+      this.currentBooked = params;
+      navigateTo("/requestDemo/demoAppointment-booked");
+    },
   },
 };
 </script>
+
 <style scoped>
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #a7a7a7;
+}
+/* :deep(.m-bottom-sheet__close) {
+  display: none !important;
+} */
+:deep(.m-bottom-sheet__container) {
+  border-radius: 20px !important;
+}
+:deep(.m-backdrop-content) {
+  border-radius: 20px !important;
+}
+/* .m-bottom-sheet__container .maz-h-5 {
+  height: 0 !important;
+  width: 0 !important;
+} */
 .demoBG {
   background-position: center;
   background-repeat: no-repeat;
@@ -114,8 +166,8 @@ export default {
 }
 .both-btn {
   position: fixed;
-  bottom: 30%;
-  left: 25%;
+  bottom: 14%;
+  left: 16%;
 }
 .item {
   width: 28%;

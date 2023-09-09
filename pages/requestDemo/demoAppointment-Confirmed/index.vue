@@ -6,6 +6,10 @@
     <div class="container">
       <div class="row">
         <div class="col">
+          <i
+            class="fa-solid fa-xmark icon"
+            @click="handleCurrentCross('update')"
+          ></i>
           <div style="margin-top: 40px; text-align: center">
             <img src="/assets/calendar-check.png" />
           </div>
@@ -23,8 +27,16 @@
             </h3>
           </div>
           <div class="both-btn">
-            <demo-button name="Add to calendar" class="mx-auto" />
-            <demo-border-button name="OK, got it" class="mx-auto mt-3" />
+            <demo-button
+              name="Add to calendar"
+              class="mx-auto"
+              @click="handleCurrentBooked"
+            />
+            <demo-border-button
+              name="OK, got it"
+              class="mx-auto mt-3"
+              @click="handleCurrentMain(update)"
+            />
           </div>
         </div>
       </div>
@@ -41,6 +53,29 @@ export default {
     DemoBorderButton,
   },
 
+  data() {
+    return {
+      CurrentBooked: "send",
+      CurrentCross: "send",
+      CurrentMain: "send",
+    };
+  },
+
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
+    handleCurrentBooked(params) {
+      this.currentBooked = params;
+      navigateTo("/requestDemo/demoAppointment-booked");
+    },
+    handleCurrentMain(params) {
+      this.currentMain = params;
+      navigateTo("/");
+    },
+  },
+
   setup() {
     let database = ref([
       {
@@ -52,6 +87,13 @@ export default {
 };
 </script>
 <style scoped>
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #a7a7a7;
+}
 .demoBG {
   background-position: center;
   background-repeat: no-repeat;
@@ -96,7 +138,7 @@ export default {
 }
 .both-btn {
   position: fixed;
-  bottom: 30%;
-  left: 21%;
+  bottom: 15%;
+  left: 16%;
 }
 </style>

@@ -4,7 +4,14 @@
       <div class="row">
         <div class="col">
           <div class="Feature-head py-5">
-            <mobile-heading class="text-center" name="Feature" />
+            <div class="d-flex align-items-center justify-content-between">
+              <i class="fa-solid fa-angle-left"></i>
+              <mobile-heading class="" name="Feature" />
+              <i
+                class="fa-solid fa-xmark"
+                @click="handleCurrentCross('update')"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -12,204 +19,208 @@
   </div>
   <section>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="sub-hedaing">
-            <h3>Features of our appointment management solution</h3>
+      <div class="scroll-container feature-scroll-container">
+        <div class="row">
+          <div class="col">
+            <div class="sub-hedaing">
+              <h3>Features of our appointment management solution</h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div
-          class="bg-img"
-          :style="{ backgroundImage: 'url(/assets/Fbanner.png)' }"
-        >
-          <div class="col">
-            <div class="F-main">
-              <swiper
-                :slidesPerView="'auto'"
-                :pagination="{
-                  clickable: true,
-                }"
-                :modules="modules"
-                class="mySwiper"
-                :space-between="30"
-              >
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fOne.png" />
-                    <h3 class="F-header mb-0">Online booking</h3>
-                    <p class="F-para mb-0">
-                      It is a digital appointment book, where your clients can
-                      plan, reschedule, or drop arrangements from anywhere and
-                      anytime.
-                    </p>
+        <div class="row">
+          <div
+            class="bg-img"
+            :style="{ backgroundImage: 'url(/assets/Fbanner.png)' }"
+          >
+            <div class="col">
+              <div class="F-main">
+                <swiper
+                  :slidesPerView="'auto'"
+                  :pagination="{
+                    clickable: true,
+                  }"
+                  :modules="modules"
+                  class="mySwiper"
+                  :space-between="30"
+                >
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fOne.png" />
+                      <h3 class="F-header mb-0">Online booking</h3>
+                      <p class="F-para mb-0">
+                        It is a digital appointment book, where your clients can
+                        plan, reschedule, or drop arrangements from anywhere and
+                        anytime.
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fTwo.png" />
+                      <h3 class="F-header mb-0">Slot blockers</h3>
+                      <p class="F-para mb-0">
+                        Use the Slot blockers and get rid of excessive
+                        appointments within a particular period. And, your
+                        clients are also able to see which slots are available
+                        for them.
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fThree.png" />
+                      <h3 class="F-header mb-0">Off hours booking</h3>
+                      <p class="F-para mb-0">
+                        Now you don't worry when you are offline! Your clients
+                        will have more flexibility to book appointments during
+                        non-working hours as well.
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fFour.png" />
+                      <h3 class="F-header mb-0">Package booking</h3>
+                      <p class="F-para mb-0">
+                        Engage your customers with exciting salon packages.
+                        Using Salonnz, have a facility in creating packages for
+                        different services, which will also multiply the sale
+                        and revenue in your business.
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fFive.png" />
+                      <h3 class="F-header mb-0">Membership booking</h3>
+                      <p class="F-para mb-0">
+                        On Salonnz, salon owner can arrange membership program
+                        for faithful customers through which they can avail
+                        discounts for specific services
+                      </p>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="box">
+                      <img src="/assets/fSix.png" />
+                      <h3 class="F-header mb-0">Accept payment</h3>
+                      <p class="F-para mb-0">
+                        Salonnz comes with an online booking widget connected
+                        with Paypal. Salon owners can get payments for your
+                        services by simply synchronizing purchases with this
+                        widget.
+                      </p>
+                    </div>
+                  </swiper-slide>
+                </swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="menu-main">
+                  <h2 class="D-heading mb-0">Dashboard Menu</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="m-items d-flex justify-content-between">
+                  <div class="item">
+                    <img src="/assets/appo-one.png" />
+                    <p class="item-para mb-0">Dashboard</p>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fTwo.png" />
-                    <h3 class="F-header mb-0">Slot blockers</h3>
-                    <p class="F-para mb-0">
-                      Use the Slot blockers and get rid of excessive
-                      appointments within a particular period. And, your clients
-                      are also able to see which slots are available for them.
-                    </p>
+                  <div class="item">
+                    <img src="/assets/appo-two.png" />
+                    <p class="item-para mb-0">Calender</p>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fThree.png" />
-                    <h3 class="F-header mb-0">Off hours booking</h3>
-                    <p class="F-para mb-0">
-                      Now you don't worry when you are offline! Your clients
-                      will have more flexibility to book appointments during
-                      non-working hours as well.
-                    </p>
+                  <div class="item">
+                    <img src="/assets/appo-three.png" />
+                    <p class="item-para mb-0">Sales</p>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fFour.png" />
-                    <h3 class="F-header mb-0">Package booking</h3>
-                    <p class="F-para mb-0">
-                      Engage your customers with exciting salon packages. Using
-                      Salonnz, have a facility in creating packages for
-                      different services, which will also multiply the sale and
-                      revenue in your business.
-                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="m-items d-flex justify-content-between">
+                  <div class="item">
+                    <img src="/assets/appo-four.png" />
+                    <p class="item-para mb-0">Appointment</p>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fFive.png" />
-                    <h3 class="F-header mb-0">Membership booking</h3>
-                    <p class="F-para mb-0">
-                      On Salonnz, salon owner can arrange membership program for
-                      faithful customers through which they can avail discounts
-                      for specific services
-                    </p>
+                  <div class="item">
+                    <img src="/assets/appo-five.png" />
+                    <p class="item-para mb-0">Coupones</p>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="box">
-                    <img src="/assets/fSix.png" />
-                    <h3 class="F-header mb-0">Accept payment</h3>
-                    <p class="F-para mb-0">
-                      Salonnz comes with an online booking widget connected with
-                      Paypal. Salon owners can get payments for your services by
-                      simply synchronizing purchases with this widget.
-                    </p>
+                  <div class="item">
+                    <img src="/assets/appo-six.png" />
+                    <p class="item-para mb-0">Staff</p>
                   </div>
-                </swiper-slide>
-              </swiper>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="m-items d-flex justify-content-between">
+                  <div class="item">
+                    <img src="/assets/appo-seven.png" />
+                    <p class="item-para mb-0">Payroll</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/appo-eight.png" />
+                    <p class="item-para mb-0">Discount</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/dash-nine.png" />
+                    <p class="item-para mb-0">Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="m-items d-flex justify-content-between">
+                  <div class="item">
+                    <img src="/assets/dash-ele.png" />
+                    <p class="item-para mb-0">Expenses</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/dash-twe.png" />
+                    <p class="item-para mb-0">Inventory</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/dash-thr.png" />
+                    <p class="item-para mb-0">File Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="m-items d-flex justify-content-between">
+                  <div class="item">
+                    <img src="/assets/dash-forth.png" />
+                    <p class="item-para mb-0">E-commerce</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/mar-six.png" />
+                    <p class="item-para mb-0">Review</p>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/dash-fif.png" />
+                    <p class="item-para mb-0">Forms</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="dashboard">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="menu-main">
-            <h2 class="D-heading mb-0">Dashboard Menu</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="m-items d-flex justify-content-between">
-            <div class="item">
-              <img src="/assets/appo-one.png" />
-              <p class="item-para mb-0">Dashboard</p>
-            </div>
-            <div class="item">
-              <img src="/assets/appo-two.png" />
-              <p class="item-para mb-0">Calender</p>
-            </div>
-            <div class="item">
-              <img src="/assets/appo-three.png" />
-              <p class="item-para mb-0">Sales</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="m-items d-flex justify-content-between">
-            <div class="item">
-              <img src="/assets/appo-four.png" />
-              <p class="item-para mb-0">Appointment</p>
-            </div>
-            <div class="item">
-              <img src="/assets/appo-five.png" />
-              <p class="item-para mb-0">Coupones</p>
-            </div>
-            <div class="item">
-              <img src="/assets/appo-six.png" />
-              <p class="item-para mb-0">Staff</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="m-items d-flex justify-content-between">
-            <div class="item">
-              <img src="/assets/appo-seven.png" />
-              <p class="item-para mb-0">Payroll</p>
-            </div>
-            <div class="item">
-              <img src="/assets/appo-eight.png" />
-              <p class="item-para mb-0">Discount</p>
-            </div>
-            <div class="item">
-              <img src="/assets/dash-nine.png" />
-              <p class="item-para mb-0">Services</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="m-items d-flex justify-content-between">
-            <div class="item">
-              <img src="/assets/dash-ele.png" />
-              <p class="item-para mb-0">Expenses</p>
-            </div>
-            <div class="item">
-              <img src="/assets/dash-twe.png" />
-              <p class="item-para mb-0">Inventory</p>
-            </div>
-            <div class="item">
-              <img src="/assets/dash-thr.png" />
-              <p class="item-para mb-0">File Manager</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="m-items d-flex justify-content-between">
-            <div class="item">
-              <img src="/assets/dash-forth.png" />
-              <p class="item-para mb-0">E-commerce</p>
-            </div>
-            <div class="item">
-              <img src="/assets/mar-six.png" />
-              <p class="item-para mb-0">Review</p>
-            </div>
-            <div class="item">
-              <img src="/assets/dash-fif.png" />
-              <p class="item-para mb-0">Forms</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -223,6 +234,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { ref } from "vue";
 import MobileHeading from "../../components/mobile-heading.vue";
+import "../../style/main.css";
 
 export default {
   components: {
@@ -231,7 +243,17 @@ export default {
     Heading,
     MobileHeading,
   },
-
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/");
+    },
+  },
   setup() {
     let database = ref([
       {
@@ -256,10 +278,8 @@ export default {
 </script>
 
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.feature-scroll-container {
+  margin-top: 124px !important;
 }
 .heading {
   padding: 20px;
@@ -275,7 +295,6 @@ export default {
 }
 .F-main {
   padding-top: 40px;
-  /* padding-bottom: 40px; */
   margin-bottom: 18px;
 }
 .box {
@@ -326,7 +345,6 @@ export default {
 }
 .dashboard {
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 .item {
   width: 22%;
