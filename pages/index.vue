@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -70,7 +70,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
     };
   },
 };
