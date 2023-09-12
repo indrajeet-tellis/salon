@@ -74,6 +74,7 @@ const isOpen = ref(false);
 <script>
 import DemoButton from "../../../components/demo-button.vue";
 import DemoBorderButton from "../../../components/demo-border-button.vue";
+import "../../../style/main.css";
 
 export default {
   components: {
@@ -84,15 +85,15 @@ export default {
   data() {
     return {
       CurrentBooked: "send",
-      // CurrentCross: "send",
+      CurrentCross: "send",
     };
   },
 
   methods: {
-    // handleCurrentCross(params) {
-    //   this.currentCross = params;
-    //   navigateTo("/");
-    // },
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/requestDemo");
+    },
     handleCurrentBooked(params) {
       this.currentBooked = params;
       navigateTo("/requestDemo/demoAppointment-booked");

@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col d-flex justify-content-between">
             <div class="box"></div>
             <div class="box">
@@ -105,6 +105,17 @@
               />
             </div>
           </div>
+        </div> -->
+        <CommunicationChanel textOne="Google Meet" textTwo="Zoom" />
+        <CommunicationChanel textOne="Desktop" textTwo="Mobile" />
+        <CommunicationChanel textOne="Audio Call" textTwo="Video Call" />
+        <div class="d-flex both-btn" style="gap: 70px; margin-top: 90px">
+          <demo-button name="Previous" style="margin-left: 30px" />
+          <demo-button
+            name="Next"
+            style="margin-right: 30px"
+            @click="handleCurrentSuccess(update)"
+          />
         </div>
       </div>
     </div>
@@ -115,12 +126,14 @@ import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
 import "../../../style/main.css";
+import CommunicationChanel from "../../../components/CommunicationChanel.vue";
 
 export default {
   components: {
     MobileHeading,
     DemoButton,
     SelectBox,
+    CommunicationChanel,
   },
   data() {
     return {
@@ -182,7 +195,7 @@ export default {
   border-radius: 5px;
   margin-top: 17px;
 }
-.box {
+/* .box {
   width: 20%;
   margin-top: 35px;
 }
@@ -199,11 +212,11 @@ export default {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.35);
   position: relative;
   height: 100px;
-}
-.item:hover {
+} */
+/* .item:hover {
   border: 2px solid #2c3b91;
   box-shadow: none;
-}
+} */
 .itemText {
   font-size: 12px;
   font-weight: 400;
@@ -229,7 +242,7 @@ export default {
   transition: 0.4s;
   z-index: 999;
 }
-.item:hover .item-icon {
+/* .item:hover .item-icon {
   display: block;
-}
+} */
 </style>

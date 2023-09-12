@@ -14,7 +14,7 @@
                 @click="handleCurrentCross('update')"
               ></i>
             </div>
-            <div class="scroll-container">
+            <div class="scroll-container demo-scroll-container">
               <img src="/assets/demoAd-img.png" />
               <h3 class="demoAd-main-heading">
                 Complete Salon Digitalization Consultation
@@ -39,6 +39,7 @@
 <script>
 import MobileHeading from "../../components/mobile-heading.vue";
 import DemoButton from "../../components/demo-button.vue";
+import "../../style/main.css";
 export default {
   components: {
     MobileHeading,
@@ -72,6 +73,9 @@ export default {
 };
 </script>
 <style scoped>
+.demo-scroll-container {
+  margin-top: 134px !important;
+}
 .advantange-btn {
   position: fixed;
   bottom: 98px;
@@ -93,18 +97,16 @@ export default {
   color: #2c3b91;
   font-size: 22px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   width: 351px;
   text-align: center;
-  margin: 50px auto 20px auto;
+  margin: 50px auto 29px auto !important;
 }
 .demoAd-main-para {
   color: #333333;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   width: 335px;
   text-align: center;
-  margin: 0 auto 160px auto;
+  margin: 0 auto !important;
 }
 </style>

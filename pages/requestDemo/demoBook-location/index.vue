@@ -253,7 +253,7 @@ export default {
   width: 100%;
   padding: 0 1rem;
 }
-.form-label {
+/* .form-label {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
@@ -284,5 +284,6 @@ export default {
   font-size: 12px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
-}
+  padding: 12px;
+} */
 </style>

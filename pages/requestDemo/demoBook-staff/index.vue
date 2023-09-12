@@ -76,14 +76,7 @@
               </select>
             </div>
             <div class="" style="margin-top: 45px">
-              <h4
-                style="
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #2c3b91;
-                  font-family: 'DM Sans', sans-serif;
-                "
-              >
+              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
                 Do you have website?
               </h4>
               <div
@@ -111,14 +104,7 @@
               </div>
             </div>
             <div class="" style="margin-top: 45px">
-              <h4
-                style="
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #2c3b91;
-                  font-family: 'DM Sans', sans-serif;
-                "
-              >
+              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
                 Currently using any software?
               </h4>
               <div
@@ -161,10 +147,7 @@ import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
 import SelectBox from "../../../components/select-box.vue";
 import "../../../style/main.css";
-// import "vuetify/styles";
-// import { createVuetify } from "vuetify";
-// import * as components from "vuetify/components";
-// import * as directives from "vuetify/directives";
+
 export default {
   components: {
     MobileHeading,
@@ -203,25 +186,26 @@ export default {
 </script>
 
 <style scoped>
-.form-label {
+/* .form-label {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 25px;
 }
 .form-control {
   color: #d9d9d9 !important;
   font-size: 12px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 1px solid #d9d9d9 !important;
+  padding: 12px;
 }
 .form-check-label {
   color: #000000 !important;
   font-size: 16px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .form-check-input {
   border: 1px solid #2c3b91 !important;
@@ -233,6 +217,7 @@ export default {
   color: #232323 !important;
   font-size: 12px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
-}
+  font-family: "Roboto", sans-serif;
+  padding: 12px;
+} */
 </style>

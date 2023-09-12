@@ -6,6 +6,7 @@
           animationLink="https://lottie.host/0f621e40-0aeb-4eaa-a0e3-72d1d3a7b096/cV7NoRllOz.json"
           :height="200"
           :width="200"
+          :loop="false"
         />
       </client-only>
     </div>

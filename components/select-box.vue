@@ -9,7 +9,8 @@
           id="inlineRadio1"
           value="option1"
         />
-        <label class="form-check-label" for="inlineRadio1"></label>
+        <!-- <p>Select</p> -->
+        <!-- <label class="form-check-label" for="inlineRadio1">Select</label> -->
       </div>
       <div class="form-check form-check-inline">
         <input
@@ -81,7 +82,7 @@ defineProps({
   background: #2c3b91;
   top: 37%;
   left: 0%;
-  width: 98%;
+  width: 97%;
   height: 12%;
   position: absolute;
 }
