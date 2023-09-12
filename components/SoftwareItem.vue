@@ -19,7 +19,7 @@ defineProps({
   padding-top: 10px;
 }
 .software-tittle {
-  width: 88px;
+  width: 107px;
   margin-top: 12px;
   color: #333333;
   font-size: 12px;

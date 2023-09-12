@@ -184,11 +184,11 @@ export default {
     </div>
     <div class="botom-scroll-container">
       <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Digital marketing" />
+      <SoftwareItem name="Logo & Graphics" />
+      <SoftwareItem name="Custom Salon Apps" />
+      <SoftwareItem name="Website design" />
+      <SoftwareItem name="SEO" />
     </div>
   </section>
   <!-- software end -->
@@ -202,7 +202,10 @@ export default {
             <div style="width: 222px">
               <heading name="Advantages of having your own salon app" />
             </div>
-            <Button @click="handleCurrentGone('update')" />
+            <Button
+              @click="handleCurrentGone('update')"
+              style="margin-top: -4px"
+            />
           </div>
           <div class="pic mt-4">
             <img src="/assets/ad-main.png" alt="advantage" />
@@ -464,7 +467,7 @@ export default {
             <div class="left">
               <heading name="Features of our appointment management solution" />
             </div>
-            <div class="right">
+            <div class="right" style="margin-top: -4px">
               <Button @click="handleCurrentFeature('update')" />
             </div>
           </div>
@@ -477,37 +480,37 @@ export default {
                 style="position: absolute; bottom: 18px; left: 33px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Payroll"
                 class="two"
                 style="position: absolute; bottom: 99px; left: 13px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Staff"
                 class="three"
                 style="position: absolute; bottom: 184px; left: 17px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Coupones"
                 class="four"
                 style="position: absolute; bottom: 244px; left: 84px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Appointment"
                 class="five"
                 style="position: absolute; bottom: 252px; left: 174px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Sales"
                 class="six"
                 style="position: absolute; bottom: 199px; left: 244px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Calender"
                 class="seven"
                 style="position: absolute; bottom: 118px; left: 266px"
               />
               <AppointmentBox
-                text="Discount"
+                text="Dashboard"
                 class="eight"
                 style="position: absolute; bottom: 37px; left: 264px"
               />
@@ -546,7 +549,7 @@ export default {
               <PackageItem
                 class="two"
                 style="margin-top: 40px"
-                tittle=" Branded salon app with your own logo"
+                tittle=" New awesome looking website or upgrade your existing website"
               />
               <div class="line"></div>
             </div>
@@ -554,7 +557,7 @@ export default {
               <PackageItem
                 class="two"
                 style="margin-top: 40px"
-                tittle=" Branded salon app with your own logo"
+                tittle=" Online booking option on the website"
               />
               <!-- src="url(assets/pack-two.png)" -->
               <div class="line"></div>
@@ -563,7 +566,7 @@ export default {
               <PackageItem
                 class="two"
                 style="margin-top: 40px"
-                tittle=" Branded salon app with your own logo"
+                tittle=" App promotion in social media with images/video content"
               />
               <div class="line"></div>
             </div>
@@ -571,7 +574,7 @@ export default {
               <PackageItem
                 class="two"
                 style="margin-top: 40px"
-                tittle=" Branded salon app with your own logo"
+                tittle=" Review and Reputation management"
               />
             </div>
           </div>
