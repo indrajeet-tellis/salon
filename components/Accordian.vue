@@ -22,6 +22,7 @@
 
 <script>
 import { ref } from "vue";
+import "../style/main.css";
 export default {
   setup() {
     const accItems = ref([
@@ -80,23 +81,11 @@ export default {
 }
 .acc-content {
   margin-bottom: 20px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 8px;
-  color: #2e3a59;
-  /* width: 308px; */
+  font-size: 12px;
+  color: #333333;
 }
 .accTitle {
-  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   color: #232323;
 }
-/* .acc-title {
-  width: 334px;
-}
-.acc-title .para {
-  width: 80%;
-}
-.acc-title .icons {
-  width: 20%;
-} */
 </style>

@@ -19,45 +19,38 @@
   </div>
   <section style="margin-bottom: 200px">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="rating-text">Ratings & Reviews (220)</h2>
-          <!-- <StarRating /> -->
-          <!-- <v-rating
-            empty-icon="$mdiStarOutline"
-            full-icon="$mdiStar"
-            half-icon="$mdiStarHalfFull"
-            half-increments
-            length="5"
-            size="64"
-            value="3"
-          ></v-rating> -->
-          <div class="review-btn">
-            <a href="#">Write a review</a>
-          </div>
-          <div style="margin-top: 32px">
-            <ReviewList
-              personName="Sandra"
-              personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      <div class="scroll-container">
+        <div class="row">
+          <div class="col">
+            <h2 class="rating-text">Ratings & Reviews (220)</h2>
+            <div class="review-rating"><StarRating /></div>
+            <div class="review-msg">
+              <input v-model="message" placeholder="Write a review" />
+            </div>
+            <div style="margin-top: 32px">
+              <ReviewList
+                personName="Sandra"
+                personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet."
-            />
-          </div>
-          <div style="margin-top: 32px">
-            <ReviewList
-              personName="Reah"
-              personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              />
+            </div>
+            <div style="margin-top: 32px">
+              <ReviewList
+                personName="Reah"
+                personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet."
-            />
-          </div>
-          <div style="margin-top: 32px">
-            <ReviewList
-              personName="Lucie"
-              personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              />
+            </div>
+            <div style="margin-top: 32px">
+              <ReviewList
+                personName="Lucie"
+                personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet."
-            />
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -119,5 +112,26 @@ export default {
   font-weight: 400;
   line-height: normal;
   display: inline-block;
+}
+.review-msg {
+  text-align: center;
+}
+.review-msg input {
+  width: 275px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+/* .rating > label::before {
+  font-size: 1.25em !important;
+} */
+
+.rating > label::before {
+  font-size: 1.25em !important;
+}
+.rating {
+  padding-left: 105px !important;
 }
 </style>

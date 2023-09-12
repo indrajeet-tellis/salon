@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,11 +10,19 @@ import Accordian from "../components/Accordian.vue";
 import { useRoute } from "vue-router";
 import Heading from "../components/heading.vue";
 import BottomNav from "../components/bottom-nav.vue";
+import "../style/main.css";
+import BannerButton from "../components/Banner-button.vue";
+import SoftwareItem from "../components/SoftwareItem.vue";
+import AdvantageCard from "../components/AdvantageCard.vue";
+import OnlineReviewCard from "../components/OnlineReviewCard.vue";
+import AppointmentBox from "../components/AppointmentBox.vue";
+import PackageItem from "../components/PackageItem.vue";
 export default {
   data() {
     return {
       currentGone: "send",
       currentFeature: "send",
+      CurrentSoftware: "send",
     };
   },
   methods: {
@@ -26,6 +34,10 @@ export default {
       this.currentGone = params;
       navigateTo("/feature");
     },
+    handleCurrentSoftware(params) {
+      this.currentSoftware = params;
+      navigateTo("/service");
+    },
   },
   components: {
     Swiper,
@@ -33,6 +45,12 @@ export default {
     Accordian,
     Heading,
     BottomNav,
+    BannerButton,
+    SoftwareItem,
+    AdvantageCard,
+    OnlineReviewCard,
+    AppointmentBox,
+    PackageItem,
   },
 
   setup() {
@@ -52,7 +70,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination, Autoplay],
+      modules: [Pagination],
     };
   },
 };
@@ -68,32 +86,12 @@ export default {
         <div class="col">
           <div class="main mt-4">
             <div class="head d-flex justify-content-between align-items-center">
-              <h1
-                class="b-heading"
-                style="
-                  font-size: 22px;
-                  font-weight: 700;
-                  font-family: 'Roboto', sans-serif;
-                  color: #2c3b91;
-                "
-              >
-                Hello Marcel,
-              </h1>
+              <h1 class="b-heading">Hello Marcel,</h1>
               <div class="icon">
                 <i class="fa-regular fa-bell"></i>
               </div>
             </div>
-            <p
-              class="b-para"
-              style="
-                font-size: 14px;
-                font-weight: 400;
-                font-family: 'Roboto', sans-serif;
-                color: #333333;
-              "
-            >
-              Welcome to Salonnz, your salon digital partner
-            </p>
+            <p class="b-para">Welcome to Salonnz, your salon digital partner</p>
           </div>
         </div>
       </div>
@@ -115,351 +113,53 @@ export default {
           >
             <swiper-slide>
               <div
-                class="banItem banItem2 position-relative overflow-hidden"
-                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+                class="banItem"
+                :style="{ backgroundImage: 'url(/assets/bnr-bg.png)' }"
               >
-                <div class="subBan-main subBan-main2" style="">
-                  <div
-                    class="shape"
-                    style="
-                      width: 77px;
-                      height: 56px;
-                      background: red;
-                      position: absolute;
-                      right: -9%;
-                      top: -11%;
-                      rotate: 403deg;
-                      text-align: center;
-                      display: flex;
-                    "
-                  >
-                    <p
-                      class="b-offer align-items-end"
-                      style="
-                        font-family: Roboto, sans-serif;
-                        font-size: 8px;
-                        font-weight: 400;
-                        color: #fff;
-                        position: absolute;
-                        bottom: -15px;
-                        left: 16%;
-                        width: 44px;
-                        line-height: 9px;
-                      "
-                    >
-                      Limited Offer
-                    </p>
-                  </div>
-                  <h3
-                    class="mb-0 mt-3"
-                    style="
-                      font-family: 'Roboto', sans-serif;
-                      font-size: 18px;
-                      font-weight: 700;
-                      color: #002478;
-
-                      width: 206px;
-                      text-align: center;
-                      margin: 0 auto;
-                    "
-                  >
-                    Introductory Offer
-                  </h3>
-                  <p
-                    class="b-subPara2 mt-4"
-                    style="
-                      font-family: 'Roboto', sans-serif;
-                      font-size: 10px;
-                      font-weight: 400;
-                      color: #fff;
-
-                      width: 261px;
-                      text-align: center;
-                      margin: 0 auto;
-                    "
-                  >
-                    For a limited time we are offering free trial for 120 days
-                    for first
-                    <span
-                      style="
-                        color: #2c34c8;
-                        text-decoration: underline;
-                        font-weight: 700;
-                      "
-                      >25</span
-                    >salons with
-                    <span
-                      style="
-                        color: #2c34c8;
-                        text-decoration: underline;
-                        font-weight: 700;
-                      "
-                      >$0 </span
-                    >set-up fees
-                  </p>
-                  <div
-                    class="subBan-btn subBan-btn2 mt-4"
-                    style="
-                      width: 110px;
-                      padding-bottom: 8px;
-                      background: #ed0046;
-
-                      border-radius: 50px;
-                      margin: 0 auto;
-                    "
-                  >
-                    <a
-                      style="
-                        color: #fff !important;
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 10px;
-                        font-weight: 500;
-                        padding: 20px;
-                      "
-                      href="#"
-                    >
-                      Request Demo
-                    </a>
-                  </div>
+                <div class="banner-btn">
+                  <BannerButton
+                    name="Request Demo"
+                    style="margin: 106px auto 0 auto"
+                  />
                 </div>
               </div>
             </swiper-slide>
-
             <swiper-slide>
               <div
                 class="banItem"
-                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+                :style="{ backgroundImage: 'url(/assets/bnr-bg-one.png)' }"
               >
-                <div
-                  class="subBan-main d-flex position-relative"
-                  style="padding-left: 13px; padding-bottom: 20px; text"
-                >
-                  <div class="left w-75">
-                    <h3
-                      class="mb-0"
-                      style="
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        font-weight: 700;
-                        color: #fff;
-                        margin-top: 24px;
-                        width: 206px;
-                      "
-                    >
-                      Boost & increase your salon revenue with your own branded
-                      Salon App
-                    </h3>
-                    <div
-                      class="subBan-btn"
-                      style="
-                        width: 110px;
-                        padding-bottom: 8px;
-                        background: #ed0046;
-                        margin-top: 55px;
-                        border-radius: 50px;
-                      "
-                    >
-                      <a
-                        style="
-                          color: #fff !important;
-                          font-family: 'Roboto', sans-serif;
-                          font-size: 10px;
-                          font-weight: 500;
-                          padding: 20px;
-                        "
-                        href="#"
-                      >
-                        Request Demo
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="right w-25 position-absolute"
-                    style="left: 54%; bottom: 7%"
-                  >
-                    <img src="/assets/bItem.png" />
-                  </div>
+                <div class="banner-btn-one">
+                  <BannerButton
+                    name="Request Demo"
+                    style="margin-top: 112px; margin-left: 20px"
+                  />
                 </div>
               </div>
             </swiper-slide>
-
             <swiper-slide>
               <div
                 class="banItem"
-                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+                :style="{ backgroundImage: 'url(/assets/bnr-bg-two.png)' }"
               >
-                <div
-                  class="subBan-main d-flex position-relative"
-                  style="
-                    padding-left: 13px;
-                    padding-bottom: 20px;
-                    padding-top: 15px;
-                  "
-                >
-                  <div class="left w-75">
-                    <h3
-                      class="mb-0"
-                      style="
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        font-weight: 700;
-                        color: #fff;
-
-                        width: 206px;
-                      "
-                    >
-                      Elevate Your Online Presence with Stunning and Functional
-                      Designs
-                    </h3>
-                    <div
-                      class="subBan-btn"
-                      style="
-                        width: 110px;
-                        padding-bottom: 8px;
-                        background: #ed0046;
-                        margin-top: 55px;
-                        border-radius: 50px;
-                      "
-                    >
-                      <a
-                        style="
-                          color: #fff !important;
-                          font-family: 'Roboto', sans-serif;
-                          font-size: 10px;
-                          font-weight: 500;
-                          padding: 20px;
-                        "
-                        href="#"
-                      >
-                        Request Demo
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="right right2 w-25 position-absolute"
-                    style="left: 69%; bottom: 7%"
-                  >
-                    <img src="/assets/subBan-two.png" />
-                  </div>
+                <div class="banner-btn">
+                  <BannerButton
+                    name="Request Demo"
+                    style="margin-top: 112px; margin-left: 20px"
+                  />
                 </div>
               </div>
             </swiper-slide>
-
             <swiper-slide>
               <div
                 class="banItem"
-                :style="{ backgroundImage: 'url(/assets/sub-ban.png)' }"
+                :style="{ backgroundImage: 'url(/assets/bnr-bg-three.png)' }"
               >
-                <h2
-                  class="b-subHead3 text-center mb-0"
-                  style="
-                    font-size: 14px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                    color: #fff;
-                  "
-                >
-                  Digital Salon Kickstarter Package
-                </h2>
-                <div class="subBan-main subBan-main3 d-flex" style="">
-                  <div
-                    class="left left2"
-                    style="width: 60%; padding-left: 32px; position: relative"
-                  >
-                    <ul
-                      class="mb-0 ps-0"
-                      style="
-                        font-family: 'DM Sans', sans-serif;
-                        font-size: 8px;
-                        font-weight: 400;
-                        color: #fff;
-                        padding-bottom: 18px;
-                        font-size: 7px;
-                        font-weight: 400;
-                        font-family: 'DM Sans', sans-serif;
-                      "
-                    >
-                      <div
-                        class="b-tikImg"
-                        style="position: absolute; left: 7%; top: 10%"
-                      >
-                        <img src="/assets/Ftik.png" />
-                      </div>
-                      <li class="mt-3" style="width: 163px">
-                        Branded salon app with your own logo
-                      </li>
-                      <div
-                        class="b-tikImg2"
-                        style="position: absolute; left: 7%; top: 29%"
-                      >
-                        <img src="/assets/Ftik.png" />
-                      </div>
-                      <li class="mt-3" style="width: 163px">
-                        New awesome looking website or upgrade your existing
-                        website
-                      </li>
-                      <div
-                        class="b-tikImg3"
-                        style="position: absolute; left: 7%; top: 48%"
-                      >
-                        <img src="/assets/Ftik.png" />
-                      </div>
-                      <li class="mt-2" style="width: 163px">
-                        Online booking option on the website
-                      </li>
-                      <div
-                        class="b-tikImg4"
-                        style="position: absolute; left: 7%; top: 61%"
-                      >
-                        <img src="/assets/Ftik.png" />
-                      </div>
-                      <li class="mt-2" style="width: 163px">
-                        App promotion in social media with images/video content
-                      </li>
-                      <div
-                        class="b-tikImg5"
-                        style="position: absolute; left: 7%; top: 80%"
-                      >
-                        <img src="/assets/Ftik.png" />
-                      </div>
-                      <li class="mt-2" style="width: 163px">
-                        Review and Reputation management
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="right right2"
-                    style="width: 40%; margin-top: 10px"
-                  >
-                    <img
-                      class=""
-                      style="left: 54%; bottom: 7%"
-                      src="/assets/subBan-three.png"
-                    />
-                    <div
-                      class="subBan-btn subBan-btn3"
-                      style="
-                        width: 110px;
-                        padding-bottom: 8px;
-                        background: #ed0046;
-                        margin-top: 17px;
-                        border-radius: 50px;
-                      "
-                    >
-                      <a
-                        style="
-                          color: #fff !important;
-                          font-family: 'Roboto', sans-serif;
-                          font-size: 10px;
-                          font-weight: 500;
-                          padding: 20px;
-                        "
-                        href="#"
-                      >
-                        Request Demo
-                      </a>
-                    </div>
-                  </div>
+                <div class="banner-btn">
+                  <BannerButton
+                    name="Request Demo"
+                    style="margin-top: 117px; margin-left: 207px"
+                  />
                 </div>
               </div>
             </swiper-slide>
@@ -475,134 +175,20 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <div
-            class="main d-flex align-items-center justify-content-between mt-4"
-          >
+          <div class="main d-flex align-items-center justify-content-between">
             <heading name="What we can do for your salon?" />
-            <Button />
+            <Button @click="handleCurrentSoftware" />
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="botom-scroll-container d-flex gap-4"
-      style="overflow-x: scroll; margin-top: 30px"
-    >
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-one.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          Salon Software
-        </p>
-      </div>
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-two.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          Digital marketing
-        </p>
-      </div>
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-three.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          Logo & Graphics
-        </p>
-      </div>
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-four.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          Custom Salon Apps
-        </p>
-      </div>
-
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-five.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          Website design
-        </p>
-      </div>
-      <div class="item text-center">
-        <div class="round">
-          <img src="/assets/sof-six.png" />
-        </div>
-        <p
-          class="para"
-          style="
-            color: #2c3b91;
-            font-size: 10px;
-            font-weight: 500;
-            font-family: 'Roboto', sans-serif;
-            color: #333333;
-            width: 88px;
-            margin-top: 12px;
-          "
-        >
-          SEO
-        </p>
-      </div>
+    <div class="botom-scroll-container">
+      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Salon Software" />
+      <SoftwareItem name="Salon Software" />
     </div>
   </section>
   <!-- software end -->
@@ -612,8 +198,10 @@ export default {
     <div class="container bg-ad">
       <div class="row">
         <div class="col">
-          <div class="main d-flex justify-content-between align-items-center">
-            <heading name="Advantages of having your own salon app" />
+          <div class="main d-flex justify-content-between">
+            <div style="width: 222px">
+              <heading name="Advantages of having your own salon app" />
+            </div>
             <Button @click="handleCurrentGone('update')" />
           </div>
           <div class="pic mt-4">
@@ -621,7 +209,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-1">
         <div class="">
           <swiper
             :slidesPerView="'auto'"
@@ -631,78 +219,55 @@ export default {
             }"
             :modules="modules"
             class="mySwiper"
-            :space-between="20"
+            :space-between="50"
             :autoplay="{
               delay: 3000,
               disableOnInteraction: false,
             }"
           >
-            <swiper-slide
-              ><div class="box mb-4 text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-one.png" alt="ad-one" />
-                <h3 class="sub-header fw-bold mt-3">
-                  Increasing a customer loyalty
-                </h3>
-                <p class="ad-para fw-light">
-                  People like attention, and your customers are no exception.
+            <swiper-slide>
+              <AdvantageCard
+                tittle=" Increasing a customer loyalty"
+                subtittle="People like attention, and your customers are no exception.
                   Continuous interaction with your customers make them feel
-                  special, and their trust in you grows.
-                </p>
-              </div>
-            </swiper-slide>
-
-            <swiper-slide
-              ><div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-two.png" alt="add-two" />
-                <h3 class="sub-header fw-bold mt-3">
-                  Attracting and retaining an audience
-                </h3>
-                <p class="ad-para fw-light">
-                  People like attention, and your customers are no exception.
-                  Continuous interaction with your customers make them feel
-                  special, and their trust in you grows.
-                </p>
-              </div>
+                  special, and their trust in you grows."
+              />
             </swiper-slide>
 
             <swiper-slide>
-              <div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-three.png" alt="ad-one" />
-                <h3 class="sub-header fw-bold mt-3">
-                  Optimization and automation of business
-                </h3>
-                <p class="ad-para fw-light">
-                  People like attention, and your customers are no exception.
+              <AdvantageCard
+                tittle=" Attracting and retaining an audience"
+                subtittle="  People like attention, and your customers are no exception.
                   Continuous interaction with your customers make them feel
-                  special, and their trust in you grows.
-                </p>
-              </div>
+                  special, and their trust in you grows."
+              />
             </swiper-slide>
 
             <swiper-slide>
-              <div class="box text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-four.png" alt="ad-one" />
-                <h3 class="sub-header fw-bold mt-3">
-                  You get a powerful communication channel with your customer
-                </h3>
-                <p class="ad-para fw-light">
-                  People like attention, and your customers are no exception.
+              <AdvantageCard
+                tittle="  Optimization and automation of business"
+                subtittle=" People like attention, and your customers are no exception.
                   Continuous interaction with your customers make them feel
-                  special, and their trust in you grows.
-                </p>
-              </div>
+                  special, and their trust in you grows."
+              />
             </swiper-slide>
 
             <swiper-slide>
-              <div class="box mb-5 text-center mt-3 px-2 py-3">
-                <img src="/assets/ad-five.png" alt="ad-one" />
-                <h3 class="sub-header fw-bold mt-3">Brand Awareness</h3>
-                <p class="ad-para fw-light">
-                  People like attention, and your customers are no exception.
+              <AdvantageCard
+                tittle="You get a powerful communication channel with your customer"
+                subtittle=" People like attention, and your customers are no exception.
                   Continuous interaction with your customers make them feel
-                  special, and their trust in you grows.
-                </p>
-              </div>
+                  special, and their trust in you grows."
+              />
+            </swiper-slide>
+
+            <swiper-slide>
+              <AdvantageCard
+                tittle="Brand Awareness"
+                subtittle=" People like attention, and your customers are no exception.
+                  Continuous interaction with your customers make them feel
+                  special, and their trust in you grows."
+              />
             </swiper-slide>
           </swiper>
         </div>
@@ -726,61 +291,21 @@ export default {
           />
           <div class="text-center">
             <img src="/assets/mar-one.png" />
-            <p
-              class="marketing-para mt-2 mb-0"
-              style="
-                color: #ed2d66;
-                font-size: 10px;
-                font-weight: 700;
-                font-family: 'Roboto', sans-serif;
-              "
-            >
-              Push Notifications
-            </p>
+            <p class="marketing-para mt-2 mb-0">Push Notifications</p>
           </div>
           <div class="mar-main mt-3 d-flex">
             <div class="ma-one" style="width: 30%; margin-top: -13px">
               <div>
                 <img src="/assets/mar-three.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Refferal Program
-                </p>
+                <p class="marketing-para mb-0 mt-2">Refferal Program</p>
               </div>
               <div style="margin-top: 33px">
                 <img src="/assets/mar-two.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Packages
-                </p>
+                <p class="marketing-para mb-0 mt-2">Packages</p>
               </div>
               <div style="margin-top: 33px">
                 <img src="/assets/mar-four.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Membership
-                </p>
+                <p class="marketing-para mb-0 mt-2">Membership</p>
               </div>
             </div>
             <div class="ma-two" style="width: 40%; text-align: center">
@@ -792,45 +317,15 @@ export default {
             >
               <div>
                 <img src="/assets/mar-five.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Reward Points
-                </p>
+                <p class="marketing-para mb-0 mt-2">Reward Points</p>
               </div>
               <div style="margin-top: 33px">
                 <img src="/assets/mar-six.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Review
-                </p>
+                <p class="marketing-para mb-0 mt-2">Review</p>
               </div>
               <div style="margin-top: 33px">
                 <img src="/assets/mar-seven.png" />
-                <p
-                  class="marketing-para mb-0 mt-2"
-                  style="
-                    color: #ed2d66;
-                    font-size: 10px;
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Gift Card
-                </p>
+                <p class="marketing-para mb-0 mt-2">Gift Card</p>
               </div>
             </div>
           </div>
@@ -850,8 +345,8 @@ export default {
             class="text-center my-4"
             name="  Features For Your Salon Website"
           />
-          <div class="d-flex">
-            <div class="left d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="left d-flex">
               <ul class="mt-1 mb-0">
                 <li class="fw-normal">
                   <img class="tik" src="/assets/Ftik.png" alt="Ftik.png" />Cool
@@ -892,28 +387,18 @@ export default {
     class="online mt-4 pt-4"
     :style="{ backgroundImage: 'url(/assets/online.png)' }"
   >
-    <div class="container">
+    <div class="">
       <div class="row">
         <div class="on-main text-center">
           <heading name=" Online Review Management for Social Ratings" />
-          <p
-            class=""
-            style="
-              color: #333333;
-              font-size: 10px;
-              font-weight: 400;
-              font-family: 'Roboto', sans-serif;
-              width: 213px;
-              margin: 0 auto;
-            "
-          >
+          <p class="online-subText">
             Increase your new client rate with our automatic ratings and reviews
           </p>
         </div>
         <div class="text-center mt-3">
           <img src="/assets/on-img.png" alt="" />
         </div>
-        <div class="main mt-4">
+        <div class="main mt-4" style="padding-left: 25px">
           <swiper
             :slidesPerView="'auto'"
             :pagination="{
@@ -924,163 +409,44 @@ export default {
             :space-between="30"
           >
             <swiper-slide>
-              <div class="box">
-                <img src="/assets/on-one.png" />
-                <h3
-                  class="on-header mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top: 15px;
-                  "
-                >
-                  Increase Visibility
-                </h3>
-                <p
-                  class="on-para mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 10px;
-                    font-weight: 400;
-                    font-family: 'Roboto', sans-serif;
-                    width: 172px;
-                    margin-top: 18px;
-                  "
-                >
-                  Ratings and reviews increase your salon’s online visibility
+              <OnlineReviewCard
+                heading="Increase Visibility"
+                subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
-                  clients than ever before.
-                </p>
-              </div>
+                  clients than ever before."
+              />
             </swiper-slide>
             <swiper-slide>
-              <div class="box">
-                <img src="/assets/on-two.png" />
-                <h3
-                  class="on-header mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top: 15px;
-                  "
-                >
-                  Send review request automatically
-                </h3>
-                <p
-                  class="on-para mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 10px;
-                    font-weight: 400;
-                    font-family: 'Roboto', sans-serif;
-                    width: 172px;
-                    margin-top: 18px;
-                  "
-                >
-                  Our automatic review request message clients at key points in
-                  their client journey, ensuring a steady stream of reviews that
-                  provide valuable insight into your salon’s performance.
-                </p>
-              </div>
+              <OnlineReviewCard
+                heading="Increase Visibility"
+                subheading="Ratings and reviews increase your salon’s online visibility
+                  and reputation, ensuring you rank more highly & attract more
+                  clients than ever before."
+              />
             </swiper-slide>
             <swiper-slide>
-              <div class="box">
-                <img src="/assets/on-three.png" />
-                <h3
-                  class="on-header mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top: 15px;
-                  "
-                >
-                  Boost team morale
-                </h3>
-                <p
-                  class="on-para mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 10px;
-                    font-weight: 400;
-                    font-family: 'Roboto', sans-serif;
-                    width: 172px;
-                    margin-top: 18px;
-                  "
-                >
-                  Positive review and ratings boost staff morale and motivation.
-                  They provide recognition for their hard work and dedication.
-                </p>
-              </div>
+              <OnlineReviewCard
+                heading="Increase Visibility"
+                subheading="Ratings and reviews increase your salon’s online visibility
+                  and reputation, ensuring you rank more highly & attract more
+                  clients than ever before."
+              />
             </swiper-slide>
             <swiper-slide>
-              <div class="box">
-                <img src="/assets/on-four.png" />
-                <h3
-                  class="on-header mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top: 15px;
-                  "
-                >
-                  More accountability
-                </h3>
-                <p
-                  class="on-para mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 10px;
-                    font-weight: 400;
-                    font-family: 'Roboto', sans-serif;
-                    width: 172px;
-                    margin-top: 18px;
-                  "
-                >
-                  Reviews and ratings provide a means for clients to hold the
-                  salon and its team accountable for their performance, which
-                  improves service quality.
-                </p>
-              </div>
+              <OnlineReviewCard
+                heading="Increase Visibility"
+                subheading="Ratings and reviews increase your salon’s online visibility
+                  and reputation, ensuring you rank more highly & attract more
+                  clients than ever before."
+              />
             </swiper-slide>
             <swiper-slide>
-              <div class="box">
-                <img src="/assets/on-five.png" />
-                <h3
-                  class="on-header mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top: 15px;
-                  "
-                >
-                  Cost effective
-                </h3>
-                <p
-                  class="on-para mb-0"
-                  style="
-                    color: #201f1f;
-                    font-size: 10px;
-                    font-weight: 400;
-                    font-family: 'Roboto', sans-serif;
-                    width: 172px;
-                    margin-top: 18px;
-                  "
-                >
-                  Reviews and ratings are a cost effective way for you to gather
-                  feedback and improve your performance, as they do not require
-                  significant investments in time or money.
-                </p>
-              </div>
+              <OnlineReviewCard
+                heading="Increase Visibility"
+                subheading="Ratings and reviews increase your salon’s online visibility
+                  and reputation, ensuring you rank more highly & attract more
+                  clients than ever before."
+              />
             </swiper-slide>
           </swiper>
         </div>
@@ -1104,216 +470,50 @@ export default {
               <Button @click="handleCurrentFeature('update')" />
             </div>
           </div>
-          <div class="text-center position-relative" style="margin-top: 100px">
-            <div
-              class="round position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 5%;
-                left: 16%;
-              "
-            >
-              <img src="/assets/appo-eight.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Discount
-              </p>
-            </div>
-            <div
-              class="round round2 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 40%;
-                left: 10%;
-              "
-            >
-              <img src="/assets/appo-seven.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Payroll
-              </p>
-            </div>
-            <div
-              class="round round3 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 78%;
-                left: 11%;
-              "
-            >
-              <img src="/assets/appo-six.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Staff
-              </p>
-            </div>
-            <div
-              class="round round4 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 105%;
-                left: 25%;
-              "
-            >
-              <img src="/assets/appo-five.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                coupones
-              </p>
-            </div>
-            <div
-              class="round round5 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 110%;
-                left: 45%;
-              "
-            >
-              <img src="/assets/appo-four.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Appointment
-              </p>
-            </div>
-            <div
-              class="round round6 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 90%;
-                left: 63%;
-              "
-            >
-              <img src="/assets/appo-three.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Sales
-              </p>
-            </div>
-            <div
-              class="round round7 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 55%;
-                left: 72%;
-              "
-            >
-              <img src="/assets/appo-two.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Calender
-              </p>
-            </div>
-            <div
-              class="round round8 position-absolute"
-              style="
-                width: 60px;
-                height: 60px;
-                background: #2c3b91;
-                border-radius: 50%;
-                padding: 5px;
-                bottom: 18%;
-                left: 74%;
-              "
-            >
-              <img src="/assets/appo-one.png" style="size: 10%" />
-              <p
-                class="round-para mb-0"
-                style="
-                  font-size: 8px;
-                  font-weight: 400;
-                  font-family: 'Roboto', sans-serif;
-                  color: #fff;
-                  margin-top: 2px;
-                "
-              >
-                Dashboard
-              </p>
-            </div>
+          <div class="text-center position-relative" style="margin-top: 120px">
             <img class="app-img" src="/assets/appo-mainImg.png" alt="app-img" />
+            <div>
+              <AppointmentBox
+                text="Discount"
+                class="one"
+                style="position: absolute; bottom: 18px; left: 33px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="two"
+                style="position: absolute; bottom: 99px; left: 13px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="three"
+                style="position: absolute; bottom: 184px; left: 17px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="four"
+                style="position: absolute; bottom: 244px; left: 84px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="five"
+                style="position: absolute; bottom: 252px; left: 174px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="six"
+                style="position: absolute; bottom: 199px; left: 244px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="seven"
+                style="position: absolute; bottom: 118px; left: 266px"
+              />
+              <AppointmentBox
+                text="Discount"
+                class="eight"
+                style="position: absolute; bottom: 37px; left: 264px"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -1331,118 +531,50 @@ export default {
         <div class="col">
           <div class="header">
             <heading name="Digital salon Kickstarter package" />
-
-            <p
-              class="para"
-              style="
-                color: #2c3b91;
-                font-size: 10px;
-                font-weight: 400;
-                font-family: 'Roboto', sans-serif;
-                width: 333px;
-                margin: 0 auto;
-              "
-            >
+            <p class="package-subheading">
               All-in-one package for your for your meeting all your salon
               digitalization
             </p>
           </div>
           <div class="main mt-3">
-            <div class="item">
+            <div style="position: relative">
+              <PackageItem
+                class="one"
+                tittle=" Branded salon app with your own logo"
+              />
               <div class="line"></div>
-              <div class="d-flex align-items-center">
-                <div class="left">
-                  <img src="/assets/pack-one.png" alt="digi-one" />
-                </div>
-                <div class="right">
-                  <h3
-                    class="sub-header mb-0"
-                    style="
-                      color: #333333;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
-                    Branded salon app with your own logo
-                  </h3>
-                </div>
-              </div>
             </div>
-            <div class="item mt-5 d-flex align-items-center">
+            <div style="position: relative">
+              <PackageItem
+                class="two"
+                style="margin-top: 40px"
+                tittle=" Branded salon app with your own logo"
+              />
               <div class="line"></div>
-              <div class="left">
-                <img src="/assets/pack-two.png" alt="digi-one" />
-              </div>
-              <div class="right">
-                <h3
-                  class="sub-header mb-0"
-                  style="
-                    color: #333333;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  New awesome looking website or upgrade your existing website
-                </h3>
-              </div>
             </div>
-            <div class="item mt-5 d-flex align-items-center">
+            <div style="position: relative">
+              <PackageItem
+                class="two"
+                style="margin-top: 40px"
+                tittle=" Branded salon app with your own logo"
+              />
+              <!-- src="url(assets/pack-two.png)" -->
               <div class="line"></div>
-              <div class="left">
-                <img src="/assets/pack-three.png" alt="digi-one" />
-              </div>
-              <div class="right">
-                <h3
-                  class="sub-header mb-0"
-                  style="
-                    color: #333333;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Online booking option on the website
-                </h3>
-              </div>
             </div>
-            <div class="item mt-5 d-flex align-items-center">
+            <div style="position: relative">
+              <PackageItem
+                class="two"
+                style="margin-top: 40px"
+                tittle=" Branded salon app with your own logo"
+              />
               <div class="line"></div>
-              <div class="left">
-                <img src="/assets/pack-four.png" alt="digi-one" />
-              </div>
-              <div class="right">
-                <h3
-                  class="sub-header mb-0"
-                  style="
-                    color: #333333;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  App promotion in social media with images/video content
-                </h3>
-              </div>
             </div>
-            <div class="item mt-5 d-flex align-items-center">
-              <div class="left">
-                <img src="/assets/pack-five.png" alt="digi-one" />
-              </div>
-              <div class="right">
-                <h3
-                  class="sub-header mb-0"
-                  style="
-                    color: #333333;
-                    font-size: 12px;
-                    font-weight: 500;
-                    font-family: 'Roboto', sans-serif;
-                  "
-                >
-                  Review and Reputation management
-                </h3>
-              </div>
+            <div style="position: relative">
+              <PackageItem
+                class="two"
+                style="margin-top: 40px"
+                tittle=" Branded salon app with your own logo"
+              />
             </div>
           </div>
         </div>
@@ -1457,7 +589,6 @@ export default {
       <div class="row">
         <div class="col">
           <heading class="text-center" name="How it works" />
-
           <div class="main mt-4">
             <div class="item d-flex align-items-center mt-2">
               <div class="round">1</div>
@@ -1466,27 +597,8 @@ export default {
               </div>
               <div class="right">
                 <div class="heads">
-                  <h3
-                    class="w-subHeading mb-0"
-                    style="
-                      color: #ed0046;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
-                    Request Demo
-                  </h3>
-                  <p
-                    class="w-subPara mb-0"
-                    style="
-                      font-size: 10px;
-                      font-weight: 400;
-                      font-family: 'Roboto', sans-serif;
-                      color: #000000;
-                      margin-top: 9px;
-                    "
-                  >
+                  <h3 class="subHeading mb-0">Request Demo</h3>
+                  <p class="subtext mb-0">
                     Submit and request a demo online on our website.
                   </p>
                 </div>
@@ -1496,27 +608,8 @@ export default {
               <div class="round">2</div>
               <div class="left text-end">
                 <div class="headsT">
-                  <h3
-                    class="w-subHeading mb-0"
-                    style="
-                      color: #ed0046;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
-                    We will contact you
-                  </h3>
-                  <p
-                    class="w-subPara mb-0"
-                    style="
-                      font-size: 10px;
-                      font-weight: 400;
-                      font-family: 'Roboto', sans-serif;
-                      color: #000000;
-                      margin-top: 9px;
-                    "
-                  >
+                  <h3 class="subHeading mb-0">We will contact you</h3>
+                  <p class="subtext mb-0">
                     We will contact you on the date and time you requested and
                     show you same demo design and template
                   </p>
@@ -1533,27 +626,10 @@ export default {
               </div>
               <div class="right">
                 <div class="heads">
-                  <h3
-                    class="w-subHeading mb-0"
-                    style="
-                      color: #ed0046;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
+                  <h3 class="subHeading mb-0">
                     Features and functionality Consultation
                   </h3>
-                  <p
-                    class="w-subPara mb-0"
-                    style="
-                      font-size: 10px;
-                      font-weight: 400;
-                      font-family: 'Roboto', sans-serif;
-                      color: #000000;
-                      margin-top: 9px;
-                    "
-                  >
+                  <p class="subtext mb-0">
                     Once you check our demo design and solutions,you can request
                     design changes and modify and customize features and
                     functionallity according to your requirement.
@@ -1565,27 +641,8 @@ export default {
               <div class="round">4</div>
               <div class="left text-end">
                 <div class="headsT">
-                  <h3
-                    class="w-subHeading mb-0"
-                    style="
-                      color: #ed0046;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
-                    Review the App and Website
-                  </h3>
-                  <p
-                    class="w-subPara mb-0"
-                    style="
-                      font-size: 10px;
-                      font-weight: 400;
-                      font-family: 'Roboto', sans-serif;
-                      color: #000000;
-                      margin-top: 9px;
-                    "
-                  >
+                  <h3 class="subHeading mb-0">Review the App and Website</h3>
+                  <p class="subtext mb-0">
                     Once we review all the content and images for your website
                     and the app for you to review before publishing it live.
                   </p>
@@ -1602,27 +659,10 @@ export default {
               </div>
               <div class="right">
                 <div class="heads">
-                  <h3
-                    class="w-subHeading mb-0"
-                    style="
-                      color: #ed0046;
-                      font-size: 12px;
-                      font-weight: 500;
-                      font-family: 'Roboto', sans-serif;
-                    "
-                  >
+                  <h3 class="subHeading mb-0">
                     Publish the app and website live.
                   </h3>
-                  <p
-                    class="w-subPara mb-0"
-                    style="
-                      font-size: 10px;
-                      font-weight: 400;
-                      font-family: 'Roboto', sans-serif;
-                      color: #000000;
-                      margin-top: 9px;
-                    "
-                  >
+                  <p class="subtext mb-0">
                     Once you finalize your website and app the webiste will be
                     published the same day. But your salon app will take 3-10
                     days by Apple and google store
@@ -1640,7 +680,7 @@ export default {
   <!-- FAQ’s start -->
   <section
     class="question mt-5"
-    :style="{ backgroundImage: 'url(/assets/que-bg.png)' }"
+    :style="{ backgroundImage: 'url(/assets/block.png)' }"
   >
     <div class="container que-bg">
       <div class="row">
@@ -1657,34 +697,6 @@ export default {
   </section>
   <!-- FAQ’s end -->
 </template>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-.swiper-pagination-bullet {
-  opacity: 1 !important;
-  background: #fff !important;
-  width: 7px !important;
-  height: 7px !important ;
-  border-radius: 50% !important;
-  border: 1px solid #ed0046 !important;
-}
-.swiper-pagination-bullet-active {
-  background: #ed0046 !important;
-  width: 13px !important;
-  border-radius: 100px !important;
-}
-</style>
 
 <style scoped>
 /* marketing start */
@@ -1693,23 +705,36 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.marketing-para {
+  color: #ed2d66;
+  font-size: 12px;
+  font-weight: 700;
+}
 /* marketing end */
+
+/* banner start */
+.b-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3b91;
+}
 .banner .ban-main {
   position: absolute;
-  bottom: -23%;
+  bottom: -32%;
   left: 0%;
-  margin-top: 10px;
 }
 .banner .banItem {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  margin-bottom: 38px;
   padding-top: 7px;
-  height: 200px;
+  width: 335px;
+  height: 160px;
   border-radius: 20px;
+  margin: 0 auto 38px auto;
 }
+
 .banner .ba-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1727,45 +752,24 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 160px;
+  padding-bottom: 145px;
 }
-
+.b-para {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 0 !important;
+}
 /* banner end */
 
 /* software start*/
 .software {
   margin-top: 42px;
 }
+.software .main {
+  margin-top: 40px;
+}
 
-.software .main .button {
-  margin-top: 9px;
-}
-.software .item .round {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  margin: 0 auto;
-}
-.software .item .round img {
-  padding: 10px;
-}
-.software .item .round {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-  margin: 0 auto;
-}
-.software .item .round img {
-  padding: 10px;
-}
 /* software end */
 
 /* online start */
@@ -1773,7 +777,7 @@ a {
 .online .swiper-slide {
   width: 60% !important;
 }
-.online .box {
+/* .online .box {
   border-radius: 15px;
   padding: 15px 10px;
   margin-bottom: 38px;
@@ -1782,11 +786,18 @@ a {
   -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
   -moz-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
-}
+} */
 .online {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.online-subText {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  width: 255px;
+  margin: 0 auto;
 }
 
 /* online end */
@@ -1816,24 +827,7 @@ a {
 .advantage .pic img {
   width: 100%;
 }
-.advantage .box {
-  border: 1px solid #e4e3e3;
-  border-radius: 23px;
-  height: 234px;
-}
-.advantage .box .sub-header {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  color: #ed0046;
-  margin: 0 auto;
-}
-.advantage .box .ad-para {
-  font-family: "Roboto", sans-serif;
-  font-size: 8px;
-  color: #232323;
-  width: 162px;
-  margin: 6px auto;
-}
+
 .advantage .marketing-part .mar-main {
   display: flex;
   position: relative;
@@ -1871,15 +865,16 @@ a {
   color: #1c2d57;
 }
 .features .left {
-  width: 60%;
+  width: 65%;
   box-sizing: border-box;
 }
 .features .left ul li {
-  font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
   color: #232323;
   margin-left: 8px;
   line-height: 23px;
+  width: 195px;
 }
 .features .left .tik {
   margin-left: -33px;
@@ -1889,7 +884,7 @@ a {
   width: 100%;
 }
 .features .right {
-  width: 40%;
+  width: 35%;
 }
 
 /* features end */
@@ -1898,19 +893,10 @@ a {
 .appointment {
   padding-top: 20px;
 }
-.appointment .heading .left {
-  width: 80%;
+.appointment .left {
+  width: 291px !important;
 }
-.appointment .heading .right {
-  width: 20%;
-  margin-top: -4px;
-}
-.appointment .heading .left .header {
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  color: #1c2d57;
-  width: 300px;
-}
+
 .appointment .box {
   background: #fff;
   border-radius: 10px;
@@ -1947,23 +933,20 @@ a {
 .package .header {
   text-align: center;
 }
+.package-subheading {
+  color: #2c3b91;
+  font-size: 12px;
+  font-weight: 400;
+  width: 284px;
+  margin: 0 auto;
+}
 
-.package .main .item {
-  position: relative;
-}
-.package .main .item .line {
+.package .main .line {
   position: absolute;
-  bottom: -23px;
-  left: 0;
-  width: 100%;
-  border: 1px dashed #000000;
-}
-.package .main .item .left {
-  width: 20%;
-  padding-top: 1px;
-}
-.package .main .item .right {
-  width: 80%;
+  bottom: -18px;
+  left: 3px;
+  width: 96%;
+  border: 0.5px dashed #737373;
 }
 
 /* package end */
@@ -2005,11 +988,18 @@ a {
   top: 6%;
   content: "";
 }
-.works .main .w-subHeading {
-  width: 152px;
+.works .main .subHeading {
+  width: 154px;
+  color: #ed0046;
+  font-size: 12px;
+  font-weight: 700;
 }
-.works .main .w-subPara {
-  width: 152px;
+.works .main .subtext {
+  width: 153px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 9px;
 }
 .works .main .left {
   width: 50%;

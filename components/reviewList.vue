@@ -18,6 +18,7 @@
 defineProps({
   personName: String,
   personText: String,
+  url: String,
 });
 </script>
 <style scoped>

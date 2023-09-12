@@ -8,7 +8,7 @@
               class="d-flex align-items-center justify-content-between demo-advantage-header"
             >
               <i class="fa-solid fa-angle-left"></i>
-              <mobile-heading class="text-center py-5" name="Advantages" />
+              <mobile-heading class="text-center py-5" name="Book Demo" />
               <i
                 class="fa-solid fa-xmark"
                 @click="handleCurrentCross('update')"

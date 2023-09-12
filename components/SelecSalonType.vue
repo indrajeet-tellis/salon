@@ -41,13 +41,11 @@
   </div>
 </template>
 <script setup>
-defineProps({
-  name: String,
-});
+import "../style/main.css";
 </script>
 <style scoped>
 .item {
-  width: 45%;
+  width: 60%;
   background: #fff;
   margin: 0 auto;
   padding: 8px 10px;
@@ -58,12 +56,6 @@ defineProps({
   border-radius: 5px;
   transition: 0.4s;
 }
-.item:hover {
-  background: #2c3b91;
-}
-.item:hover h4 {
-  color: #fff;
-}
 
 .type-img img {
   width: 100%;
@@ -73,7 +65,40 @@ defineProps({
   font-weight: 500;
   color: #2c3b91;
   margin-top: 9px;
-  font-family: "DM Sans", sans-serif;
+
   margin-bottom: 0 !important;
+}
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.single-tab {
+  padding: 4px 30px;
+}
+
+.ActiveTab {
+  height: 26px;
+  border-radius: 20px;
+  background: #2c3b91;
+}
+
+.single-tab h5 {
+  color: #2c3b91;
+  text-align: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0 !important;
+}
+
+.ActiveName {
+  color: white !important;
 }
 </style>

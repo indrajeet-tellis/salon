@@ -7,9 +7,10 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.min.css",
     "@fortawesome/fontawesome-free/css/all.css",
     "maz-ui/css/main.css",
+    "primevue/resources/themes/lara-light-blue/theme.css",
   ],
   build: {
-    transpile: ["vuetify", "maz-ui"],
+    transpile: ["vuetify", "maz-ui", "primevue"],
   },
 
   modules: ["@nuxtjs/google-fonts"],

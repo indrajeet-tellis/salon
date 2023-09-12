@@ -8,7 +8,6 @@
 .button a {
   display: inline-block;
   color: #737373;
-  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-decoration: underline !important;

@@ -50,11 +50,6 @@ import ThemeApp from "../../components/ThemeApp.vue";
 import SelecSalonType from "../../components/SelecSalonType.vue";
 import DemoButton from "../../components/demo-button.vue";
 
-// const components = {
-//   MobileHeading,
-//   TabSwitch,
-// };
-
 const currentTab = ref("App");
 const tabNames = ["App", "Website"];
 const handleActiveTab = (params) => {

@@ -33,7 +33,6 @@ const handleTabClick = (params) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); */
   padding: 0 4rem;
   border-radius: 0.2rem;
   margin-bottom: 1.2rem;
@@ -44,8 +43,6 @@ const handleTabClick = (params) => {
 }
 
 .ActiveTab {
-  /* border-bottom: 0.3rem solid #d450bc; */
-  /* width: 88px; */
   height: 26px;
   border-radius: 20px;
   background: #2c3b91;

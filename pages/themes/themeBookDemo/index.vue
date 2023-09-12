@@ -3,6 +3,7 @@
     class="main"
     :style="{ backgroundImage: 'url(/assets/package-img.png)' }"
   >
+    <i class="fa-solid fa-xmark icon" @click="handleCurrentCross"></i>
     <h1 class="theme-app-text">App Builder</h1>
     <h4 class="appBuilder-text">
       With our App Builder feature you can customize theme colour, splash
@@ -28,15 +29,31 @@ export default {
     DemoButton,
     DemoBorderButton,
   },
+  data() {
+    return {
+      CurrentCross: "send",
+    };
+  },
+  methods: {
+    handleCurrentCross(params) {
+      this.currentCross = params;
+      navigateTo("/themes");
+    },
+  },
 };
 </script>
 <style scoped>
+.icon {
+  position: absolute;
+  right: 17px;
+  top: 15px;
+}
 .main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 100px;
-  padding: 100px 0 20px 0;
+  padding: 100px 0 341px 0;
+  position: relative;
 }
 .theme-app-text {
   color: #2c3b91;
@@ -72,6 +89,8 @@ export default {
 }
 
 .both-btn {
-  margin-top: 100px;
+  position: fixed;
+  bottom: 35px;
+  left: 57px;
 }
 </style>

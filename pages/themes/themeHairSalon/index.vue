@@ -14,8 +14,8 @@
       </div>
     </div>
   </div>
-  <div class="main">
-    <DemoButton name="Select" style="margin: 200px auto 0 auto" />
+  <div class="hairslaon-btn">
+    <DemoButton name="Select" @click="handleCurrentAppbilder" />
   </div>
 </template>
 <script>
@@ -30,6 +30,7 @@ export default {
   data() {
     return {
       CurrentCross: "send",
+      CurrentAppbilder: "send",
     };
   },
   methods: {
@@ -37,11 +38,17 @@ export default {
       this.currentCross = params;
       navigateTo("/themes");
     },
+    handleCurrentAppbilder(params) {
+      this.currentAppbilder = params;
+      navigateTo("/themes/themeBookDemo");
+    },
   },
 };
 </script>
 <style scoped>
-.main {
-  margin-bottom: 100px;
+.hairslaon-btn {
+  position: fixed;
+  bottom: 50px;
+  left: 62px;
 }
 </style>

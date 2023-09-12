@@ -16,12 +16,15 @@
   </div>
 </template>
 <script>
-export default {};
+import "../style/main.css";
+defineProps({
+  url: String,
+});
 </script>
 <style scoped>
 .sub-text {
   color: #333;
-  font-family: Roboto;
+
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -30,7 +33,7 @@ export default {};
 }
 .card-text {
   color: #2c3b91;
-  font-family: Roboto;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -41,7 +44,7 @@ export default {};
 .card-icon {
   color: #333;
   text-align: center;
-  font-family: Roboto;
+
   font-size: 10px;
   font-style: normal;
   font-weight: 400;

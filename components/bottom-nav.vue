@@ -36,6 +36,9 @@ const route = useRoute();
 console.log(route.params.id);
 </script>
 <style scoped>
+a {
+  text-decoration: none !important;
+}
 .links {
   position: fixed;
   left: 0;
@@ -55,7 +58,7 @@ console.log(route.params.id);
 .links ul li a {
   color: #737373 !important;
   font-size: 10px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
   flex-direction: column;
   display: flex;

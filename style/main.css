@@ -14,3 +14,48 @@
   height: 40vh;
   overflow-x: hidden;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  /* text-decoration: none; */
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background: #fff !important;
+  width: 7px !important;
+  height: 7px !important ;
+  border-radius: 50% !important;
+  border: 1px solid #ed0046 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ed0046 !important;
+  width: 13px !important;
+  border-radius: 100px !important;
+}
+.botom-scroll-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+  margin-top: 30px;
+}

@@ -304,6 +304,7 @@ import { useRoute } from "vue-router";
 import MobileHeading from "../../components/mobile-heading.vue";
 import "../../style/main.css";
 import BottomNav from "../../components/bottom-nav.vue";
+import "../../style/main.css";
 
 export default {
   components: {
