@@ -460,9 +460,7 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <div
-            class="appointment-heading d-flex justify-content-between align-items-center"
-          >
+          <div class="appointment-heading d-flex justify-content-between">
             <div class="left">
               <heading name="Features of our appointment management solution" />
             </div>
