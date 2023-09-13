@@ -58,7 +58,7 @@ h6 {
   height: 40vh;
   overflow-x: hidden;
 }
-.form-label {
+/* .form-label {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
@@ -91,7 +91,7 @@ h6 {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   padding: 12px;
-}
+} */
 .maz-py-6 {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;

@@ -14,7 +14,7 @@
                 @click="handleCurrentCross('update')"
               ></i>
             </div>
-            <div class="scroll-container demo-scroll-container">
+            <div class="" style="margin-top: 124px">
               <img src="/assets/demoAd-img.png" />
               <h3 class="demoAd-main-heading">
                 Complete Salon Digitalization Consultation
@@ -78,7 +78,7 @@ export default {
 }
 .advantange-btn {
   position: fixed;
-  bottom: 98px;
+  bottom: 15px;
   left: 68px;
 }
 .demo-advantage-header {

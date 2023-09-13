@@ -78,13 +78,13 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 0;
+  padding: 220px 0 236px 0;
   position: relative;
 }
 .ok-btn {
   position: fixed;
-  bottom: 14%;
-  left: 14%;
+  bottom: 3%;
+  left: 16%;
 }
 .demo-text {
   font-size: 40px;

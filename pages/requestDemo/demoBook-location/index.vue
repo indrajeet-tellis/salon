@@ -18,9 +18,9 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 100px">
+  <section>
     <div class="container position-relative">
-      <div class="scroll-container">
+      <div class="scroll-container demoLocation-scroll-container">
         <div class="row">
           <div class="col">
             <div class="mb-3">
@@ -101,7 +101,7 @@
               </h4>
               <div
                 class="form-check form-check-inline"
-                style="margin-right: 6.5rem"
+                style="margin-right: 6.5rem; margin-top: 13px"
               >
                 <input
                   class="form-check-input"
@@ -128,6 +128,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="www.abc.com"
+              style="margin-top: 14px"
             />
             <div class="" style="margin-top: 45px">
               <h4
@@ -142,7 +143,7 @@
               </h4>
               <div
                 class="form-check form-check-inline"
-                style="margin-right: 6.5rem"
+                style="margin-right: 6.5rem; margin-top: 13px"
               >
                 <input
                   class="form-check-input"
@@ -244,16 +245,19 @@ export default {
 </script>
 
 <style scoped>
+.demoLocation-scroll-container {
+  height: 65vh !important;
+}
 .both-btn {
   gap: 20px;
   margin-top: 90px;
   position: fixed;
-  bottom: 95px;
+  bottom: 14px;
   left: 0;
   width: 100%;
   padding: 0 1rem;
 }
-/* .form-label {
+.form-label {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
@@ -267,6 +271,9 @@ export default {
   font-family: "DM Sans", sans-serif;
   border: 1px solid #d9d9d9 !important;
 }
+/* .form-check {
+  margin-top: 13px !important;
+} */
 .form-check-label {
   color: #000000 !important;
   font-size: 16px;
@@ -285,5 +292,5 @@ export default {
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   padding: 12px;
-} */
+}
 </style>

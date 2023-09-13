@@ -10,7 +10,7 @@
           value="option1"
         />
         <!-- <p>Select</p> -->
-        <!-- <label class="form-check-label" for="inlineRadio1">Select</label> -->
+        <label class="form-check-label" for="inlineRadio1"></label>
       </div>
       <div class="form-check form-check-inline">
         <input
@@ -52,6 +52,9 @@ defineProps({
 </script>
 
 <style scoped>
+/* .form-check-input:checked {
+  background: none !important;
+} */
 .form-check-inline {
   display: inline-block;
   margin-right: 0rem !important;

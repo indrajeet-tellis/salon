@@ -20,7 +20,7 @@
   </div>
   <section class="position-relative">
     <div class="container">
-      <div class="scroll-container">
+      <div class="scroll-container demobook-scroll-container">
         <h3 class="demo-book-subHeading">Select your salon type</h3>
         <SelecSalonType name="Select your salon type" />
         <demo-button
@@ -71,6 +71,9 @@ export default {
 };
 </script>
 <style scoped>
+.demobook-scroll-container {
+  height: 70vh !important;
+}
 .demo-book-subHeading {
   color: #2c3b91;
   font-size: 18px;
@@ -85,7 +88,7 @@ export default {
 
 .btn {
   position: fixed;
-  bottom: 20%;
+  bottom: 5%;
   left: 16%;
 }
 </style>

@@ -20,7 +20,7 @@
   </div>
   <section>
     <div class="container">
-      <div class="scroll-container">
+      <div class="scroll-container demostaff-scroll-container">
         <div class="row">
           <div class="col">
             <div class="mb-3">
@@ -134,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex both-btn" style="gap: 20px; margin-top: 30px">
+      <div class="d-flex both-btn">
         <demo-button name="Previous" @click="handleCurrentPrevious(update)" />
         <demo-button name="Next" v-bind:disabled="btnDisable" />
       </div>
@@ -186,7 +186,19 @@ export default {
 </script>
 
 <style scoped>
-/* .form-label {
+.demostaff-scroll-container {
+  height: 70vh !important;
+}
+.both-btn {
+  gap: 20px;
+  margin-top: 30px;
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  left: 0;
+  padding: 0 10px;
+}
+.form-label {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
@@ -219,5 +231,5 @@ export default {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   padding: 12px;
-} */
+}
 </style>

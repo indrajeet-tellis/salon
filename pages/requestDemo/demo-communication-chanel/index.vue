@@ -20,7 +20,7 @@
   </div>
   <section style="margin-bottom: 100px">
     <div class="container position-relative">
-      <div class="scroll-container">
+      <div class="scroll-container chanel-scroll-container">
         <div class="row">
           <div class="col">
             <h2 class="demoCommunicationText">
@@ -34,83 +34,12 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col d-flex justify-content-between">
-            <div class="box"></div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-one.png" />
-                <p class="itemText mb-0">Google Meet</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-two.png" />
-                <p class="itemText mb-0">Zoom</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col d-flex justify-content-between">
-            <div class="box"></div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-three.png" />
-                <p class="itemText mb-0">Desktop</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-four.png" />
-                <p class="itemText mb-0">Mobile</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col d-flex justify-content-between">
-            <div class="box"></div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-five.png" />
-                <p class="itemText mb-0">Audio Call</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box">
-              <div class="item">
-                <img src="/assets/channel-six.png" />
-                <p class="itemText mb-0">Video Call</p>
-                <i class="fa-solid fa-check item-icon"></i>
-              </div>
-            </div>
-            <div class="box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="d-flex both-btn" style="gap: 70px; margin-top: 90px">
-              <demo-button name="Previous" style="margin-left: 30px" />
-              <demo-button
-                name="Next"
-                style="margin-right: 30px"
-                @click="handleCurrentSuccess(update)"
-              />
-            </div>
-          </div>
-        </div> -->
+
         <CommunicationChanel textOne="Google Meet" textTwo="Zoom" />
         <CommunicationChanel textOne="Desktop" textTwo="Mobile" />
         <CommunicationChanel textOne="Audio Call" textTwo="Video Call" />
-        <div class="d-flex both-btn" style="gap: 70px; margin-top: 90px">
-          <demo-button name="Previous" style="margin-left: 30px" />
+        <div class="d-flex both-btn">
+          <demo-button name="Previous" />
           <demo-button
             name="Next"
             style="margin-right: 30px"
@@ -162,13 +91,16 @@ export default {
 };
 </script>
 <style scoped>
+.chanel-scroll-container {
+  height: 75vh !important;
+}
 .both-btn {
   gap: 25px;
   margin-top: 90px;
   position: fixed;
-  bottom: 95px;
+  bottom: 15px;
   width: 100%;
-  left: 0;
+  left: 14px;
 }
 .demoCommunicationText {
   font-size: 18px;

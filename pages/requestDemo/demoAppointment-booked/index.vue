@@ -47,7 +47,7 @@
               @click="isOpen = true"
             />
           </div>
-          <!-- <MazBtn>Open Bottom Sheet</MazBtn> -->
+
           <MazBottomSheet v-model="isOpen">
             <div class="maz-flex maz-flex-center">
               <CancelAppointment />
@@ -110,27 +110,20 @@ export default {
   cursor: pointer;
   color: #a7a7a7;
 }
-/* :deep(.m-bottom-sheet__close) {
-  display: none !important;
-} */
+
 :deep(.m-bottom-sheet__container) {
   border-radius: 20px !important;
 }
 :deep(.m-backdrop-content) {
   border-radius: 20px !important;
 }
-/* .m-bottom-sheet__container .maz-h-5 {
-  height: 0 !important;
-  width: 0 !important;
-} */
+
 .demoBG {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 97px;
-  position: relative;
-  height: auto;
   padding: 0 0 203px 0;
+  overflow: hidden;
 }
 .header-text {
   font-size: 30px;
@@ -167,12 +160,11 @@ export default {
 }
 .both-btn {
   position: fixed;
-  bottom: 14%;
+  bottom: 3%;
   left: 16%;
 }
 .item {
   width: 28%;
-  height: 100px;
   text-align: center;
 }
 .item-p {

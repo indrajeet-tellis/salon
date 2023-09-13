@@ -99,7 +99,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 97px;
   position: relative;
   padding: 0 0 203px 0;
 }
@@ -133,7 +132,7 @@ export default {
 }
 .both-btn {
   position: fixed;
-  bottom: 15%;
+  bottom: 3%;
   left: 16%;
 }
 </style>
