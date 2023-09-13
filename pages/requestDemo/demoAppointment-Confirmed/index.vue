@@ -46,6 +46,7 @@
 <script>
 import DemoButton from "../../../components/demo-button.vue";
 import DemoBorderButton from "../../../components/demo-border-button.vue";
+import "../../../style/main.css";
 
 export default {
   components: {
@@ -100,13 +101,11 @@ export default {
   background-size: cover;
   margin-bottom: 97px;
   position: relative;
-  height: auto;
   padding: 0 0 203px 0;
 }
 .header-text {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
   width: 324px;
   margin: 18px auto 0 auto;
@@ -114,7 +113,6 @@ export default {
 .subheader-text {
   font-size: 20px;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
   margin: 18px auto 0 auto;
   width: 309px;
@@ -122,19 +120,16 @@ export default {
 .confirm-text {
   font-size: 22px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
   width: 321px;
   margin: 53px auto 0 auto;
-  line-height: 26px;
 }
 .reminder-text {
   font-size: 18px;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
-  width: 367px;
-  margin: 147px auto 0 auto;
+  width: 346px;
+  margin: 140px auto 0 auto;
 }
 .both-btn {
   position: fixed;
