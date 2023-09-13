@@ -14,6 +14,9 @@ p {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0 !important;
 }
+span {
+  font-family: "Roboto", sans-serif;
+}
 h1,
 h2,
 h3,
@@ -58,43 +61,13 @@ h6 {
   height: 40vh;
   overflow-x: hidden;
 }
-/* .form-label {
-  color: #2c3b91 !important;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  margin-top: 25px;
-}
-.form-control {
-  color: #d9d9d9 !important;
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid #d9d9d9 !important;
-  padding: 12px;
-}
-.form-check-label {
-  color: #000000 !important;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-}
-.form-check-input {
-  border: 1px solid #2c3b91 !important;
-}
-.form-check-input:checked {
-  background: #2c3b91 !important;
-}
-.form-select {
-  color: #232323 !important;
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  padding: 12px;
-} */
+
 .maz-py-6 {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
   border-top-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
+}
+.single-form-check {
+  margin-right: 4.5rem !important;
 }

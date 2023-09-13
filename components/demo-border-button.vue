@@ -16,7 +16,7 @@ defineProps({
 .demo-button {
   background: transparent;
   text-align: center;
-  width: 260px;
+  width: 310px;
   border-radius: 1050px;
   padding-top: 6px;
   padding-bottom: 6px;

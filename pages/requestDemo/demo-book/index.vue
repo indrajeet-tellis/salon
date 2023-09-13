@@ -89,6 +89,6 @@ export default {
 .btn {
   position: fixed;
   bottom: 5%;
-  left: 16%;
+  left: 8%;
 }
 </style>

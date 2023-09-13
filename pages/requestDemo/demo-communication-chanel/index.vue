@@ -77,7 +77,7 @@ export default {
     },
     handleCurrentSuccess(params) {
       this.currentSuccess = params;
-      navigateTo("/requestDemo/demo-successfully");
+      navigateTo("/requestDemo/review-confirm");
     },
   },
 

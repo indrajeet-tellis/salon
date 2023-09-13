@@ -79,7 +79,7 @@ export default {
 .advantange-btn {
   position: fixed;
   bottom: 15px;
-  left: 68px;
+  left: 36px;
 }
 .demo-advantage-header {
   position: fixed;

@@ -84,7 +84,7 @@ export default {
 .ok-btn {
   position: fixed;
   bottom: 3%;
-  left: 16%;
+  left: 9%;
 }
 .demo-text {
   font-size: 40px;

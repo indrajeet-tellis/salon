@@ -34,8 +34,8 @@
                 placeholder="ABC"
               />
             </div>
-            <div class="text-center mt-5">
-              <div class="form-check form-check-inline">
+            <div class="mt-5">
+              <div class="form-check form-check-inline single-form-check">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -89,14 +89,7 @@
               </select>
             </div>
             <div class="" style="margin-top: 45px">
-              <h4
-                style="
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #2c3b91;
-                  font-family: 'DM Sans', sans-serif;
-                "
-              >
+              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
                 Do you have website?
               </h4>
               <div
@@ -131,14 +124,7 @@
               style="margin-top: 14px"
             />
             <div class="" style="margin-top: 45px">
-              <h4
-                style="
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #2c3b91;
-                  font-family: 'DM Sans', sans-serif;
-                "
-              >
+              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
                 Currently using any software?
               </h4>
               <div
@@ -261,14 +247,14 @@ export default {
   color: #2c3b91 !important;
   font-size: 16px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 25px;
 }
 .form-control {
   color: #d9d9d9 !important;
   font-size: 12px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 1px solid #d9d9d9 !important;
 }
 /* .form-check {
@@ -278,7 +264,7 @@ export default {
   color: #000000 !important;
   font-size: 16px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .form-check-input {
   border: 1px solid #2c3b91 !important;
@@ -290,7 +276,7 @@ export default {
   color: #232323 !important;
   font-size: 12px;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 12px;
 }
 </style>

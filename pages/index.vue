@@ -217,9 +217,7 @@ export default {
           <swiper
             :slidesPerView="'auto'"
             @autoplayTimeLeft="onAutoplayTimeLeft"
-            :pagination="{
-              clickable: true,
-            }"
+            :pagination="false"
             :modules="modules"
             class="mySwiper"
             :space-between="50"
@@ -240,36 +238,28 @@ export default {
             <swiper-slide>
               <AdvantageCard
                 tittle=" Attracting and retaining an audience"
-                subtittle="  People like attention, and your customers are no exception.
-                  Continuous interaction with your customers make them feel
-                  special, and their trust in you grows."
+                subtittle="  Your customers will start recommending your application to their friends and acquaintances, thereby, attracting new customers. By sending relevant and useful information, you expand your reach."
               />
             </swiper-slide>
 
             <swiper-slide>
               <AdvantageCard
                 tittle="  Optimization and automation of business"
-                subtittle=" People like attention, and your customers are no exception.
-                  Continuous interaction with your customers make them feel
-                  special, and their trust in you grows."
+                subtittle=" Besides marketing benefits, the application controls the work of employees, simplifies all daily activities, increases productivity."
               />
             </swiper-slide>
 
             <swiper-slide>
               <AdvantageCard
                 tittle="You get a powerful communication channel with your customer"
-                subtittle=" People like attention, and your customers are no exception.
-                  Continuous interaction with your customers make them feel
-                  special, and their trust in you grows."
+                subtittle="Sending push-up notifications, providing information about special offers, discounts and promotions motivate your customers to use your services more often."
               />
             </swiper-slide>
 
             <swiper-slide>
               <AdvantageCard
                 tittle="Brand Awareness"
-                subtittle=" People like attention, and your customers are no exception.
-                  Continuous interaction with your customers make them feel
-                  special, and their trust in you grows."
+                subtittle="The development of a business application also contributes to the fact that more and more people get to know about your brand. It works as a kind of advertisement for your services your brand becomes more recognizable and your reputation grows in such a way."
               />
             </swiper-slide>
           </swiper>
@@ -404,9 +394,7 @@ export default {
         <div class="main mt-4" style="padding-left: 25px">
           <swiper
             :slidesPerView="'auto'"
-            :pagination="{
-              clickable: true,
-            }"
+            :pagination="false"
             :modules="modules"
             class="mySwiper"
             :space-between="30"
@@ -778,16 +766,7 @@ export default {
 .online .swiper-slide {
   width: 60% !important;
 }
-/* .online .box {
-  border-radius: 15px;
-  padding: 15px 10px;
-  margin-bottom: 38px;
-  height: 222px;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
-  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
-} */
+
 .online {
   background-position: center;
   background-repeat: no-repeat;
@@ -935,7 +914,7 @@ export default {
   text-align: center;
 }
 .package-subheading {
-  color: #2c3b91;
+  color: #333333;
   font-size: 12px;
   font-weight: 400;
   width: 284px;

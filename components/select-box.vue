@@ -52,9 +52,6 @@ defineProps({
 </script>
 
 <style scoped>
-/* .form-check-input:checked {
-  background: none !important;
-} */
 .form-check-inline {
   display: inline-block;
   margin-right: 0rem !important;

@@ -133,6 +133,6 @@ export default {
 .both-btn {
   position: fixed;
   bottom: 3%;
-  left: 16%;
+  left: 9%;
 }
 </style>

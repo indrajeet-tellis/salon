@@ -30,9 +30,9 @@ defineProps({
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.32);
 }
 .online-main h3 {
-  color: #201f1f;
+  color: #002478;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 15px;
 }
 .online-main p {

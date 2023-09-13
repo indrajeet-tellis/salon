@@ -34,8 +34,8 @@
                 placeholder="ABC"
               />
             </div>
-            <div class="text-center mt-5">
-              <div class="form-check form-check-inline">
+            <div class="mt-5">
+              <div class="form-check form-check-inline single-form-check">
                 <input
                   class="form-check-input"
                   type="radio"

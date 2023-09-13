@@ -23,7 +23,7 @@ defineProps({
   margin-top: 1rem;
   margin-bottom: 2.5rem;
   padding: 0.313rem 0.5rem 1rem 0.5rem;
-  height: 255px;
+  height: 285px;
   border: 1px solid #e4e3e3;
   border-radius: 23px;
   width: 108%;
@@ -37,7 +37,7 @@ h3 {
 p {
   font-size: 12px;
   color: #232323;
-  width: 220px;
+  width: 212px;
   margin: 20px auto;
 }
 </style>

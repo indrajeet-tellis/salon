@@ -128,40 +128,36 @@ export default {
 .header-text {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
   width: 324px;
   margin: 18px auto 0 auto;
 }
 .subheader-text {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  color: #2c3b91;
-  margin: 52px auto 0 auto;
-  width: 309px;
+  color: #ed0046;
+  margin: 40px auto 0 auto;
+  width: 294px;
 }
 .confirm-text {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   color: #2c3b91;
   width: 321px;
   margin: 26px auto 0 auto;
-  line-height: 26px;
+  line-height: 20px;
 }
 .reminder-text {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   color: #2c3b91;
   width: 367px;
-  margin: 15px auto 0 auto;
+  margin: 54px auto 0 auto;
 }
 .both-btn {
   position: fixed;
   bottom: 3%;
-  left: 16%;
+  left: 9%;
 }
 .item {
   width: 28%;
@@ -171,6 +167,5 @@ export default {
   font-size: 14px;
   font-weight: 500;
   color: #2c3b91;
-  font-family: "Roboto", sans-serif;
 }
 </style>
