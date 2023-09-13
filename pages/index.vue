@@ -182,13 +182,34 @@ export default {
         </div>
       </div>
     </div>
-    <div class="botom-scroll-container">
-      <SoftwareItem name="Salon Software" />
-      <SoftwareItem name="Digital marketing" />
-      <SoftwareItem name="Logo & Graphics" />
-      <SoftwareItem name="Custom Salon Apps" />
-      <SoftwareItem name="Website design" />
-      <SoftwareItem name="SEO" />
+    <div class="software-slides">
+      <swiper
+        :slidesPerView="'auto'"
+        :pagination="false"
+        :modules="modules"
+        class="mySwiper"
+        :space-between="10"
+        :autoplay="false"
+      >
+        <swiper-slide>
+          <SoftwareItem name="Salon Software" />
+        </swiper-slide>
+        <swiper-slide>
+          <SoftwareItem name="Digital marketing" />
+        </swiper-slide>
+        <swiper-slide>
+          <SoftwareItem name="Logo & Graphics" />
+        </swiper-slide>
+        <swiper-slide>
+          <SoftwareItem name="Custom Salon Apps" />
+        </swiper-slide>
+        <swiper-slide>
+          <SoftwareItem name="Website design" />
+        </swiper-slide>
+        <swiper-slide>
+          <SoftwareItem name="SEO" />
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
   <!-- software end -->
@@ -752,6 +773,9 @@ export default {
 /* banner end */
 
 /* software start*/
+.software-slides .swiper-slide {
+  width: 30% !important;
+}
 .software {
   margin-top: 42px;
 }
