@@ -17,13 +17,13 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 200px">
+  <section style="margin-top: 127px">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="text-center mt-4"><img src="/assets/faqs-img.png" /></div>
           <div>
-            <Accordian />
+            <SliderFAQ />
           </div>
         </div>
       </div>
@@ -32,10 +32,13 @@
 </template>
 <script>
 import MobileHeading from "../../../components/mobile-heading.vue";
+import "../../../style/main.css";
+import SliderFAQ from "../../../components/SliderFAQ.vue";
 
 export default {
   components: {
     MobileHeading,
+    SliderFAQ,
   },
   data() {
     return {
@@ -50,19 +53,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.fw-bold {
-  color: #2c3b91 !important;
-  font-family: Roboto !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  line-height: normal !important;
-  letter-spacing: 0.048px !important;
-}
-</style>
+<style scoped></style>

@@ -17,14 +17,19 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 100px">
+  <section style="margin-top: 116px">
     <div class="container">
       <div class="row">
         <div class="col">
           <h3 class="salon-info-text">Fill the salon information</h3>
-          <div class="text-center mt-3">
-            <i class="fa-solid fa-camera camera"></i>
+          <div class="image-edit">
             <img src="/assets/salon-info-img.png" class="edit-img" />
+            <div class="camera-icon-bg">
+              <label>
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <input type="file" hidden />
+              </label>
+            </div>
           </div>
           <div class="inputs-box" style="margin-top: 31px">
             <div class="box">
@@ -164,6 +169,7 @@
 <script>
 import MobileHeading from "../../../components/mobile-heading.vue";
 import DemoButton from "../../../components/demo-button.vue";
+import "../../../style/main.css";
 export default {
   components: {
     MobileHeading,
@@ -183,22 +189,27 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.image-edit {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
 }
-.camera {
+.camera-icon-bg {
   bottom: 16%;
-  left: 56%;
+  left: 61%;
   background: #2c3b91;
-  color: #fff;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  font-size: 7px;
-  padding: 3px;
   z-index: 2;
+  position: absolute;
+  padding: 3px;
+}
+.camera-icon {
+  color: #fff;
+  font-size: 7px;
+  top: 3px;
+  left: 5px;
   position: absolute;
 }
 .edit-img {
@@ -207,29 +218,27 @@ export default {
 .salon-info-text {
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
+
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: normal;
+
   margin-top: 19px;
 }
 .form-label {
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 .form-control::placeholder {
   color: rgba(35, 35, 35, 0.5);
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 .box {
   margin-top: 20px;
@@ -238,11 +247,10 @@ export default {
   margin-left: 9px;
   margin-right: 15px;
   color: #2c3b91;
-  font-family: Roboto;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 .select-box select {
   border: 1px solid #d9d9d9;
@@ -253,9 +261,7 @@ export default {
   color: rgba(35, 35, 35, 0.5);
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .web-select input {
   margin-right: 7px !important;
@@ -265,9 +271,8 @@ export default {
   color: #2c3b91;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 .software-name input {
   width: 309px !important;
@@ -279,9 +284,8 @@ export default {
   color: rgba(35, 35, 35, 0.5);
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 .notes-text textarea {
   width: 309px !important;
@@ -294,8 +298,7 @@ export default {
   color: rgba(35, 35, 35, 0.5);
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: normal;
 }
 </style>

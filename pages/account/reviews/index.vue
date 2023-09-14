@@ -17,9 +17,9 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 200px">
+  <section>
     <div class="container">
-      <div class="scroll-container">
+      <div class="review-scroll-container">
         <div class="row">
           <div class="col">
             <h2 class="rating-text">Ratings & Reviews (220)</h2>
@@ -61,6 +61,7 @@
 import MobileHeading from "../../../components/mobile-heading.vue";
 import ReviewList from "../../../components/reviewList.vue";
 import StarRating from "../../../components/star-rating.vue";
+import "../../../style/main.css";
 export default {
   components: {
     MobileHeading,
@@ -81,10 +82,9 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.review-scroll-container {
+  margin-top: 116px !important;
+  height: 70vh !important;
 }
 .rating-text {
   color: #2c3b91;
@@ -133,5 +133,6 @@ export default {
 }
 .rating {
   padding-left: 105px !important;
+  font-size: 1rem !important;
 }
 </style>

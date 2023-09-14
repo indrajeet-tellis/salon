@@ -26,10 +26,35 @@
             <h4 class="rate-text">Rate your experience</h4>
             <div class="feedback-rating"><StarRating /></div>
             <h4 class="app-text">Do you like our app ?</h4>
-            <MazRadioButtons
+            <!-- <MazRadioButtons
               v-model="selectedOption"
               :options="selecteYourOption"
-            />
+            /> -->
+            <MazSelect />
+            <!-- <MazRadioButtons
+  v-model="selectedCompetition"
+  :options="competitions"
+  color="secondary"
+>
+  <template #default="{ option, selected }">
+    <div style="display: flex;">
+      <MazAvatar
+        v-if="option.areaEnsignUrl"
+        :src="option.areaEnsignUrl"
+        style="margin-right: 16px;"
+        size="0.8rem"
+      />
+      <div style="display: flex; flex-direction: column;">
+        <span>
+          {{ option.label }}
+        </span>
+        <span :class="{ 'maz-text-muted': !selected }">
+          {{ option.areaName }}
+        </span>
+      </div>
+    </div>
+  </template>
+</MazRadioButtons> -->
             <h4 class="txt-area">
               Would you like to share something with us ?
             </h4>
@@ -40,7 +65,7 @@
               label="Write your message here..."
             />
             <div class="feedback-btn">
-              <DemoButton name="Submit" />
+              <DemoButton name="Submit" @click="handleCurrentSubmit" />
             </div>
           </div>
         </div>
@@ -58,9 +83,9 @@ import DemoButton from "../../../components/demo-button.vue";
 import MazRadioButtons from "maz-ui/components/MazRadioButtons";
 import StarRating from "../../../components/star-rating.vue";
 import "../../../style/main.css";
+import MazSelect from "../../../components/MazSelect.vue";
 
 const value = ref();
-components: ({ MobileHeading, DemoButton, StarRating });
 
 const selectedOption = ref();
 const selecteYourOption = [
@@ -76,74 +101,55 @@ const selecteYourOption = [
 const handleCurrentCross = (params) => {
   navigateTo("/account");
 };
+const handleCurrentSubmit = (params) => {
+  navigateTo("/account/reviews");
+};
 </script>
 
 <style scoped>
 .feedback-scroll-container {
   margin-top: 116px !important;
+  height: 62vh !important;
 }
 .feedback-text {
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   margin-top: 23px;
 }
 .important-text {
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   margin-top: 11px;
 }
 .rate-text {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-top: 39px;
 }
 .app-text {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-top: 85px;
 }
 .txt-area {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-top: 70px;
 }
-.m-radio-buttons__items .maz-elevation {
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.27) !important;
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.27) !important;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.27) !important;
-  background: red !important;
-}
-/* .feedback-rating .rating > label::before {
-  font-size: 2.25em !important;
-} */
+
 .rating > label {
   font-size: 2.25em !important;
 }
 .feedback-btn {
   position: fixed;
   bottom: 40px;
-  left: 60px;
+  left: 34px;
 }
 </style>

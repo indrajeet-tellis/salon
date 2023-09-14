@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="py-5">
+          <div class="img-heading">
             <div class="profile-img"><img src="/assets/profile-img.png" /></div>
             <mobile-heading class="text-center" name="Marcel Dalima" />
             <p class="email-text">limadacell@gmail.com</p>
             <div
-              class="editProfile-btn d-flex mx-auto"
+              class="editProfile-btn d-flex"
               @click="handleCurrentEdit('update')"
             >
               <i class="fa-solid fa-pencil edit-icon me-1"></i>
@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 100px">
+  <section style="margin-top: 262px">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -155,6 +155,7 @@
 </template>
 <script>
 import MobileHeading from "../../components/mobile-heading.vue";
+import "../../style/main.css";
 export default {
   components: {
     MobileHeading,
@@ -213,19 +214,15 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.img-heading {
+  padding-top: 3rem !important;
+  padding-bottom: 1rem !important;
 }
 .email-text {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  /* letter-spacing: 0.28px; */
   text-align: center;
 }
 .profile-img {
@@ -240,6 +237,7 @@ export default {
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.34);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.34);
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.34);
+  margin: 20px auto 0 auto !important;
 }
 .edit-icon {
   font-size: 10px;
@@ -248,33 +246,24 @@ export default {
 .edit-text {
   color: #737373;
   text-align: center;
-  font-family: DM Sans;
   font-size: 8px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.16px;
+  /* letter-spacing: 0.16px; */
   margin-bottom: 0 !important ;
 }
 .profile-text {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.32px;
+  /* letter-spacing: 0.32px; */
   margin-bottom: 0 !important;
   width: 195px;
 }
 .logout {
   color: #ed0046;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.32px;
+  /* letter-spacing: 0.32px; */
   margin-bottom: 0 !important;
   width: 195px;
 }

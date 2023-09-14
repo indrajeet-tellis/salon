@@ -71,3 +71,16 @@ h6 {
 .single-form-check {
   margin-right: 4.5rem !important;
 }
+.m-radio-buttons__items {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+/* .m-radio-buttons__items > selected > .maz-elevation {
+  background: #ed0046 !important;
+} */
+/* .rating {
+  border: none;
+  float: left;
+  font-size: 3rem;
+} */

@@ -20,9 +20,17 @@
   <div class="container" style="margin-bottom: 100px">
     <div class="row">
       <div class="col">
-        <div class="" style="text-align: center; margin-top: 41px">
-          <i class="fa-solid fa-camera camera"></i>
+        <div
+          class=""
+          style="text-align: center; margin-top: 135px; position: relative"
+        >
           <img src="/assets/profile-img.png" class="edit-img" />
+          <div class="camera-icon-bg">
+            <label>
+              <div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
+              <input type="file" hidden />
+            </label>
+          </div>
         </div>
         <div class="inputs-box" style="margin-top: 20px">
           <div class="box">
@@ -59,8 +67,8 @@
             />
           </div>
         </div>
-        <div style="margin-top: 150px">
-          <DemoButton name="Save" style="margin: 0 auto" />
+        <div class="save-btn">
+          <DemoButton name="Save" @click="handleCurrentSave" />
         </div>
       </div>
     </div>
@@ -68,6 +76,7 @@
 </template>
 <script>
 import DemoButton from "../../../components/demo-button.vue";
+import "../../../style/main.css";
 export default {
   components: {
     DemoButton,
@@ -75,6 +84,7 @@ export default {
   data() {
     return {
       CurrentCross: "send",
+      CurrentSave: "send",
     };
   },
   methods: {
@@ -82,27 +92,40 @@ export default {
       this.currentCross = params;
       navigateTo("/account");
     },
+    handleCurrentSave(params) {
+      this.currentSave = params;
+      navigateTo("/account");
+    },
   },
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.save-btn {
+  position: fixed;
+  bottom: 23px;
+  left: 32px;
 }
-.camera {
-  bottom: 16%;
+.camera-icon-bg {
+  bottom: 5px;
   left: 56%;
   background: #2c3b91;
-  color: #fff;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  font-size: 7px;
-  padding: 3px;
+  padding: 2px;
   z-index: 2;
   position: absolute;
+}
+.camera-icon {
+  position: absolute;
+}
+.camera-icon i {
+  font-size: 7px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -3px;
 }
 .edit-img {
   position: relative;
@@ -114,18 +137,12 @@ export default {
   margin-bottom: 0.5rem;
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .form-control::placeholder {
   color: rgba(35, 35, 35, 0.5);
-  font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 </style>

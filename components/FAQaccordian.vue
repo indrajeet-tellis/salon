@@ -5,8 +5,9 @@
         class="acc-title d-flex justify-content-between"
         @click="toggleAcc(item)"
       >
+        <div class="round"></div>
         <div class="para">
-          <p class="fw-bold">{{ item.accTitle }}</p>
+          <p class="">{{ item.accTitle }}</p>
         </div>
         <div class="icons ps-4">
           <i class="fa-solid fa-angle-down" v-if="item.isOpen"></i>
@@ -72,6 +73,9 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  padding: 0 20px;
+}
 .icon {
   cursor: pointer;
   margin-bottom: 20px;
@@ -79,19 +83,30 @@ export default {
   margin-top: 7px;
 }
 .acc-wrapper {
-  border-bottom: 1px dashed #333;
-  box-sizing: content-box;
-  margin-top: 20px;
+  margin-top: 25px;
+  position: relative;
 }
-
-.acc-content {
+/* .round::after {
+  position: absolute;
+  border: 1px dashed #333;
+  width: 100%;
+  bottom: -16px;
+  left: 0;
+  content: "";
+} */
+.round {
+  width: 10px;
+  height: 10px;
+  background: #ed0046;
+  border-radius: 50%;
+  position: absolute;
+  left: -17px;
+  top: 7px;
+}
+p {
   color: #333;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
+  font-size: 14px;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.24px;
   position: relative;
 }
 /* .acc-content::after {
@@ -103,13 +118,11 @@ export default {
   height: 10px;
   background: #ed0046;
 } */
-.accTitle {
+.acc-content {
   color: #333;
   font-family: Roboto;
-  font-size: 8px;
-  font-style: normal;
+  font-size: 10px;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.16px;
+  margin-top: 9px;
 }
 </style>

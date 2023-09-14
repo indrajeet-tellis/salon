@@ -9,12 +9,15 @@
         <p>
           {{ personText }}
         </p>
+        <!-- <StarRating /> -->
       </div>
       <div></div>
     </div>
   </div>
 </template>
 <script setup>
+import "../style/main.css";
+import StarRating from "../components/star-rating.vue";
 defineProps({
   personName: String,
   personText: String,
@@ -47,5 +50,9 @@ defineProps({
   width: 257px;
   margin-bottom: 0 !important;
   margin-top: 9px;
+}
+.rating {
+  padding-left: 0px !important;
+  font-size: 0.5rem !important;
 }
 </style>
