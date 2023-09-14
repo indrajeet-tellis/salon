@@ -49,6 +49,6 @@ export default {
 .hairslaon-btn {
   position: fixed;
   bottom: 50px;
-  left: 62px;
+  left: 33px;
 }
 </style>

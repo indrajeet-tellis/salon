@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="main"
     :style="{ backgroundImage: 'url(/assets/package-img.png)' }"
   >
@@ -19,11 +19,12 @@
         style="margin: 20px auto 0 auto"
       />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import DemoButton from "../../../components/demo-button.vue";
 import DemoBorderButton from "../../../components/demo-border-button.vue";
+import "../../../style/main.css";
 export default {
   components: {
     DemoButton,
@@ -52,38 +53,30 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0 341px 0;
-  position: relative;
+  padding: 180px 0 462px 0;
+  overflow: hidden !important;
+  height: 100vh;
 }
 .theme-app-text {
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
   font-size: 35px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 0 !important;
 }
 .appBuilder-text {
-  color: #2c3b91;
+  color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   width: 339px;
   margin: 51px auto 0 auto;
 }
 .theme-app-subText {
   color: #2c3b91;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   width: 329px;
   margin: 31px auto 0 auto;
 }
@@ -91,6 +84,6 @@ export default {
 .both-btn {
   position: fixed;
   bottom: 35px;
-  left: 57px;
+  left: 32px;
 }
 </style>

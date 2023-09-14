@@ -1,51 +1,27 @@
 <template>
   <div class="selectsalon-main">
-    <div class="row mt-4">
-      <div class="col-6 text-center">
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-one.png" /></div>
-          <h4 class="item-text">Hair</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-three.png" /></div>
-          <h4 class="item-text">Barbershop</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-five.png" /></div>
-          <h4 class="item-text">Spa</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-seven.png" /></div>
-          <h4 class="item-text">Waxing</h4>
-        </div>
+    <div class="main-item text-center d-flex">
+      <div class="item">
+        <div class="type-img"><img src="/assets/type-one.png" /></div>
+        <h4 class="item-text">{{ text }}</h4>
       </div>
-      <div class="col-6 text-center">
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-two.png" /></div>
-          <h4 class="item-text">Beauty</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-four.png" /></div>
-          <h4 class="item-text">Nails</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-six.png" /></div>
-          <h4 class="item-text">Eyebrow</h4>
-        </div>
-        <div class="item">
-          <div class="type-img"><img src="/assets/type-eight.png" /></div>
-          <h4 class="item-text">Massage</h4>
-        </div>
+      <div class="item">
+        <div class="type-img"><img src="/assets/type-two.png" /></div>
+        <h4 class="item-text">{{ textTwo }}</h4>
       </div>
     </div>
   </div>
 </template>
 <script setup>
 import "../style/main.css";
+defineProps({
+  text: String,
+  textTwo: String,
+});
 </script>
 <style scoped>
 .item {
-  width: 60%;
+  width: 35%;
   background: #fff;
   margin: 0 auto;
   padding: 8px 10px;

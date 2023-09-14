@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 200px">
+  <section>
     <div class="container">
       <div class="scroll-container themes-scroll-container">
         <div class="row">
@@ -28,7 +28,10 @@
               </div>
               <div v-if="currentTab === 'Website'">
                 <div class="middle-section">
-                  <SelecSalonType />
+                  <SelecSalonType text="Hair" textTwo="Beauty" />
+                  <SelecSalonType text="Barbershop" textTwo="Nails" />
+                  <SelecSalonType text="Spa" textTwo="Eyebrow" />
+                  <SelecSalonType text="Waxing" textTwo="Massage" />
                   <div class="website-btn">
                     <DemoButton name="Select" @click="handleCurrentHairSalon" />
                   </div>
@@ -68,24 +71,20 @@ const handleCurrentHairSalon = (params) => {
 <style scoped>
 .website-btn {
   position: fixed;
-  bottom: 130px;
-  left: 59px;
+  bottom: 32px;
+  left: 30px;
 }
 .themes-scroll-container {
   margin-top: 142px;
+  height: 74vh !important;
 }
-.h-100 {
-  height: 100%;
-}
+
 .theme-app-text {
   margin-top: 90px;
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   width: 260px;
   margin: 90px auto 0 auto;
 }
@@ -142,7 +141,4 @@ const handleCurrentHairSalon = (params) => {
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* :deep(.bell path) {
-  color: #fff;
-} */
 </style>

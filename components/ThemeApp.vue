@@ -20,7 +20,7 @@ defineProps({
 .both-btn {
   position: fixed;
   bottom: 22px;
-  left: 65px;
+  left: 35px;
 }
 .themeapp-main h2 {
   color: #333;
