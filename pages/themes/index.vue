@@ -28,10 +28,30 @@
               </div>
               <div v-if="currentTab === 'Website'">
                 <div class="middle-section">
-                  <SelecSalonType text="Hair" textTwo="Beauty" />
-                  <SelecSalonType text="Barbershop" textTwo="Nails" />
-                  <SelecSalonType text="Spa" textTwo="Eyebrow" />
-                  <SelecSalonType text="Waxing" textTwo="Massage" />
+                  <SelecSalonType
+                    text="Hair"
+                    textTwo="Beauty"
+                    imageSrcOne="/assets/type-one.png"
+                    imageSrcTwo="/assets/type-two.png"
+                  />
+                  <SelecSalonType
+                    text="Barbershop"
+                    textTwo="Nails"
+                    imageSrcOne="/assets/type-three.png"
+                    imageSrcTwo="/assets/type-four.png"
+                  />
+                  <SelecSalonType
+                    text="Spa"
+                    textTwo="Eyebrow"
+                    imageSrcOne="/assets/type-five.png"
+                    imageSrcTwo="/assets/type-six.png"
+                  />
+                  <SelecSalonType
+                    text="Waxing"
+                    textTwo="Massage"
+                    imageSrcOne="/assets/type-seven.png"
+                    imageSrcTwo="/assets/type-eight.png"
+                  />
                   <div class="website-btn">
                     <DemoButton name="Select" @click="handleCurrentHairSalon" />
                   </div>

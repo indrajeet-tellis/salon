@@ -1,6 +1,6 @@
 <template>
   <div class="box text-center">
-    <img src="/assets/cardImg.png" alt="ad-one" />
+    <img :src="imgSrc" />
     <h3 class="">
       {{ tittle }}
     </h3>
@@ -15,7 +15,7 @@ import "../style/main.css";
 defineProps({
   tittle: String,
   subtittle: String,
-  url: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

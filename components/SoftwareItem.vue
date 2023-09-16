@@ -1,7 +1,7 @@
 <template>
   <div class="softwareitem">
     <div class="round">
-      <img src="/assets/sof-one.png" />
+      <img :src="imageSrc" />
     </div>
     <p class="software-tittle">{{ name }}</p>
   </div>
@@ -10,7 +10,7 @@
 import "../style/main.css";
 defineProps({
   name: String,
-  url: String,
+  imageSrc: String,
 });
 </script>
 <style scoped>

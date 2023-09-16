@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <img src="/assets/fOne.png" />
+    <img :src="imgSrc" />
     <h3 class="">{{ text }}</h3>
     <p class="">
       {{ subText }}
@@ -13,6 +13,7 @@ import "../style/main.css";
 defineProps({
   text: String,
   subText: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

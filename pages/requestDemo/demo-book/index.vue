@@ -22,7 +22,30 @@
     <div class="container">
       <div class="scroll-container demobook-scroll-container">
         <h3 class="demo-book-subHeading">Select your salon type</h3>
-        <SelecSalonType name="Select your salon type" />
+        <SelecSalonType
+          text="Hair"
+          textTwo="Beauty"
+          imageSrcOne="/assets/type-one.png"
+          imageSrcTwo="/assets/type-two.png"
+        />
+        <SelecSalonType
+          text="Barbershop"
+          textTwo="Nails"
+          imageSrcOne="/assets/type-three.png"
+          imageSrcTwo="/assets/type-four.png"
+        />
+        <SelecSalonType
+          text="Spa"
+          textTwo="Eyebrow"
+          imageSrcOne="/assets/type-five.png"
+          imageSrcTwo="/assets/type-six.png"
+        />
+        <SelecSalonType
+          text="Waxing"
+          textTwo="Massage"
+          imageSrcOne="/assets/type-seven.png"
+          imageSrcTwo="/assets/type-eight.png"
+        />
         <demo-button
           class="mx-auto btn"
           name="Next"

@@ -1,15 +1,15 @@
 <template>
   <div class="featureitems d-flex justify-content-between">
     <div class="item">
-      <img src="/assets/appo-one.png" />
+      <img :src="imgSrcOne" />
       <p class="">{{ text }}</p>
     </div>
     <div class="item">
-      <img src="/assets/appo-two.png" />
+      <img :src="imgSrcTwo" />
       <p class="">{{ textTwo }}</p>
     </div>
     <div class="item">
-      <img src="/assets/appo-three.png" />
+      <img :src="imgSrcThree" />
       <p class="">{{ textThree }}</p>
     </div>
   </div>
@@ -20,6 +20,9 @@ defineProps({
   text: String,
   textTwo: String,
   textThree: String,
+  imgSrcOne: String,
+  imgSrcTwo: String,
+  imgSrcThree: String,
 });
 </script>
 <style scoped>

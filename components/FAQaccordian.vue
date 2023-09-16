@@ -86,14 +86,17 @@ export default {
   margin-top: 25px;
   position: relative;
 }
-/* .round::after {
+.acc-wrapper::after {
   position: absolute;
   border: 1px dashed #333;
   width: 100%;
   bottom: -16px;
   left: 0;
   content: "";
-} */
+}
+.acc-wrapper:last-child::after {
+  border: none;
+}
 .round {
   width: 10px;
   height: 10px;

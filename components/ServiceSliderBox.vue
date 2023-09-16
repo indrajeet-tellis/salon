@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <img src="/assets/one.png" />
+    <img :src="imgSrc" />
     <p class="mb-0">
       {{ title }}
     </p>
@@ -11,6 +11,7 @@ import "../style/main.css";
 
 defineProps({
   title: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

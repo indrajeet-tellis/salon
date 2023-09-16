@@ -50,26 +50,31 @@
                 >
                   <swiper-slide>
                     <ServiceSliderBox
+                      imgSrc="assets/one.png"
                       title=" Branded salon app with your own logo"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
+                      imgSrc="assets/two.png"
                       title=" Branded salon app with your own logo"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
+                      imgSrc="assets/three.png"
                       title=" Branded salon app with your own logo"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
+                      imgSrc="assets/four.png"
                       title=" Branded salon app with your own logo"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
+                      imgSrc="assets/five.png"
                       title=" Branded salon app with your own logo"
                     />
                   </swiper-slide>

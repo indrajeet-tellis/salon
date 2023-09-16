@@ -1,6 +1,6 @@
 <template>
   <div class="round">
-    <img src="/assets/appo-eight.png" style="size: 10%" />
+    <img :src="imgSrc" style="size: 10%" />
     <p class="">
       {{ text }}
     </p>
@@ -10,7 +10,7 @@
 import "../style/main.css";
 defineProps({
   text: String,
-  url: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

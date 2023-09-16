@@ -1,6 +1,6 @@
 <template>
   <div class="online-main">
-    <img src="/assets/on-one.png" />
+    <img :src="imgSrc" />
     <h3 class="">
       {{ heading }}
     </h3>
@@ -14,7 +14,7 @@ import "../style/main.css";
 defineProps({
   heading: String,
   subheading: String,
-  url: String,
+  imgSrc: String,
 });
 </script>
 

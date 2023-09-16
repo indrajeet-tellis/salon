@@ -192,22 +192,31 @@ export default {
         :autoplay="false"
       >
         <swiper-slide>
-          <SoftwareItem name="Salon Software" />
+          <SoftwareItem name="Salon Software" imageSrc="/assets/sof-one.png" />
         </swiper-slide>
         <swiper-slide>
-          <SoftwareItem name="Digital marketing" />
+          <SoftwareItem
+            name="Digital marketing"
+            imageSrc="/assets/sof-two.png"
+          />
         </swiper-slide>
         <swiper-slide>
-          <SoftwareItem name="Logo & Graphics" />
+          <SoftwareItem
+            name="Logo & Graphics"
+            imageSrc="/assets/sof-three.png"
+          />
         </swiper-slide>
         <swiper-slide>
-          <SoftwareItem name="Custom Salon Apps" />
+          <SoftwareItem
+            name="Custom Salon Apps"
+            imageSrc="/assets/sof-four.png"
+          />
         </swiper-slide>
         <swiper-slide>
-          <SoftwareItem name="Website design" />
+          <SoftwareItem name="Website design" imageSrc="/assets/sof-five.png" />
         </swiper-slide>
         <swiper-slide>
-          <SoftwareItem name="SEO" />
+          <SoftwareItem name="SEO" imageSrc="/assets/sof-six.png" />
         </swiper-slide>
       </swiper>
     </div>
@@ -249,6 +258,7 @@ export default {
           >
             <swiper-slide>
               <AdvantageCard
+                imgSrc="/assets/cardImg.png"
                 tittle=" Increasing a customer loyalty"
                 subtittle="People like attention, and your customers are no exception.
                   Continuous interaction with your customers make them feel
@@ -258,6 +268,7 @@ export default {
 
             <swiper-slide>
               <AdvantageCard
+                imgSrc="/assets/ad-two.png"
                 tittle=" Attracting and retaining an audience"
                 subtittle="  Your customers will start recommending your application to their friends and acquaintances, thereby, attracting new customers. By sending relevant and useful information, you expand your reach."
               />
@@ -265,6 +276,7 @@ export default {
 
             <swiper-slide>
               <AdvantageCard
+                imgSrc="/assets/cardImg-two.png"
                 tittle="  Optimization and automation of business"
                 subtittle=" Besides marketing benefits, the application controls the work of employees, simplifies all daily activities, increases productivity."
               />
@@ -272,6 +284,7 @@ export default {
 
             <swiper-slide>
               <AdvantageCard
+                imgSrc="/assets/ad-four.png"
                 tittle="You get a powerful communication channel with your customer"
                 subtittle="Sending push-up notifications, providing information about special offers, discounts and promotions motivate your customers to use your services more often."
               />
@@ -279,6 +292,7 @@ export default {
 
             <swiper-slide>
               <AdvantageCard
+                imgSrc="/assets/ad-five.png"
                 tittle="Brand Awareness"
                 subtittle="The development of a business application also contributes to the fact that more and more people get to know about your brand. It works as a kind of advertisement for your services your brand becomes more recognizable and your reputation grows in such a way."
               />
@@ -422,6 +436,7 @@ export default {
           >
             <swiper-slide>
               <OnlineReviewCard
+                imgSrc="/assets/on-one.png"
                 heading="Increase Visibility"
                 subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
@@ -430,6 +445,7 @@ export default {
             </swiper-slide>
             <swiper-slide>
               <OnlineReviewCard
+                imgSrc="/assets/on-two.png"
                 heading="Increase Visibility"
                 subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
@@ -438,6 +454,7 @@ export default {
             </swiper-slide>
             <swiper-slide>
               <OnlineReviewCard
+                imgSrc="/assets/on-three.png"
                 heading="Increase Visibility"
                 subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
@@ -446,6 +463,7 @@ export default {
             </swiper-slide>
             <swiper-slide>
               <OnlineReviewCard
+                imgSrc="/assets/on-four.png"
                 heading="Increase Visibility"
                 subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
@@ -454,6 +472,7 @@ export default {
             </swiper-slide>
             <swiper-slide>
               <OnlineReviewCard
+                imgSrc="/assets/on-five.png"
                 heading="Increase Visibility"
                 subheading="Ratings and reviews increase your salon’s online visibility
                   and reputation, ensuring you rank more highly & attract more
@@ -484,44 +503,52 @@ export default {
             <img class="app-img" src="/assets/appo-mainImg.png" alt="app-img" />
             <div>
               <AppointmentBox
+                imgSrc="/assets/appo-eight.png"
                 text="Discount"
                 class="one"
                 style="position: absolute; bottom: 18px; left: 33px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-seven.png"
                 text="Payroll"
                 class="two"
                 style="position: absolute; bottom: 99px; left: 13px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-six.png"
                 text="Staff"
                 class="three"
                 style="position: absolute; bottom: 184px; left: 17px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-five.png"
                 text="Coupones"
                 class="four"
                 style="position: absolute; bottom: 244px; left: 84px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-four.png"
                 text="Appointment"
                 class="five"
                 style="position: absolute; bottom: 252px; left: 174px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-three.png"
                 text="Sales"
                 class="six"
                 style="position: absolute; bottom: 199px; left: 244px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-two.png"
                 text="Calender"
                 class="seven"
-                style="position: absolute; bottom: 118px; left: 266px"
+                style="position: absolute; bottom: 120px; left: 270px"
               />
               <AppointmentBox
+                imgSrc="/assets/appo-one.png"
                 text="Dashboard"
                 class="eight"
-                style="position: absolute; bottom: 37px; left: 264px"
+                style="position: absolute; bottom: 40px; left: 271px"
               />
             </div>
           </div>

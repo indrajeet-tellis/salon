@@ -1,7 +1,7 @@
 <template>
   <div class="review-box d-flex justify-content-between align-items-center">
     <div class="left">
-      <img src="/assets/reviewM-img.png" />
+      <img :src="imageSource" :alt="altText" />
     </div>
     <div class="right d-flex justify-content-between">
       <div class="text-box">
@@ -21,7 +21,8 @@ import StarRating from "../components/star-rating.vue";
 defineProps({
   personName: String,
   personText: String,
-  url: String,
+  imageSource: String,
+  altText: String,
 });
 </script>
 <style scoped>

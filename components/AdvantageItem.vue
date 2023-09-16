@@ -1,6 +1,6 @@
 <template>
   <div class="advantage-main">
-    <img src="/assets/cardImg.png" />
+    <img :src="imgSrc" />
 
     <h4 class="">{{ text }}</h4>
     <p class="">
@@ -13,7 +13,7 @@ import "../style/main.css";
 defineProps({
   text: String,
   subText: String,
-  url: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

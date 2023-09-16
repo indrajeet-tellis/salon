@@ -2,11 +2,11 @@
   <div class="selectsalon-main">
     <div class="main-item text-center d-flex">
       <div class="item">
-        <div class="type-img"><img src="/assets/type-one.png" /></div>
+        <div class="type-img"><img :src="imageSrcOne" /></div>
         <h4 class="item-text">{{ text }}</h4>
       </div>
       <div class="item">
-        <div class="type-img"><img src="/assets/type-two.png" /></div>
+        <div class="type-img"><img :src="imageSrcTwo" /></div>
         <h4 class="item-text">{{ textTwo }}</h4>
       </div>
     </div>
@@ -17,6 +17,8 @@ import "../style/main.css";
 defineProps({
   text: String,
   textTwo: String,
+  imageSrcOne: String,
+  imageSrcTwo: String,
 });
 </script>
 <style scoped>

@@ -37,12 +37,24 @@ const competitions = [
   {
     value: "1",
     label: "Yes",
-    areaEnsignUrl: "https://picsum.photos/id/1/200/300",
+    areaEnsignUrl: "/assets/like.png",
   },
   {
     value: "2",
     label: "No",
-    areaEnsignUrl: "https://picsum.photos/id/1/200/300",
+    areaEnsignUrl: "/assets/dislike.png",
   },
 ];
 </script>
+
+<style scoped>
+label {
+  align-self: center !important;
+}
+/* span {
+  padding: 6px 7px 8px 0px !important;
+}
+.maz-text-muted {
+  padding: 0 !important;
+} */
+</style>

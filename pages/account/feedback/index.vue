@@ -26,35 +26,9 @@
             <h4 class="rate-text">Rate your experience</h4>
             <div class="feedback-rating"><StarRating /></div>
             <h4 class="app-text">Do you like our app ?</h4>
-            <!-- <MazRadioButtons
-              v-model="selectedOption"
-              :options="selecteYourOption"
-            /> -->
-            <MazSelect />
-            <!-- <MazRadioButtons
-  v-model="selectedCompetition"
-  :options="competitions"
-  color="secondary"
->
-  <template #default="{ option, selected }">
-    <div style="display: flex;">
-      <MazAvatar
-        v-if="option.areaEnsignUrl"
-        :src="option.areaEnsignUrl"
-        style="margin-right: 16px;"
-        size="0.8rem"
-      />
-      <div style="display: flex; flex-direction: column;">
-        <span>
-          {{ option.label }}
-        </span>
-        <span :class="{ 'maz-text-muted': !selected }">
-          {{ option.areaName }}
-        </span>
-      </div>
-    </div>
-  </template>
-</MazRadioButtons> -->
+
+            <div style="margin-top: 21px"><MazSelect /></div>
+
             <h4 class="txt-area">
               Would you like to share something with us ?
             </h4>

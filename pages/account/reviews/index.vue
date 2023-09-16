@@ -29,6 +29,7 @@
             </div>
             <div style="margin-top: 32px">
               <ReviewList
+                image-source="/assets/reviewM-img.png"
                 personName="Sandra"
                 personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -37,6 +38,8 @@
             </div>
             <div style="margin-top: 32px">
               <ReviewList
+                image-source="/assets/reviewM-two.png"
+                alt-text="A beautiful image"
                 personName="Reah"
                 personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -45,6 +48,7 @@
             </div>
             <div style="margin-top: 32px">
               <ReviewList
+                image-source="/assets/reviewM-three.png"
                 personName="Lucie"
                 personText=" Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation

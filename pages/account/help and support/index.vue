@@ -23,7 +23,7 @@
         <div class="col">
           <div class="scroll-container support-scroll-container">
             <div class="text-center" style="margin-top: 20px">
-              <img src="../../../public/assets/support-img.png" />
+              <img src="/assets/support-img.png" />
             </div>
             <div style="margin-top: 27px">
               <h3 class="contact-text">Contact Us</h3>

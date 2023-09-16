@@ -43,6 +43,7 @@
                 >
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fOne.png"
                       text="Online booking"
                       subText=" It is a digital appointment book, where your clients can
                         plan, reschedule, or drop arrangements from anywhere and
@@ -51,6 +52,7 @@
                   </swiper-slide>
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fTwo.png"
                       text="Slot blockers"
                       subText="Use the Slot blockers and get rid of excessive
                         appointments within a particular period. And, your
@@ -60,6 +62,7 @@
                   </swiper-slide>
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fThree.png"
                       text="Off hours booking"
                       subText="Now you don't worry when you are offline! Your clients
                         will have more flexibility to book appointments during
@@ -68,6 +71,7 @@
                   </swiper-slide>
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fFour.png"
                       text="Package booking"
                       subText="Engage your customers with exciting salon packages.
                         Using Salonnz, have a facility in creating packages for
@@ -77,6 +81,7 @@
                   </swiper-slide>
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fFive.png"
                       text="Membership booking"
                       subText="On Salonnz, salon owner can arrange membership program
                         for faithful customers through which they can avail
@@ -85,6 +90,7 @@
                   </swiper-slide>
                   <swiper-slide>
                     <FeatureBox
+                      imgSrc="/assets/fSix.png"
                       text="Accept payment"
                       subText=" Salonnz comes with an online booking widget connected
                         with Paypal. Salon owners can get payments for your
@@ -109,26 +115,41 @@
             <div class="row">
               <div class="col">
                 <FeatureDashBox
+                  imgSrcOne="assets/appo-one.png"
+                  imgSrcTwo="assets/appo-two.png"
+                  imgSrcThree="assets/appo-three.png"
                   text="Dashboard"
                   textTwo="Calender"
                   textThree="Sales"
                 />
                 <FeatureDashBox
+                  imgSrcOne="assets/appo-four.png"
+                  imgSrcTwo="assets/appo-five.png"
+                  imgSrcThree="assets/appo-six.png"
                   text="Appointment"
                   textTwo="Coupones"
                   textThree="Staff"
                 />
                 <FeatureDashBox
+                  imgSrcOne="assets/appo-seven.png"
+                  imgSrcTwo="assets/appo-eight.png"
+                  imgSrcThree="assets/dash-nine.png"
                   text="Payroll"
                   textTwo="Discount"
                   textThree="Services"
                 />
                 <FeatureDashBox
+                  imgSrcOne="assets/dash-ele.png"
+                  imgSrcTwo="assets/dash-twe.png"
+                  imgSrcThree="assets/dash-thr.png"
                   text="Expenses"
                   textTwo="Inventory"
                   textThree="File Manager"
                 />
                 <FeatureDashBox
+                  imgSrcOne="assets/dash-forth.png"
+                  imgSrcTwo="assets/mar-six.png"
+                  imgSrcThree="assets/dash-fif.png"
                   text="E-commerce"
                   textTwo="Review"
                   textThree="Forms"
