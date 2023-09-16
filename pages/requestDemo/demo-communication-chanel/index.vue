@@ -35,9 +35,24 @@
           </div>
         </div>
 
-        <CommunicationChanel textOne="Google Meet" textTwo="Zoom" />
-        <CommunicationChanel textOne="Desktop" textTwo="Mobile" />
-        <CommunicationChanel textOne="Audio Call" textTwo="Video Call" />
+        <CommunicationChanel
+          textOne="Google Meet"
+          textTwo="Zoom"
+          imgSrcOne="/assets/channel-one.png"
+          imgSrcTwo="/assets/channel-two.png"
+        />
+        <CommunicationChanel
+          textOne="Desktop"
+          textTwo="Mobile"
+          imgSrcOne="/assets/channel-three.png"
+          imgSrcTwo="/assets/channel-four.png"
+        />
+        <CommunicationChanel
+          textOne="Audio Call"
+          textTwo="Video Call"
+          imgSrcOne="/assets/channel-five.png"
+          imgSrcTwo="/assets/channel-six.png"
+        />
         <div class="d-flex both-btn">
           <demo-button name="Previous" />
           <demo-button

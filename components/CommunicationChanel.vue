@@ -3,13 +3,13 @@
     <div class="d-flex channel-inner">
       <div class="box">
         <div class="item">
-          <img src="/assets/channel-five.png" />
+          <img :src="imgSrcOne" />
           <p class="itemText">{{ textOne }}</p>
         </div>
       </div>
       <div class="box">
         <div class="item">
-          <img src="/assets/channel-five.png" />
+          <img :src="imgSrcTwo" />
           <p class="itemText">{{ textTwo }}</p>
         </div>
       </div>
@@ -21,6 +21,8 @@ import "../style/main.css";
 defineProps({
   textOne: String,
   textTwo: String,
+  imgSrcOne: String,
+  imgSrcTwo: String,
 });
 </script>
 <style scoped>
