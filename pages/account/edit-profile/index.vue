@@ -138,11 +138,15 @@ export default {
   color: #2c3b91;
   text-align: center;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+}
+.form-control:focus {
+  border-color: #2c3b91 !important;
+  box-shadow: none !important;
 }
 .form-control::placeholder {
   color: rgba(35, 35, 35, 0.5);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 </style>

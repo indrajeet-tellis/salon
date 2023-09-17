@@ -76,7 +76,7 @@
               </select>
             </div>
             <div class="" style="margin-top: 45px">
-              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
+              <h4 style="font-size: 16px; font-weight: 600; color: #2c3b91">
                 Do you have website?
               </h4>
               <div
@@ -104,7 +104,7 @@
               </div>
             </div>
             <div class="" style="margin-top: 45px">
-              <h4 style="font-size: 16px; font-weight: 400; color: #2c3b91">
+              <h4 style="font-size: 16px; font-weight: 600; color: #2c3b91">
                 Currently using any software?
               </h4>
               <div
@@ -201,7 +201,7 @@ export default {
 .form-label {
   color: #2c3b91 !important;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
 }
@@ -227,9 +227,9 @@ export default {
 }
 .form-select {
   color: #232323 !important;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  padding: 12px;
+  padding: 10px;
 }
 </style>

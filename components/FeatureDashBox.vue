@@ -31,22 +31,19 @@ defineProps({
 }
 
 .item {
-  width: 22%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 10px 2px;
   background: #fff;
   text-align: center;
   border-radius: 12px;
   margin-top: 20px;
-  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.32);
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.32);
+  width: 74px;
+  height: 73px;
 }
 p {
-  font-size: 10px !important;
+  font-size: 12px !important;
   font-weight: 400 !important;
-
   color: #2c3b91;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 </style>

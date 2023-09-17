@@ -2,7 +2,7 @@
   <div class="package-item">
     <div class="d-flex align-items-center">
       <div class="left">
-        <img src="/assets/pack-one.png" alt="digi-one" />
+        <img :src="imgSrc" />
       </div>
       <div class="right">
         <h3 class="">
@@ -17,7 +17,7 @@ import "../style/main.css";
 
 defineProps({
   tittle: String,
-  url: String,
+  imgSrc: String,
 });
 </script>
 <style scoped>

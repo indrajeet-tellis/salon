@@ -100,8 +100,7 @@ export default {
 .demo-book-subHeading {
   color: #2c3b91;
   font-size: 18px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-align: center;
   margin: 10px auto;
 }

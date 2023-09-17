@@ -64,7 +64,7 @@ export default {
 }
 .cancel-text {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   color: #2c3b91;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -73,7 +73,7 @@ export default {
 .cancel-subtext {
   font-size: 16px;
   font-weight: 400;
-  color: #2c3b91;
+  color: #333;
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 330px;
@@ -90,9 +90,13 @@ export default {
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   color: #979797 !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   font-weight: 400 !important;
   font-family: "Roboto", sans-serif !important;
-  width: 318px !important;
+  width: 352px !important;
+}
+.form-control:focus {
+  border-color: #2c3b91 !important;
+  box-shadow: none !important;
 }
 </style>

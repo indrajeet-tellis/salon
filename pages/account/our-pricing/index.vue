@@ -93,16 +93,16 @@ export default {
 .package::after {
   width: 94%;
   height: 1px;
-  border: 1px dashed #333;
+  border: 0.5px dashed #737373;
   content: "";
   position: absolute;
-  top: 169px;
+  top: 166px;
   left: 10px;
 }
 .package::before {
   width: 94%;
   height: 1px;
-  border: 1px dashed #333;
+  border: 0.5px dashed #737373;
   content: "";
   position: absolute;
   top: 401px;
@@ -141,7 +141,7 @@ ul li {
 .package-text {
   color: #2c3b91;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.4px;
   text-align: center;
 }
@@ -156,7 +156,7 @@ ul li {
 .faq-text {
   color: #2c3b91;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.36px;
   text-align: center;
   margin-bottom: 0 !important;

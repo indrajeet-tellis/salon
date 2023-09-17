@@ -1,4 +1,5 @@
 <script setup>
+import "../style/main.css";
 const emit = defineEmits(["active-tab"]);
 const activeTab = ref("About");
 const props = defineProps({
@@ -35,15 +36,15 @@ const handleTabClick = (params) => {
   justify-content: space-between;
   padding: 0 4rem;
   border-radius: 0.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 9.2rem;
 }
 
 .single-tab {
-  padding: 4px 30px;
+  padding: 5px 18px;
 }
 
 .ActiveTab {
-  height: 26px;
+  height: 32px;
   border-radius: 20px;
   background: #2c3b91;
 }
@@ -51,11 +52,8 @@ const handleTabClick = (params) => {
 .single-tab h5 {
   color: #2c3b91;
   text-align: center;
-  font-family: DM Sans;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 400;
-  line-height: normal;
   margin-bottom: 0 !important;
 }
 

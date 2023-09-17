@@ -29,7 +29,7 @@ defineProps({
 }
 p {
   color: #333333;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 400 !important;
   width: 107px;
   margin: 6px auto;

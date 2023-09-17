@@ -232,8 +232,7 @@ export default {
 
 .sub-hedaing {
   font-size: 18px !important;
-  font-weight: 500 !important;
-  font-family: "Roboto", sans-serif;
+  font-weight: 700 !important;
   color: #2c3b91;
   text-align: center;
   margin-top: 11px;
@@ -256,7 +255,7 @@ export default {
 .menu-main .D-heading {
   color: #2c3b91;
   font-size: 18px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }

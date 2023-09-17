@@ -22,20 +22,22 @@
             <h2 class="mb-0 subheader-text">
               Tuesday, 13 Oct 2022 at 11:30 AM
             </h2>
-            <h3 class="mb-0 reminder-text">Prefered communication channel</h3>
-          </div>
-          <div class="d-flex justify-content-between mt-3">
-            <div class="item">
-              <img src="/assets/channel-one.png" />
-              <p class="item-p">Google Meet</p>
-            </div>
-            <div class="item">
-              <img src="/assets/channel-three.png" />
-              <p class="item-p">Desktop</p>
-            </div>
-            <div class="item">
-              <img src="/assets/channel-five.png" />
-              <p class="item-p">Audio call</p>
+            <div class="channels-box">
+              <h3 class="mb-0 reminder-text">Prefered communication channel</h3>
+              <div class="d-flex justify-content-between mt-3">
+                <div class="item">
+                  <img src="/assets/channel-one.png" />
+                  <p class="item-p">Google Meet</p>
+                </div>
+                <div class="item">
+                  <img src="/assets/channel-three.png" />
+                  <p class="item-p">Desktop</p>
+                </div>
+                <div class="item">
+                  <img src="/assets/channel-five.png" />
+                  <p class="item-p">Audio call</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -122,8 +124,8 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 203px 0;
-  overflow: hidden;
+  padding: 0 0 143px 0;
+  overflow: hidden !important;
 }
 .header-text {
   font-size: 30px;
@@ -133,10 +135,10 @@ export default {
   margin: 18px auto 0 auto;
 }
 .subheader-text {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: #ed0046;
-  margin: 40px auto 0 auto;
+  margin: 35px auto 0 auto;
   width: 294px;
 }
 .confirm-text {
@@ -147,16 +149,22 @@ export default {
   margin: 26px auto 0 auto;
   line-height: 20px;
 }
+.channels-box {
+  border-radius: 20px;
+  border: 0.5px solid #2c3b91;
+  padding: 7px;
+  margin-top: 25px;
+}
 .reminder-text {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: #2c3b91;
-  width: 367px;
-  margin: 54px auto 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 .both-btn {
   position: fixed;
-  bottom: 3%;
+  bottom: 10%;
   left: 9%;
 }
 .item {
@@ -165,7 +173,7 @@ export default {
 }
 .item-p {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #2c3b91;
 }
 </style>

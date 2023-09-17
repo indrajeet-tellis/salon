@@ -19,7 +19,7 @@ defineProps({
 <style scoped>
 h4 {
   font-size: 14px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   color: #2c3b91;
   text-align: center;
   width: 224px;

@@ -47,12 +47,12 @@
                 subText="Besides marketing benefits, the application controls the work of employees, simplifies all daily activities, increases productivity."
               />
               <AdvantageItem
-                imgSrc="assets/ad-three.png"
+                imgSrc="assets/ad-four.png"
                 text="You get a powerful communication channel with your customer"
                 subText="Sending push-up notifications, providing information about special offers, discounts and promotions motivate your customers to use your services more often."
               />
               <AdvantageItem
-                imgSrc="assets/ad-four.png"
+                imgSrc="assets/ad-five.png"
                 class="last"
                 text="Brand Awareness"
                 subText="The development of a business application also contributes to the fact that more and more people get to know about your brand. It works as a kind of advertisement for your services your brand becomes more recognizable and your reputation grows in such a way."
@@ -123,11 +123,11 @@ export default {
 } */
 .Advantage-header {
   font-size: 18px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   color: #2c3b91;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  width: 215px;
+  width: 216px;
   margin: 10px auto;
 }
 /* .adItem-heading {

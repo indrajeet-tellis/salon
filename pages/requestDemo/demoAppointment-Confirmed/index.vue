@@ -100,7 +100,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 0 0 203px 0;
+  padding: 0 0 208px 0;
+  overflow: hidden !important;
 }
 .header-text {
   font-size: 30px;
@@ -128,7 +129,7 @@ export default {
   font-weight: 600;
   color: #2c3b91;
   width: 346px;
-  margin: 140px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 .both-btn {
   position: fixed;

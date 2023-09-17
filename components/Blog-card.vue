@@ -17,9 +17,6 @@
 </template>
 <script>
 import "../style/main.css";
-defineProps({
-  url: String,
-});
 </script>
 <style scoped>
 .sub-text {

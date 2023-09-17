@@ -34,6 +34,9 @@ defineProps({
   border-radius: 5px;
   transition: 0.4s;
 }
+.item:hover {
+  background: #2c3b91;
+}
 
 .type-img img {
   width: 100%;
@@ -43,8 +46,11 @@ defineProps({
   font-weight: 500;
   color: #2c3b91;
   margin-top: 9px;
-
   margin-bottom: 0 !important;
+  transition: 0.4s;
+}
+.item:hover .item-text {
+  color: #fff;
 }
 .tab-container {
   display: flex;

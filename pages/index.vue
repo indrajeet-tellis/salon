@@ -576,6 +576,7 @@ export default {
           <div class="main mt-3">
             <div style="position: relative">
               <PackageItem
+                imgSrc="/assets/pack-one.png"
                 class="one"
                 tittle=" Branded salon app with your own logo"
               />
@@ -583,6 +584,7 @@ export default {
             </div>
             <div style="position: relative">
               <PackageItem
+                imgSrc="/assets/pack-two.png"
                 class="two"
                 style="margin-top: 40px"
                 tittle=" New awesome looking website or upgrade your existing website"
@@ -591,15 +593,16 @@ export default {
             </div>
             <div style="position: relative">
               <PackageItem
+                imgSrc="/assets/pack-three.png"
                 class="two"
                 style="margin-top: 40px"
                 tittle=" Online booking option on the website"
               />
-              <!-- src="url(assets/pack-two.png)" -->
               <div class="line"></div>
             </div>
             <div style="position: relative">
               <PackageItem
+                imgSrc="/assets/pack-four.png"
                 class="two"
                 style="margin-top: 40px"
                 tittle=" App promotion in social media with images/video content"
@@ -608,6 +611,7 @@ export default {
             </div>
             <div style="position: relative">
               <PackageItem
+                imgSrc="/assets/pack-five.png"
                 class="two"
                 style="margin-top: 40px"
                 tittle=" Review and Reputation management"
@@ -792,7 +796,7 @@ export default {
   padding-bottom: 145px;
 }
 .b-para {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #333333;
   margin-bottom: 0 !important;
@@ -990,7 +994,7 @@ export default {
   padding-left: 10px;
 }
 .works .headsT {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .works .main .item {
   position: relative;
@@ -1003,7 +1007,7 @@ export default {
   color: #fff;
   position: absolute;
   top: 44%;
-  left: 45%;
+  left: 45.5%;
   text-align: center;
   line-height: 20px;
   z-index: 2;
@@ -1015,7 +1019,7 @@ export default {
   height: 93%;
   border: 1px solid #d9d9d9;
   position: absolute;
-  left: 48%;
+  left: 48.5%;
   top: 6%;
   content: "";
 }

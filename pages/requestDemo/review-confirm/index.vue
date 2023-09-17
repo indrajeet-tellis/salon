@@ -58,10 +58,12 @@
               <span style="font-weight: 400; color: #333">No</span>
             </div>
           </div>
-          <div class="channel-box">
+          <div class="date-box">
             <h2 class="mb-0 subheader-text">
               Tuesday, 13 Oct 2022 at 11:30 AM
             </h2>
+          </div>
+          <div class="channel-box">
             <h3 class="mb-0 reminder-text">Prefered communication channel</h3>
             <div class="d-flex justify-content-between mt-3">
               <div class="item">
@@ -131,19 +133,26 @@ export default {
   width: 100%;
   left: 14px;
 }
+.date-box {
+  border-radius: 10px;
+  border: 0.5px solid #d9d9d9;
+  background: #e8ecfd;
+  padding: 16px 10px;
+  margin-top: 20px;
+}
 .subheader-text {
   font-size: 19px;
   font-weight: 600;
-  color: #ed0046;
+  color: #2c3b91;
   margin: 0 auto;
-  width: 294px;
+  width: 300px;
 }
 .reminder-text {
   font-size: 16px;
   font-weight: 500;
   color: #2c3b91;
   width: 306px;
-  margin: 15px auto 0 auto;
+  margin: 0 auto;
   margin-bottom: 0px;
   text-align: center;
 }
@@ -165,7 +174,7 @@ export default {
   border-radius: 20px;
   border: 0.5px solid #d9d9d9;
   padding: 20px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .details-box .name {
   color: #2c3b91;

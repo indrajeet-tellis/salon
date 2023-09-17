@@ -106,25 +106,11 @@ export default {
   left: -17px;
   top: 7px;
 }
-p {
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  position: relative;
-}
-/* .acc-content::after {
-  position: absolute;
-  content: "";
-  left: 0%;
-  top: 0%;
-  width: 10px;
-  height: 10px;
-  background: #ed0046;
-} */
+
 .acc-content {
   color: #333;
-  font-family: Roboto;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
   font-weight: 400;
   margin-top: 9px;
 }

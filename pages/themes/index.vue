@@ -16,10 +16,10 @@
   </div>
   <section>
     <div class="container">
+      <TabSwitch :tabNames="tabNames" v-on:active-tab="handleActiveTab" />
       <div class="scroll-container themes-scroll-container">
         <div class="row">
           <div class="col">
-            <TabSwitch :tabNames="tabNames" v-on:active-tab="handleActiveTab" />
             <div class="main-container">
               <div v-if="currentTab === 'App'">
                 <div class="middle-section">
@@ -91,12 +91,13 @@ const handleCurrentHairSalon = (params) => {
 <style scoped>
 .website-btn {
   position: fixed;
-  bottom: 32px;
+  bottom: 21px;
   left: 30px;
 }
 .themes-scroll-container {
-  margin-top: 142px;
+  margin-top: 15px;
   height: 74vh !important;
+  margin-bottom: 25px;
 }
 
 .theme-app-text {

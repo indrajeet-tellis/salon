@@ -92,11 +92,8 @@ export default {
 }
 .rating-text {
   color: #2c3b91;
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 700;
   text-align: center;
   margin-top: 30px;
 }
@@ -110,11 +107,8 @@ export default {
 }
 .review-btn a {
   color: #3e3d3d;
-  font-family: Roboto;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   display: inline-block;
 }
 .review-msg {
@@ -128,9 +122,6 @@ export default {
   border: 1px solid #d9d9d9;
   background: #fff;
 }
-/* .rating > label::before {
-  font-size: 1.25em !important;
-} */
 
 .rating > label::before {
   font-size: 1.25em !important;

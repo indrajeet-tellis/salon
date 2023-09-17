@@ -119,8 +119,7 @@ export default {
 }
 .demoCommunicationText {
   font-size: 18px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   color: #2c3b91;
   text-align: center;
   margin-top: 12px;
@@ -129,45 +128,22 @@ export default {
 .demoText {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   color: #002478;
   margin-bottom: 0;
-  width: 335px;
+  width: 320px;
   margin: 0 auto;
 }
 .demoText-bg {
   background: #e8ecfd;
-  padding: 11px;
+  padding: 7px;
   text-align: center;
   border-radius: 5px;
   margin-top: 17px;
 }
-/* .box {
-  width: 20%;
-  margin-top: 35px;
-}
-.item {
-  width: 95%;
-  background: #fff;
-  margin: 0 auto;
-  padding: 7px 6px;
-  text-align: center;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.35);
-  position: relative;
-  height: 100px;
-} */
-/* .item:hover {
-  border: 2px solid #2c3b91;
-  box-shadow: none;
-} */
+
 .itemText {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   color: #333333;
   width: 68px;
   margin-top: 10px;
@@ -189,7 +165,4 @@ export default {
   transition: 0.4s;
   z-index: 999;
 }
-/* .item:hover .item-icon {
-  display: block;
-} */
 </style>

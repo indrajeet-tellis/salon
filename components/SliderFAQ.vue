@@ -87,6 +87,6 @@ export default {
 .acc-item {
   font-size: 16px;
   color: #2c3b91;
-  font-weight: 500;
+  font-weight: 600;
 }
 </style>

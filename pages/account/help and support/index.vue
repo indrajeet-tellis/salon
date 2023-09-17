@@ -125,7 +125,8 @@ export default {
 .contact-text {
   color: #2c3b91;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
+  text-align: center;
 }
 .contact-card {
   width: 285px;
@@ -167,13 +168,13 @@ export default {
   color: #2c3b91;
   text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 32px;
 }
 .needHelp-subtext {
   color: #2c3b91;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   width: 319px;
   margin-left: 15px;
   position: relative;
@@ -200,7 +201,7 @@ export default {
   color: #2c3b91;
   text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 32px;
 }
 .text-box textarea {

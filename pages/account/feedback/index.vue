@@ -25,11 +25,13 @@
             <h3 class="important-text">Your feedback is important to us</h3>
             <h4 class="rate-text">Rate your experience</h4>
             <div class="feedback-rating"><StarRating /></div>
-            <h4 class="app-text">Do you like our app ?</h4>
+            <h4 class="rate-text" style="margin-top: 85px">
+              Do you like our app ?
+            </h4>
 
             <div style="margin-top: 21px"><MazSelect /></div>
 
-            <h4 class="txt-area">
+            <h4 class="rate-text" style="margin-top: 70px">
               Would you like to share something with us ?
             </h4>
             <MazTextarea
@@ -102,20 +104,8 @@ const handleCurrentSubmit = (params) => {
 .rate-text {
   color: #2c3b91;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 39px;
-}
-.app-text {
-  color: #2c3b91;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 85px;
-}
-.txt-area {
-  color: #2c3b91;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 70px;
 }
 
 .rating > label {

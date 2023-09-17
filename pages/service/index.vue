@@ -57,25 +57,25 @@
                   <swiper-slide>
                     <ServiceSliderBox
                       imgSrc="assets/two.png"
-                      title=" Branded salon app with your own logo"
+                      title="New awesome looking website or upgrade your existing website"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
                       imgSrc="assets/three.png"
-                      title=" Branded salon app with your own logo"
+                      title="Online booking option on the website"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
                       imgSrc="assets/four.png"
-                      title=" Branded salon app with your own logo"
+                      title="App promotion in social media with images / video content"
                     />
                   </swiper-slide>
                   <swiper-slide>
                     <ServiceSliderBox
                       imgSrc="assets/five.png"
-                      title=" Branded salon app with your own logo"
+                      title="Review & Reputation management"
                     />
                   </swiper-slide>
                 </swiper>
@@ -180,7 +180,7 @@ export default {
 }
 .sub-hedaing {
   font-size: 18px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   color: #2c3b91;
   text-align: center;
   margin-top: 11px;

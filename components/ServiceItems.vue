@@ -190,11 +190,11 @@ import "../style/main.css";
 }
 .read-text-icon {
   display: inline-block;
-  font-size: 6px;
+  font-size: 8px;
 }
 .read-text-red {
   display: inline-block;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
   margin-left: 5px;
 }

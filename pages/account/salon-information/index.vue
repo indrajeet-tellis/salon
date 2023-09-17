@@ -218,27 +218,25 @@ export default {
 .salon-info-text {
   color: #2c3b91;
   text-align: center;
-
   font-size: 18px;
-
-  font-weight: 500;
-
+  font-weight: 700;
   margin-top: 19px;
 }
 .form-label {
   color: #2c3b91;
   text-align: center;
-
   font-size: 16px;
-
-  font-weight: 400;
+  font-weight: 600;
 }
 .form-control::placeholder {
   color: rgba(35, 35, 35, 0.5);
-  font-family: Roboto;
-  font-size: 12px;
-
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 400;
+}
+.form-control:focus {
+  border-color: #2c3b91;
+  box-shadow: none !important;
 }
 .box {
   margin-top: 20px;

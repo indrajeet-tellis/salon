@@ -17,7 +17,7 @@
       </div>
     </div>
   </div>
-  <section style="margin-bottom: 100px">
+  <section>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -35,6 +35,7 @@
 </template>
 <script>
 import MobileHeading from "../../../components/mobile-heading.vue";
+import "../../../style/main.css";
 
 export default {
   components: {
@@ -54,12 +55,9 @@ export default {
 };
 </script>
 <style scoped>
-.HEAD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.card-main {
+  margin-top: 133px;
 }
-
 .card-item {
   position: relative;
 }
