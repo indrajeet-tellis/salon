@@ -17,6 +17,7 @@ import AdvantageCard from "../components/AdvantageCard.vue";
 import OnlineReviewCard from "../components/OnlineReviewCard.vue";
 import AppointmentBox from "../components/AppointmentBox.vue";
 import PackageItem from "../components/PackageItem.vue";
+import SmallButton from "../components/SmallButton.vue";
 export default {
   data() {
     return {
@@ -51,6 +52,7 @@ export default {
     OnlineReviewCard,
     AppointmentBox,
     PackageItem,
+    SmallButton,
   },
 
   setup() {
@@ -127,12 +129,12 @@ export default {
             <swiper-slide>
               <div
                 class="banItem"
-                :style="{ backgroundImage: 'url(/assets/bnr-bg-one.png)' }"
+                :style="{ backgroundImage: 'url(/assets/banner-two.png)' }"
               >
                 <div class="banner-btn-one">
-                  <BannerButton
+                  <SmallButton
                     name="Request Demo"
-                    style="margin-top: 112px; margin-left: 20px"
+                    style="margin-top: 114px; margin-left: 32px"
                   />
                 </div>
               </div>
@@ -140,10 +142,10 @@ export default {
             <swiper-slide>
               <div
                 class="banItem"
-                :style="{ backgroundImage: 'url(/assets/bnr-bg-two.png)' }"
+                :style="{ backgroundImage: 'url(/assets/banner-three.png)' }"
               >
                 <div class="banner-btn">
-                  <BannerButton
+                  <SmallButton
                     name="Request Demo"
                     style="margin-top: 112px; margin-left: 20px"
                   />

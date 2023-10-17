@@ -20,7 +20,7 @@
     </div>
   </div>
   <section style="margin-top: 262px">
-    <div class="container">
+    <div class="container scroll-container">
       <div class="row">
         <div class="col">
           <div class="box d-flex position-relative">
@@ -152,13 +152,16 @@
       </div>
     </div>
   </section>
+  <BottomNav />
 </template>
 <script>
+import BottomNav from "../../components/bottom-nav.vue";
 import MobileHeading from "../../components/mobile-heading.vue";
 import "../../style/main.css";
 export default {
   components: {
     MobileHeading,
+    BottomNav,
   },
   data() {
     return {
